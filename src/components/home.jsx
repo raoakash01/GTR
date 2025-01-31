@@ -2,7 +2,12 @@ import React from 'react'
 import Banner from './banner'
 import './home.css'
 import arrow from '../assets/down-arrow.png'
-
+import AboutUs from './aboutus'
+import Banner2 from './banner2'
+import Advisory from './advisory'
+import Banner3 from './banner3'
+import Banner4 from './banner4'
+import Footer from './footer'
 function Home() {
     return (
         <>
@@ -68,6 +73,12 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <AboutUs/>
+            <Banner2/>
+            <Advisory />
+            <Banner3/>
+            <Banner4/>
+            <Footer/>
         </>
     )
 }
