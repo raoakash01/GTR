@@ -1,0 +1,164 @@
+.home {
+    background: linear-gradient(to right, #00008b, #1e90ff, #00008b);
+    color: white;
+    width: 100%;
+}
+.nav{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    margin-left: 3rem;
+}
+
+.nav-contact{
+    margin-right: 3rem;
+}
+
+.nav-menu{
+    display: flex;
+    background-color: rgba(217, 217, 217, 0.32);
+    border-radius: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 3rem;
+}
+
+.home-content{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.Tag-line{
+    justify-content: center;
+    align-items: right;
+}
+
+.tag-line-text{
+    margin-top: 9rem;
+    margin-left: 20rem;
+    text-align: right;
+    font-size: 7rem;
+    font-weight: 500;
+    color: white;
+}
+
+.tag-line-text-2{
+    margin-top: -2rem;
+    margin-left: 20rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+}
+
+.home-content-2{
+    display: flex;
+    justify-content: baseline;
+    align-items: left;
+    padding-top: 10rem;
+    padding-left: 1rem;
+}
+
+.arrow-icon{
+    margin-top: 1rem;
+    width: 2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    border: rgba(255, 255, 255, 0.726) 1px dashed;
+    transition: all 1s ease-in-out;
+}
+
+.arrow-icon:hover{
+    cursor: pointer;
+    border: white 1px solid;
+    transform: rotate(360deg);
+}
+
+.email-input{
+    background-color: white;
+    border-radius: 2rem;
+    width: 20rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    margin-left: -2rem;
+}
+
+.get-started{
+    background-color: #03071C;
+    border-radius: 2rem;
+    width: 33%;
+    height: 80%;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.email-home{
+    width: 55%;
+    height: 90%;
+    border: none;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.email-home:hover{
+    cursor: pointer;
+    text-decoration: underline 1px solid #052659;
+    color: beige;
+}
+
+.email-home:focus{
+    outline: none;
+    text-decoration: underline 1px solid #052659;
+    color: beige;
+}
+
+.email-home::placeholder{
+    font-size: 1rem;
+}
+
+.home-content-3{
+    position: relative;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+}
+.home-content-3-box{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    height: 3rem;
+    width: 60%;
+    border-radius: 2rem;
+    background-color:white ;
+}
+
+.home-content-3-right-text{
+    color: #0C2752;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.home-content-3-left-list-icons{
+    display: flex;
+    justify-content: space-between;
+    color:#0C2752;
+}
