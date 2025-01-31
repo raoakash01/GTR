@@ -12,6 +12,7 @@
     border-top: 0.2rem solid transparent;
     border-bottom: 0.2rem solid transparent;
     overflow: hidden;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .advisory-header::before,
@@ -156,4 +157,109 @@
 
 .extra-top-1{
     margin-top: 2rem;
+}
+
+.know_our_team{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    position: relative;
+    border-top: 0.2rem solid transparent;
+    border-bottom: 0.2rem solid transparent;
+    overflow: hidden;
+}
+
+
+.know_our_team::before,
+.know_our_team::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.2rem;
+    background-color: #052444;
+    transition: width 1.5s ease-in-out;
+}
+
+.know_our_team::before {
+    top: 0;
+    left: 0;
+}
+
+.know_our_team::after {
+    bottom: 0;
+    right: 0;
+}
+
+/* Animation will be applied when 'animate-border' class is added */
+.know_our_team.animate-border::before {
+    animation: border-top-animation 1.5s ease-in-out forwards;
+}
+
+.know_our_team.animate-border::after {
+    animation: border-bottom-animation 1.5s ease-in-out forwards;
+}
+
+@keyframes border-top-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes border-bottom-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.team-header-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #052444;
+}
+.team-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #052444;
+    margin-top: -1rem;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.team-header-text{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #052444;
+}
+
+.remove_border{
+    border: none;
+}
+
+.managing-director-title{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #052444;
+    letter-spacing: 0.3rem;
+}
+.half_underline{
+    border-bottom: 0.3rem solid #052444;
+    width: 9rem;
+    margin-left: 0.4rem;
+    margin-top: -1rem;
+}
+
+.managing-director-text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #052444;
 }

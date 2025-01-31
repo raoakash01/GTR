@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import algills from "../assets/Al-Gillis.jpg";
 import vijai from "../assets/vijai.jpg"
+import namita from "../assets/namita.jpg"
 
 const advisoryMembers = [
     {
@@ -22,6 +23,7 @@ const advisoryMembers = [
 
 function Advisory() {
     const headerRef = useRef(null);
+    const teamRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -39,6 +41,10 @@ function Advisory() {
 
         if (headerRef.current) {
             observer.observe(headerRef.current);
+        }
+
+        if (teamRef.current) {
+            observer.observe(teamRef.current);
         }
 
         return () => observer.disconnect();
@@ -86,6 +92,31 @@ function Advisory() {
                     <button className="nav-button right" onClick={handleNext}>
                         <FontAwesomeIcon icon={faArrowRight} />
                     </button>
+                </div>
+            </div>
+            <div ref={teamRef} className="know_our_team extra-top-1">
+            <div className="advisory-header-right">
+                    <h2 className="team-header-title">YOUR  SUBTITLE  GOES  HERE</h2>
+                    <h2 className="team-heading">MEET OUR TEAM</h2>
+            </div>
+                <div className="advisory-header-left">
+                    <p className="team-header-text">The Global TeleRadiology management team consists of industry experts in healthcare management, operations, marketing, and process development, with four founder members.</p>
+                </div>
+            </div>
+            <div className="advisory-body">
+                <div className="advisory-members">
+                   
+                    <div className="advisory-member">
+                        <img className="advisory-member-image remove_border" src={namita} alt="managing director" />
+                        <div className="advisory-member-content">
+                            <h3 className="advisory-member-name">Namita Chowdhary </h3>
+                            <p className="managing-director-title">Managing Director</p>
+                            <div className="half_underline"></div>
+                            <p className="managing-director-text">
+                            Over 25 years of expertise in strategic business management, marketing, product launches, brand positioning, research, field marketing, event management, and public relations
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
