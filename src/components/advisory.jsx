@@ -115,6 +115,8 @@ function Advisory() {
                             <p className="managing-director-text">
                             Over 25 years of expertise in strategic business management, marketing, product launches, brand positioning, research, field marketing, event management, and public relations
                             </p>
+                            <p className="managing-director-text">Focused experience in driving initiation and growth strategies for Healthcare businesses over the past 15 years.</p>
+                            <p className="managing-director-text">Proven track record with leading global organizations across various industries.</p>
                         </div>
                     </div>
                 </div>
