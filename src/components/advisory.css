@@ -263,3 +263,58 @@
     font-weight: 300;
     color: #052444;
 }
+
+.team{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.team-members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.member-card {
+    width: 15rem;
+    height: 22rem;
+    background-color: #0C2752;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.img-team{
+    border-radius: 2rem 2rem 0rem 0rem;
+    height: 16.5rem;
+    width: 15rem;
+}
+.img-team:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), inset 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.content-team {
+    text-align: center;
+}
+
+.name-team {
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px #0000007c, 2px 2px 1px #00000069, 3px 3px 1px #00000093;
+}
+
+.role-team {
+    margin-top: -0.8rem;
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: #ffffff;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+}
+

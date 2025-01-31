@@ -5,6 +5,10 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import algills from "../assets/Al-Gillis.jpg";
 import vijai from "../assets/vijai.jpg"
 import namita from "../assets/namita.jpg"
+import Irshad from "../assets/IrshadGTR.jpg"
+import Mash from "../assets/MashGTR.jpg"
+import Ruchi from "../assets/RuchiGTR.jpg"
+import Sadique from "../assets/SadiqueGTR.jpg"
 
 const advisoryMembers = [
     {
@@ -117,6 +121,37 @@ function Advisory() {
                             </p>
                             <p className="managing-director-text">Focused experience in driving initiation and growth strategies for Healthcare businesses over the past 15 years.</p>
                             <p className="managing-director-text">Proven track record with leading global organizations across various industries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="team">
+                <div className="team-members">
+                    <div className="member-card">
+                    <img className="img-team" src={Mash}></img>
+                        <div className="content-team">
+                            <h2 className="name-team">Mahesh Malhotra</h2>
+                            <p className="role-team">Vice President, Head <br/>Sales & Marketing</p>
+                        </div>
+                    </div>
+                    <div className="member-card">
+                    <img className="img-team" src={Ruchi}></img>
+                         <div className="content-team">
+                         <h2 className="name-team">Ruchi Sharma</h2>
+                         <p className="role-team">Head – Customer Relations</p>
+                         </div>
+                    </div>
+                    <div className="member-card"> 
+                        <img className="img-team" src={Irshad}></img>
+                        <div className="content-team">
+                        <h2 className="name-team">Irshad Ahmad</h2>
+                        <p className="role-team">Head – Customer Relations</p></div>  
+                    </div>
+                    <div className="member-card">
+                    <img className="img-team" src={Sadique}></img>
+                        <div className="content-team">
+                        <h2 className="name-team">Sadique Khan</h2>
+                        <p className="role-team">Head – Customer Relations</p>
                         </div>
                     </div>
                 </div>
