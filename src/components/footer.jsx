@@ -2,6 +2,7 @@ import React from 'react'
 import './footer.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTwitter, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRight, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function Footer(){
     return (
@@ -19,6 +20,13 @@ function Footer(){
                     </div>
                 </div>
             </div>
+            <div className='footer-center'>
+            <div className='footer-center-btn'>
+                <button className='footer-center-button'>
+                    <FontAwesomeIcon className='footer-center-icon' icon={faChevronUp}/>
+                </button>
+            </div>
+            </div>
             <div className="footer-lower">
                 <div className='footer-lower-upper'>
                 <div className='footer-lower-1'>
@@ -33,13 +41,34 @@ function Footer(){
                         <FontAwesomeIcon  className='social-icon' icon={faInstagram} style={{color: "#ffffff"}} />
                     </div>
                 </div>
-                <div className='footer-lower-2'></div>
-                <div className='footer-lower-3'></div>
-                <div className='footer-lower-4'></div>
-                <div className='footer-lower-5'></div>
+                <div className='footer-lower-2'>
+                    <h3 className='footer-links-heading'>About</h3>
+                    <ul className='footer-links'>
+                        <li className='footer-link'>Mission & Vision</li>
+                        <li className='footer-link'>Board of Advisor</li>
+                        <li className='footer-link'>Management Team</li>
+                    </ul>
+                </div>
+                <div className='footer-lower-3'><h3 className='footer-links-heading'>Cure</h3>
+                <ul className='footer-links'>
+                        <li className='footer-link'>Proprietary Clip</li>
+                        <li className='footer-link'>Work Flow</li>
+                        <li className='footer-link'>Quality Panel</li>
+                    </ul></div>
+                <div className='footer-lower-4'><h3 className='footer-links-heading'>Quick Links</h3> 
+                <ul className='footer-links'>
+                        <li className='footer-link'>Services</li>
+                        <li className='footer-link'>Contact</li>
+                        <li className='footer-link'>FAQs</li>
+                    </ul></div>
+                <div className='footer-lower-5'><h3 className='footer-links-heading'>Company</h3> <ul className='footer-links'>
+                        <li className='footer-link'>About us</li>
+                        <li className='footer-link'>Contact us</li>
+                        <li className='footer-link'>Careers</li>
+                    </ul></div>
                 </div>
                 <div className='footer-lower-lower'>
-
+                    <p className='footer-lower-text-2'>© Copyright  Global Teleradiology.. All Rights Reserved </p>
                 </div>
             </div>
         </div>
