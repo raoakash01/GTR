@@ -7,6 +7,7 @@ import Banner2 from './banner2'
 import Advisory from './advisory'
 import Banner3 from './banner3'
 import Banner4 from './banner4'
+import WhyUs from './whyus'
 import Footer from './footer'
 function Home() {
     return (
@@ -77,6 +78,7 @@ function Home() {
             <Banner2/>
             <Advisory />
             <Banner3/>
+            <WhyUs/>
             <Banner4/>
             <Footer/>
         </>
