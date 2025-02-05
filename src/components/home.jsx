@@ -85,6 +85,7 @@ function Home() {
             <WhyGtr/>
             <Radiology/>
             <Modality/>
+            <Banner2/>
             <Banner4/>
             <Footer/>
         </>
