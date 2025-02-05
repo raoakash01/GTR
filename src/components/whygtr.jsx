@@ -72,7 +72,8 @@ function WhyGtr() {
                             <li className="gtr-list-item">Single point of contact for everything Value Adds</li>
                             <li className="gtr-list-item">Secure patient portal for easy reference</li>
                             <li className="gtr-list-item">Quality endorsement via unique CLIPTM quality</li>
-                            <li className="gtr-list-item">Voice notes- patients and physicians Mobile App</li>
+                            <li className="gtr-list-item">Voice notes- patients and physicians</li>
+                            <li className="gtr-list-item">Mobile App</li>
                         </ul>
                     </div>
                 </div>
