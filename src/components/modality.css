@@ -1,0 +1,101 @@
+.modality {
+    padding: 2rem;
+    background-color: #f7f9fc;
+}
+
+.modality-h {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #052444;
+    margin-bottom: 1rem;
+    text-align: left;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10rem;
+}
+
+.card {
+    width: 20%;
+    height: 28rem;
+    margin: 1rem;
+    background-image: linear-gradient(to bottom left, #cdd4fa, white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+}
+
+
+.card-set{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 25%;
+    height: 30rem;
+    margin: 1rem;
+    padding: 0;
+}
+
+.card-set-1{
+    width: 100%;
+    height: 38%;
+    background-image: linear-gradient(to bottom left, #cdd4fa, white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-set-2{
+    width: 100%;
+    height: 60%;
+    background-image: linear-gradient(to bottom left, #cdd4fa, white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+}
+
+.card-h{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 80%;
+}
+
+.card-l{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+.card1{
+    background-image: linear-gradient(to bottom left, #cdd4fa, rgb(0, 9, 63));
+}
+
+.card-h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #052444;
+    margin-bottom: 90%;
+}
+
+.card-l1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #052444;
+}
+
+.card-vertical-text{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #052444;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.card-x{
+    margin-left: 2rem;
+}

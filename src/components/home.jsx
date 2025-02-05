@@ -10,6 +10,7 @@ import Banner4 from './banner4'
 import WhyUs from './whyus'
 import WhyGtr from './whygtr'
 import Radiology from './radiology'
+import Modality from './modality'
 import Footer from './footer'
 function Home() {
     return (
@@ -83,6 +84,7 @@ function Home() {
             <WhyUs/>
             <WhyGtr/>
             <Radiology/>
+            <Modality/>
             <Banner4/>
             <Footer/>
         </>
