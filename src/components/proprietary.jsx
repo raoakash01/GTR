@@ -1,6 +1,6 @@
 import React from "react";
 import './proprietary.css';
-import arrow from '../assets/line.png'
+import arrow from '../assets/Line.png'
 
 function Proprietary() {
     return (
