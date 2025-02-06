@@ -11,6 +11,7 @@ import WhyUs from './whyus'
 import WhyGtr from './whygtr'
 import Radiology from './radiology'
 import Modality from './modality'
+import Services from './services'
 import Footer from './footer'
 function Home() {
     return (
@@ -86,6 +87,7 @@ function Home() {
             <Radiology/>
             <Modality/>
             <Banner2/>
+            <Services/>
             <Banner4/>
             <Footer/>
         </>
