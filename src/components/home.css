@@ -1,5 +1,6 @@
 .home {
-    background: linear-gradient(to right, #00008b, #1e90ff, #00008b);
+    background-image: url("../assets/homebg.jpg");
+    background-size: cover;
     color: white;
     width: 100%;
 }
