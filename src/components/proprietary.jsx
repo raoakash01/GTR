@@ -1,5 +1,6 @@
 import React from "react";
 import './proprietary.css';
+import arrow from '../assets/line.png'
 
 function Proprietary() {
     return (
@@ -15,7 +16,9 @@ function Proprietary() {
                 <div className="proprietary-1">
                 <div className="proprietary-box">
                     <div className="proprietary-square"></div>
-                    <div className="proprietary-arrow"></div>
+                    <div className="proprietary-arrow">
+                        <img src={arrow} alt="arrow" />
+                    </div>
                 </div>
                 <h1 className="proprietary-box-heading">IMAGING</h1>
                 <p className="proprietary-box-text">Technician Training (DICOM)</p>
@@ -23,7 +26,9 @@ function Proprietary() {
                 <div className="proprietary-1">
                 <div className="proprietary-box">
                     <div className="proprietary-square"></div>
-                    <div className="proprietary-arrow"></div>
+                    <div className="proprietary-arrow">
+                    <img src={arrow} alt="arrow" />
+                    </div>
                 </div>
                 <h1 className="proprietary-box-heading">TRANSMITTING</h1>
                 <p className="proprietary-box-text">Easy Upload; System Checks</p>
@@ -31,7 +36,9 @@ function Proprietary() {
                 <div className="proprietary-1">
                 <div className="proprietary-box">
                     <div className="proprietary-square"></div>
-                    <div className="proprietary-arrow"></div>
+                    <div className="proprietary-arrow">
+                    <img src={arrow} alt="arrow" />
+                    </div>
                 </div>
                 <h1 className="proprietary-box-heading">REPORTING</h1>
                 <p className="proprietary-box-text">Quality Panel; Peer-to-Peer Review</p>
