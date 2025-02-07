@@ -13,6 +13,7 @@ import Radiology from './radiology'
 import Modality from './modality'
 import Services from './services'
 import Proprietary from './proprietary'
+import ProcessFlow from './processflow'
 import Footer from './footer'
 function Home() {
     return (
@@ -90,6 +91,7 @@ function Home() {
             <Banner2/>
             <Services/>
             <Proprietary/>
+            <ProcessFlow/>
             <Banner4/>
             <Footer/>
         </>
