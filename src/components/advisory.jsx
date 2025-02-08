@@ -3,25 +3,58 @@ import "./advisory.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import algills from "../assets/Al-Gillis.jpg";
-import vijai from "../assets/vijai.jpg"
-import namita from "../assets/namita.jpg"
-import Irshad from "../assets/IrshadGTR.jpg"
-import Mash from "../assets/MashGTR.jpg"
-import Ruchi from "../assets/RuchiGTR.jpg"
-import Sadique from "../assets/SadiqueGTR.jpg"
+import vijai from "../assets/vijai.jpg";
+import namita from "../assets/namita.jpg";
+import Irshad from "../assets/IrshadGTR.jpg";
+import Mash from "../assets/MashGTR.jpg";
+import Ruchi from "../assets/RuchiGTR.jpg";
+import Sadique from "../assets/SadiqueGTR.jpg";
 
 const advisoryMembers = [
     {
         name: "Al Gillis",
         title: "Director, Healthcare Facilities Development, Harvard Medical International / Partners Healthcare, Boston, USA.",
         experience: "🏥 Al – 16+ years at Harvard Medical International/Partners Healthcare<br/>🏗️ Expertise: Facilities Planning, Hospital Management, SOP Development<br/>🌍 International experience in 20+ countries<br/>🏢 Previous Roles:<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Director, Adam & Associates<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Senior Director, Healthcare International<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Director, Brigham & Women’s Hospital<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Vice President, Treasurer at HMS-PBBH-SFCC Radiology Foundation, Inc",
-        image: algills
+        image: algills,
     },
     {
         name: "Dr. Vijai Kumar",
         title: "Chief Medical Advisor, Global Health Institute.",
         experience: "🏥 20+ years in global healthcare management<br/>🏗️ Specialized in telemedicine and hospital digital transformation<br/>🌍 Worked across 15 countries in policy and development",
-        image: vijai
+        image: vijai,
+    },
+];
+
+const directors = [
+    {
+        name: "Namita Chowdhary",
+        title: "Managing Director",
+        description: [
+            "Over 25 years of expertise in strategic business management, marketing, product launches, brand positioning, research, field marketing, event management, and public relations.",
+            "Focused experience in driving initiation and growth strategies for Healthcare businesses over the past 15 years.",
+            "Proven track record with leading global organizations across various industries.",
+        ],
+        image: namita,
+    },
+    {
+        name: "Irshad Goyal",
+        title: "Director",
+        description: [
+            "Over 25 years of expertise in strategic business management, marketing, product launches, brand positioning, research, field marketing, event management, and public relations.",
+            "Focused experience in driving initiation and growth strategies for Healthcare businesses over the past 15 years.",
+            "Proven track record with leading global organizations across various industries.",
+        ],
+        image: Irshad,
+    },
+    {
+        name: "Mash Goyal",
+        title: "Director",
+        description: [
+            "Over 25 years of expertise in strategic business management, marketing, product launches, brand positioning, research, field marketing, event management, and public relations.",
+            "Focused experience in driving initiation and growth strategies for Healthcare businesses over the past 15 years.",
+            "Proven track record with leading global organizations across various industries.",
+        ],
+        image: Mash,
     }
 ];
 
@@ -29,11 +62,12 @@ function Advisory() {
     const headerRef = useRef(null);
     const teamRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [directorIndex, setDirectorIndex] = useState(0);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries, observer) => {
-                entries.forEach(entry => {
+                entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("animate-border");
                         observer.unobserve(entry.target);
@@ -55,103 +89,176 @@ function Advisory() {
     }, []);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex(prevIndex => (prevIndex + 1) % advisoryMembers.length);
-        }, 20000);
-        return () => clearInterval(interval);
+        const advisoryInterval = setInterval(() => {
+            setCurrentIndex(
+                (prevIndex) => (prevIndex + 1) % advisoryMembers.length
+            );
+        }, 8000);
+
+        const directorInterval = setInterval(() => {
+            setDirectorIndex(
+                (prevIndex) => (prevIndex + 1) % directors.length
+            );
+        }, 8000);
+
+        return () => {
+            clearInterval(advisoryInterval);
+            clearInterval(directorInterval);
+        };
     }, []);
 
-    const handleNext = () => {
-        setCurrentIndex(prevIndex => (prevIndex + 1) % advisoryMembers.length);
+    const handleNextMember = () => {
+        setCurrentIndex(
+            (prevIndex) => (prevIndex + 1) % advisoryMembers.length
+        );
     };
 
-    const handlePrev = () => {
-        setCurrentIndex(prevIndex => (prevIndex - 1 + advisoryMembers.length) % advisoryMembers.length);
+    const handlePrevMember = () => {
+        setCurrentIndex(
+            (prevIndex) => (prevIndex - 1 + advisoryMembers.length) % advisoryMembers.length
+        );
+    };
+
+    const handleNextDirector = () => {
+        setDirectorIndex((prevIndex) => (prevIndex + 1) % directors.length);
+    };
+
+    const handlePrevDirector = () => {
+        setDirectorIndex(
+            (prevIndex) => (prevIndex - 1 + directors.length) % directors.length
+        );
     };
 
     return (
         <div className="advisory">
             <div ref={headerRef} className="advisory-header">
                 <div className="advisory-header-right">
-                    <h2 className="advisory-header-title">Board<br /> of Advisory</h2>
+                    <h2 className="advisory-header-title">
+                        Board<br /> of Advisory
+                    </h2>
                 </div>
                 <div className="advisory-header-left">
-                    <p className="advisory-header-text">Our Board of Advisors comprises healthcare industry stalwarts from across the world. Alumni of some of the most prestigious healthcare facilities globally, known for their remarkable achievements, their expertise and opinion is highly sought after. Their association with Global TeleRadiology is an affirmation of our high standards of quality and world-class practices.</p>
+                    <p className="advisory-header-text">
+                        Our Board of Advisors comprises healthcare industry
+                        stalwarts from across the world. Alumni of some of the
+                        most prestigious healthcare facilities globally, known
+                        for their remarkable achievements, their expertise and
+                        opinion is highly sought after. Their association with
+                        Global TeleRadiology is an affirmation of our high
+                        standards of quality and world-class practices.
+                    </p>
                 </div>
             </div>
             <div className="advisory-body">
                 <div className="advisory-members">
-                    <button className="nav-button left" onClick={handlePrev}>
+                    <button className="nav-button left" onClick={handlePrevMember}>
                         <FontAwesomeIcon icon={faArrowLeft} />
                     </button>
                     <div className="advisory-member">
-                        <img className="advisory-member-image" src={advisoryMembers[currentIndex].image} alt={advisoryMembers[currentIndex].name} />
+                        <img
+                            className="advisory-member-image"
+                            src={advisoryMembers[currentIndex].image}
+                            alt={advisoryMembers[currentIndex].name}
+                        />
                         <div className="advisory-member-content">
-                            <h3 className="advisory-member-name">{advisoryMembers[currentIndex].name}</h3>
-                            <p className="advisory-member-title">{advisoryMembers[currentIndex].title}</p>
-                            <h3 className="advisory-member-name">{advisoryMembers[currentIndex].name} Experience</h3>
-                            <p className="advisory-member-text"dangerouslySetInnerHTML={{ __html: advisoryMembers[currentIndex].experience }}></p>
+                            <h3 className="advisory-member-name">
+                                {advisoryMembers[currentIndex].name}
+                            </h3>
+                            <p className="advisory-member-title">
+                                {advisoryMembers[currentIndex].title}
+                            </p>
+                            <h3 className="advisory-member-name">
+                                {advisoryMembers[currentIndex].name} Experience
+                            </h3>
+                            <p
+                                className="advisory-member-text"
+                                dangerouslySetInnerHTML={{
+                                    __html: advisoryMembers[currentIndex].experience,
+                                }}
+                            ></p>
                         </div>
                     </div>
-                    <button className="nav-button right" onClick={handleNext}>
+                    <button className="nav-button right" onClick={handleNextMember}>
                         <FontAwesomeIcon icon={faArrowRight} />
                     </button>
                 </div>
             </div>
             <div ref={teamRef} className="know_our_team extra-top-1">
-            <div className="advisory-header-right">
-                    <h2 className="team-header-title">YOUR  SUBTITLE  GOES  HERE</h2>
+                <div className="advisory-header-right">
+                    <h2 className="team-header-title">YOUR SUBTITLE GOES HERE</h2>
                     <h2 className="team-heading">MEET OUR TEAM</h2>
-            </div>
+                </div>
                 <div className="advisory-header-left">
-                    <p className="team-header-text">The Global TeleRadiology management team consists of industry experts in healthcare management, operations, marketing, and process development, with four founder members.</p>
+                    <p className="team-header-text">
+                        The Global TeleRadiology management team consists of
+                        industry experts in healthcare management, operations,
+                        marketing, and process development, with four founder
+                        members.
+                    </p>
                 </div>
             </div>
             <div className="advisory-body">
                 <div className="advisory-members">
-                   
+                    <button className="nav-button left" onClick={handlePrevDirector}>
+                        <FontAwesomeIcon icon={faArrowLeft} />
+                    </button>
                     <div className="advisory-member">
-                        <img className="advisory-member-image remove_border" src={namita} alt="managing director" />
+                        <img
+                            className="advisory-member-image remove_border"
+                            src={directors[directorIndex].image}
+                            alt={directors[directorIndex].name}
+                        />
                         <div className="advisory-member-content">
-                            <h3 className="advisory-member-name">Namita Chowdhary </h3>
-                            <p className="managing-director-title">Managing Director</p>
-                            <div className="half_underline"></div>
-                            <p className="managing-director-text">
-                            Over 25 years of expertise in strategic business management, marketing, product launches, brand positioning, research, field marketing, event management, and public relations
+                            <h3 className="advisory-member-name">
+                                {directors[directorIndex].name}
+                            </h3>
+                            <p className="managing-director-title">
+                                {directors[directorIndex].title}
                             </p>
-                            <p className="managing-director-text">Focused experience in driving initiation and growth strategies for Healthcare businesses over the past 15 years.</p>
-                            <p className="managing-director-text">Proven track record with leading global organizations across various industries.</p>
+                            <div className="half_underline"></div>
+                            {directors[directorIndex].description.map((desc, index) => (
+                                <p key={index} className="managing-director-text">
+                                    {desc}
+                                </p>
+                            ))}
                         </div>
                     </div>
+                    <button className="nav-button right" onClick={handleNextDirector}>
+                        <FontAwesomeIcon icon={faArrowRight} />
+                    </button>
                 </div>
             </div>
             <div className="team">
                 <div className="team-members">
                     <div className="member-card">
-                    <img className="img-team" src={Mash}></img>
+                        <img className="img-team" src={Mash} alt="Mahesh Malhotra"></img>
                         <div className="content-team">
                             <h2 className="name-team">Mahesh Malhotra</h2>
-                            <p className="role-team">Vice President, Head <br/>Sales & Marketing</p>
+                            <p className="role-team">
+                                Vice President, Head <br />
+                                Sales & Marketing
+                            </p>
                         </div>
                     </div>
                     <div className="member-card">
-                    <img className="img-team" src={Ruchi}></img>
-                         <div className="content-team">
-                         <h2 className="name-team">Ruchi Sharma</h2>
-                         <p className="role-team">Head – Customer Relations</p>
-                         </div>
-                    </div>
-                    <div className="member-card"> 
-                        <img className="img-team" src={Irshad}></img>
+                        <img className="img-team" src={Ruchi} alt="Ruchi Sharma"></img>
                         <div className="content-team">
-                        <h2 className="name-team">Irshad Ahmad</h2>
-                        <p className="role-team">Head – Customer Relations</p></div>  
+                            <h2 className="name-team">Ruchi Sharma</h2>
+                            <p className="role-team">Head – Customer Relations</p>
+                        </div>
                     </div>
                     <div className="member-card">
-                    <img className="img-team" src={Sadique}></img>
+                        <img className="img-team" src={Irshad} alt="Irshad Ahmad"></img>
                         <div className="content-team">
-                        <h2 className="name-team">Sadique Khan</h2>
-                        <p className="role-team">Head – Customer Relations</p>
+                            <h2 className="name-team">Irshad Ahmad</h2>
+                            <p className="role-team">Head – Customer Relations</p>
+                        </div>
+                    </div>
+                    <div className="member-card">
+                        <img className="img-team" src={Sadique} alt="Sadique Khan"></img>
+                        <div className="content-team">
+                            <h2 className="name-team">Sadique Khan</h2>
+                            <p className="role-team">Head – Customer Relations</p>
                         </div>
                     </div>
                 </div>
@@ -161,3 +268,4 @@ function Advisory() {
 }
 
 export default Advisory;
+
