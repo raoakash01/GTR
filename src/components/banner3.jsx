@@ -8,24 +8,40 @@ function Banner3(){
     const [clients, setClients] = useState(0);
     const [countries, setCountries] = useState(0);
     const [experience, setExperience] = useState(0);
+    const [isInViewport, setIsInViewport] = useState(false);
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            if (employees < 100) {
-                setEmployees(employees + 2);
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                setIsInViewport(true);
+            } else {
+                setIsInViewport(false);
             }
-            if (clients < 2000) {
-                setClients(clients + 50);
-            }
-            if (countries < 5) {
-                setCountries(countries + 1);
-            }
-            if (experience < 12) {
-                setExperience(experience + 1);
-            }
-        }, 20);
-        return () => clearInterval(timer);
-    }, [employees, clients, countries, experience]);
+        }, { root: null, rootMargin: "0px", threshold: 1.0 });
+
+        observer.observe(document.querySelector(".banner3"));
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
+        if (isInViewport) {
+            const timer = setInterval(() => {
+                if (employees < 100) {
+                    setEmployees(employees + 2);
+                }
+                if (clients < 2000) {
+                    setClients(clients + 50);
+                }
+                if (countries < 5) {
+                    setCountries(countries + 1);
+                }
+                if (experience < 12) {
+                    setExperience(experience + 1);
+                }
+            }, 20);
+            return () => clearInterval(timer);
+        }
+    }, [isInViewport, employees, clients, countries, experience]);
 
     return(
         <>

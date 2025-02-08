@@ -17,6 +17,7 @@ import ProcessFlow from './processflow'
 import Footer from './footer'
 import GetStarted from './getstarted'
 import Faq from './faq'
+import Vision from './vision'
 function Home() {
     return (
         <>
@@ -84,6 +85,7 @@ function Home() {
             </div>
             <AboutUs/>
             <Banner2/>
+            <Vision/>
             <Advisory />
             <Banner3/>
             <WhyUs/>
