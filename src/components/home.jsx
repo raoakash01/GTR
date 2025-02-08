@@ -15,6 +15,7 @@ import Services from './services'
 import Proprietary from './proprietary'
 import ProcessFlow from './processflow'
 import Footer from './footer'
+import GetStarted from './getstarted'
 function Home() {
     return (
         <>
@@ -92,6 +93,7 @@ function Home() {
             <Services/>
             <Proprietary/>
             <ProcessFlow/>
+            <GetStarted/>
             <Banner4/>
             <Footer/>
         </>

@@ -1,7 +1,7 @@
 .banner4{
     width: 100%;
     height: 20rem;
-    background-color: #ffffff;
+    background-image: url('../assets/bgline.jpg');
     display: flex;
     justify-content: space-around;
     align-items: center;
