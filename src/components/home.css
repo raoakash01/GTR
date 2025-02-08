@@ -177,3 +177,21 @@ li a{
     justify-content: space-between;
     color:#0C2752;
 }
+
+.home-content-3-left{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.nav-contact-link{
+    text-decoration: none;
+    color: white;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-contact-link:hover{
+    cursor: pointer;
+    color: beige;
+}

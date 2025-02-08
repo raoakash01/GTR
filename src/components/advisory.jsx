@@ -198,7 +198,7 @@ function Advisory() {
                 </div>
             </div>
             <div className="advisory-body">
-                <div className="advisory-members">
+                <div className="advisory-members" id="management">
                     <button className="nav-button left" onClick={handlePrevDirector}>
                         <FontAwesomeIcon icon={faArrowLeft} />
                     </button>

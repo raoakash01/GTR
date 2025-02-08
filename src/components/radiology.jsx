@@ -6,8 +6,8 @@ function Radiology(){
         <div className="radiology">
             <div className="radiology-upper">
                 <h1 className="radiology-heading">Radiology Panel</h1>
-                <p className="radiology-text"><span className="radiology-span">At Global Teleradiology,</span> we prioritize collaboration and quality, offering exceptional radiology reporting services through a highly experienced team. </p>         
-                <p className="radiology-text">Here’s why you should partner with us:</p>  
+                <p className="radiology-text-m">At Global Teleradiology, we prioritize collaboration and quality, offering exceptional radiology reporting services through a highly experienced team. </p>         
+                <p className="radiology-text-m">Here’s why you should partner with us:</p>  
             </div>
             <div className="radiology-lower">
                 <div className="radiology-1">

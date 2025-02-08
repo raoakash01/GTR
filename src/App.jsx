@@ -21,21 +21,21 @@ function App() {
     <>
       <div id="home"><Home /></div>
       <div id="about"><AboutUs /></div>
-      <div><Banner2 /></div>
-      <div><Vision /></div>
-      <div><Advisory /></div>
-      <div><Banner3 /></div>
+      <div id='banner2'><Banner2 /></div>
+      <div id="vision"><Vision /></div>
+      <div id="advisory"><Advisory /></div>
+      <div id="banner3"><Banner3 /></div>
       <div id="whyus"><WhyUs /></div>
-      <div><WhyGtr /></div>
-      <div><Radiology /></div>
-      <div><Modality /></div>
-      <div><Banner2 /></div>
+      <div id="whygtr"><WhyGtr /></div>
+      <div id="radiology"><Radiology /></div>
+      <div id="modality"><Modality /></div>
+      <div id="banner2"><Banner2 /></div>
       <div id="services"><Services /></div>
-      <div><Proprietary /></div>
-      <div><ProcessFlow /></div>
-      <div><Faq /></div>
+      <div id="proprietary"><Proprietary /></div>
+      <div id="processflow"><ProcessFlow /></div>
+      <div id="faq"><Faq /></div>
       <div id="join"><GetStarted /></div>
-      <div><Banner4 /></div>
+      <div id="banner4"><Banner4 /></div>
       <div><Footer /></div>
     </>
   );

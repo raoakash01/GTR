@@ -22,7 +22,7 @@ function Footer(){
             </div>
             <div className='footer-center'>
             <div className='footer-center-btn'>
-                <button className='footer-center-button'>
+                <button className='footer-center-button' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                     <FontAwesomeIcon className='footer-center-icon' icon={faChevronUp}/>
                 </button>
             </div>
@@ -44,27 +44,27 @@ function Footer(){
                 <div className='footer-lower-2'>
                     <h3 className='footer-links-heading'>About</h3>
                     <ul className='footer-links'>
-                        <li className='footer-link'>Mission & Vision</li>
-                        <li className='footer-link'>Board of Advisor</li>
-                        <li className='footer-link'>Management Team</li>
+                        <li><a className='footer-link' href="#vision">Mission & Vision</a></li>
+                        <li><a className='footer-link' href="#advisory">Board of Advisor</a></li>
+                        <li><a className='footer-link' href="#management">Management Team</a></li>
                     </ul>
                 </div>
                 <div className='footer-lower-3'><h3 className='footer-links-heading'>Cure</h3>
                 <ul className='footer-links'>
-                        <li className='footer-link'>Proprietary Clip</li>
-                        <li className='footer-link'>Work Flow</li>
-                        <li className='footer-link'>Quality Panel</li>
+                        <li><a className='footer-link' href="/cure/proprietary-clip">Proprietary Clip</a></li>
+                        <li><a className='footer-link' href="/cure/work-flow">Work Flow</a></li>
+                        <li><a className='footer-link' href="/cure/quality-panel">Quality Panel</a></li>
                     </ul></div>
                 <div className='footer-lower-4'><h3 className='footer-links-heading'>Quick Links</h3> 
                 <ul className='footer-links'>
-                        <li className='footer-link'>Services</li>
-                        <li className='footer-link'>Contact</li>
-                        <li className='footer-link'>FAQs</li>
+                        <li><a className='footer-link' href="#services">Services</a></li>
+                        <li><a className='footer-link' href="#contact">Contact</a></li>
+                        <li><a className='footer-link' href="#faq">FAQs</a></li>
                     </ul></div>
                 <div className='footer-lower-5'><h3 className='footer-links-heading'>Company</h3> <ul className='footer-links'>
-                        <li className='footer-link'>About us</li>
-                        <li className='footer-link'>Contact us</li>
-                        <li className='footer-link'>Careers</li>
+                        <li><a className='footer-link' href="/company/about-us">About us</a></li>
+                        <li><a className='footer-link' href="/company/contact-us">Contact us</a></li>
+                        <li><a className='footer-link' href="/company/careers">Careers</a></li>
                     </ul></div>
                 </div>
                 <div className='footer-lower-lower'>
