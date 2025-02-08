@@ -90,3 +90,15 @@
     font-weight: 200;
     color: #052444;
 }
+
+.why-us-icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.why-us-icon-1{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+}

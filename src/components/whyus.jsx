@@ -1,5 +1,7 @@
 import React from "react";
 import "./whyus.css";
+import icon12 from "../assets/icon12.png";
+import icon23 from "../assets/icon23.png";
 function WhyUs() {
     return (
         <div className="why-us">
@@ -20,6 +22,10 @@ function WhyUs() {
                     <div className="why-us-line"></div>
                     <div className="why-us-circle"></div>
                     </div>
+                </div>
+                <div className="why-us-icon">
+                <div><img className="why-us-icon-1" src={icon12} alt="" /></div>
+                <div><img className="why-us-icon-1" src={icon23} alt="" /></div>
                 </div>
                 <div className="why-us-blue-part-2">
                     <div className="why-us-right">
