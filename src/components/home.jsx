@@ -16,6 +16,7 @@ import Proprietary from './proprietary'
 import ProcessFlow from './processflow'
 import Footer from './footer'
 import GetStarted from './getstarted'
+import Faq from './faq'
 function Home() {
     return (
         <>
@@ -93,6 +94,7 @@ function Home() {
             <Services/>
             <Proprietary/>
             <ProcessFlow/>
+            <Faq/>
             <GetStarted/>
             <Banner4/>
             <Footer/>
