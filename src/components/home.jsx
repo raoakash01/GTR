@@ -2,26 +2,8 @@ import React from 'react'
 import Banner from './banner'
 import './home.css'
 import arrow from '../assets/down-arrow.png'
-import AboutUs from './aboutus'
-import Banner2 from './banner2'
-import Advisory from './advisory'
-import Banner3 from './banner3'
-import Banner4 from './banner4'
-import WhyUs from './whyus'
-import WhyGtr from './whygtr'
-import Radiology from './radiology'
-import Modality from './modality'
-import Services from './services'
-import Proprietary from './proprietary'
-import ProcessFlow from './processflow'
-import Footer from './footer'
-import GetStarted from './getstarted'
-import Faq from './faq'
-import Vision from './vision'
 function Home() {
-    return (
-        <>
-            
+    return (   
             <div className='home'>
             <Banner />
                 <div className='nav'>
@@ -30,11 +12,11 @@ function Home() {
                     </div>
                     <div className='nav-menu'>
                         <ul>
-                            <li>Home</li>
-                            <li>Services</li>
-                            <li>About</li>
-                            <li>Accuracy for Cure Resources</li>
-                            <li>Join Us</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#whyus">Accuracy for Cure Resources</a></li>
+                            <li><a href="#join">Join Us</a></li>
                         </ul>
                     </div>
                     <div className='nav-contact'>
@@ -83,24 +65,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <AboutUs/>
-            <Banner2/>
-            <Vision/>
-            <Advisory />
-            <Banner3/>
-            <WhyUs/>
-            <WhyGtr/>
-            <Radiology/>
-            <Modality/>
-            <Banner2/>
-            <Services/>
-            <Proprietary/>
-            <ProcessFlow/>
-            <Faq/>
-            <GetStarted/>
-            <Banner4/>
-            <Footer/>
-        </>
     )
 }
 

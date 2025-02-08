@@ -43,18 +43,18 @@ function AboutUs() {
                     </button>
                 </div>
                 <div className="cards-section">
-                    <div className=" card card_1">
+                    <div className=" card-a card_1">
                         <div className="img-container">
                         </div>
                         <p className="card-text">Preliminary and Final Interpretations</p>
                     </div>
-                    <div className="card"><div className="img-container"></div>
+                    <div className="card-a"><div className="img-container"></div>
                     <p className="card-text">Emergency Nighthawk</p>
                     </div>
-                    <div className="card"><div className="img-container"></div>
+                    <div className="card-a"><div className="img-container"></div>
                     <p className="card-text">Audit Reporting</p>
                     </div>
-                    <div className="card"><div className="img-container"></div>
+                    <div className="card-a"><div className="img-container"></div>
                     <p className="card-text">Audit Reporting</p>
                     </div>
                 </div>

@@ -127,7 +127,7 @@ function Faq() {
                         <p className="faq-ans">This is the answer to the fourth question.</p>
                     </div>}
                 </div>
-                <button className="faq-right-button">Contact Us</button>
+                {/* <button className="faq-right-button">Contact Us</button> */}
             </div>
         </div>
     );

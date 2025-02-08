@@ -25,7 +25,8 @@
     background-color: rgba(217, 217, 217, 0.32);
     border-radius: 2rem;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
 }
 
 ul{
@@ -33,10 +34,21 @@ ul{
     justify-content: space-between;
     list-style: none;
     width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
     gap: 3rem;
 }
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
 
 .home-content{
     display: flex;
