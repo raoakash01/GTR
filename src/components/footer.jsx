@@ -51,9 +51,9 @@ function Footer(){
                 </div>
                 <div className='footer-lower-3'><h3 className='footer-links-heading'>Cure</h3>
                 <ul className='footer-links'>
-                        <li><a className='footer-link' href="/cure/proprietary-clip">Proprietary Clip</a></li>
-                        <li><a className='footer-link' href="/cure/work-flow">Work Flow</a></li>
-                        <li><a className='footer-link' href="/cure/quality-panel">Quality Panel</a></li>
+                        <li><a className='footer-link' href="#proprietary-clip">Proprietary Clip</a></li>
+                        <li><a className='footer-link' href="#processflow">Work Flow</a></li>
+                        <li><a className='footer-link' href="#processflow">Quality Panel</a></li>
                     </ul></div>
                 <div className='footer-lower-4'><h3 className='footer-links-heading'>Quick Links</h3> 
                 <ul className='footer-links'>
@@ -62,9 +62,9 @@ function Footer(){
                         <li><a className='footer-link' href="#faq">FAQs</a></li>
                     </ul></div>
                 <div className='footer-lower-5'><h3 className='footer-links-heading'>Company</h3> <ul className='footer-links'>
-                        <li><a className='footer-link' href="/company/about-us">About us</a></li>
-                        <li><a className='footer-link' href="/company/contact-us">Contact us</a></li>
-                        <li><a className='footer-link' href="/company/careers">Careers</a></li>
+                        <li><a className='footer-link' href="#about">About us</a></li>
+                        <li><a className='footer-link' href="#join">Contact us</a></li>
+                        <li><a className='footer-link' href="#join">Careers</a></li>
                     </ul></div>
                 </div>
                 <div className='footer-lower-lower'>
