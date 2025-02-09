@@ -10,7 +10,7 @@ import Radiology from './components/radiology';
 import Modality from './components/modality';
 import Services from './components/services';
 import Proprietary from './components/proprietary';
-import ProcessFlow from './components/processFlow';
+import ProcessFlow from './components/processflow';
 import Faq from './components/faq';
 import GetStarted from './components/getstarted';
 import Banner4 from './components/banner4';
