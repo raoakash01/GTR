@@ -15,10 +15,14 @@ import Faq from './components/faq';
 import GetStarted from './components/getStarted';
 import Banner4 from './components/banner4';
 import Footer from './components/footer';
+import Navbar from './components/navbar';
+import Banner from './components/banner';
 
 function App() {
   return (
     <>
+      <div ><Banner/></div>
+      <div><Navbar /></div>
       <div id="home"><Home /></div>
       <div id="about"><AboutUs /></div>
       <div id='banner2'><Banner2 /></div>

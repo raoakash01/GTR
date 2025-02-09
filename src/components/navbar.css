@@ -1,0 +1,60 @@
+
+.nav{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.nav-logo{
+    margin-left: 3rem;
+}
+
+.nav-contact{
+    margin-right: 3rem;
+}
+
+.nav-menu{
+    display: flex;
+    background-color: rgba(217, 217, 217, 0.32);
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    gap: 3rem;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.nav-contact-link{
+    text-decoration: none;
+    color: white;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-contact-link:hover{
+    cursor: pointer;
+    color: beige;
+}

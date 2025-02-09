@@ -1,5 +1,4 @@
 import React from 'react'
-import Banner from './banner'
 import './home.css'
 import arrow from '../assets/down-arrow.png'
 import { useRef, useEffect } from "react";
@@ -18,24 +17,6 @@ function Home() {
   }, []);
     return (
         <div className='home'>
-            <Banner />
-            <div className='nav'>
-                <div className='nav-logo'>
-                    LOGO
-                </div>
-                <div className='nav-menu'>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#whyus">Accuracy for Cure Resources</a></li>
-                        <li><a href="#join">Join Us</a></li>
-                    </ul>
-                </div>
-                <div className='nav-contact'>
-                    <a className='nav-contact-link' href="#contact">contact Us|||</a>
-                </div>
-            </div>
             <div className='home-content'>
                 <div className='Tag-line'>
                     <h1 className='tag-line-text'>Accuracy for Cure</h1>
