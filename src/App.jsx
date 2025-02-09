@@ -1,5 +1,5 @@
 import Home from './components/home';
-import AboutUs from './components/aboutUs';
+import AboutUs from './components/aboutus';
 import Banner2 from './components/banner2';
 import Vision from './components/vision';
 import Advisory from './components/advisory';
