@@ -1,11 +1,13 @@
 
 .nav{
-    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    
+    backdrop-filter: blur(10px);
+    background-color: rgba(4, 3, 68, 0.445);
+    padding: 2.5rem 0rem 0.5rem 0rem;
+    z-index: 1000;
 }
 
 .nav-logo{
