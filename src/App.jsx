@@ -17,6 +17,7 @@ import Banner4 from './components/banner4';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 import Banner from './components/banner';
+import Overview from './components/overview';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <div id="services"><Services /></div>
       <div id="proprietary"><Proprietary /></div>
       <div id="processflow"><ProcessFlow /></div>
+      <div id="overview"><Overview /></div>
       <div id="faq"><Faq /></div>
       <div id="join"><GetStarted /></div>
       <div id="banner4"><Banner4 /></div>

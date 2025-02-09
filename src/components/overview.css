@@ -1,0 +1,93 @@
+/* --- Overview Section --- */
+.overview-container { /* Prevents excessive stretching */
+    margin: auto;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+/* --- Title Styling --- */
+.overview-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Card Container (Grid Layout) --- */
+.overview-cards {
+    padding: 3rem;
+    display: grid;
+    grid-template-areas: 
+        "left right";
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    justify-items: center; /* ✅ Ensures both cards are centered */
+}
+
+/* --- Individual Card --- */
+.overview-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 450px;
+    width: 100%;
+    justify-self: center; /* ✅ Fixes the centering issue */
+}
+
+/* --- Hover Effects --- */
+.overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* --- Icon Styling --- */
+.icon {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* --- Change Icon Color on Hover --- */
+.overview-card:hover .icon {
+    color: #0056b3;
+}
+
+/* --- Heading Inside Cards --- */
+.overview-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+/* --- Paragraph Inside Cards --- */
+.overview-card p {
+    font-size: 16px;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* --- Responsive Design (Stacks on Smaller Screens) --- */
+@media (max-width: 1024px) {
+    .overview-cards {
+        grid-template-areas: 
+            "left"
+            "right";
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
