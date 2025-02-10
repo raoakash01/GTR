@@ -1,5 +1,5 @@
 import React from "react";
-import "./Overview.css";
+import "./overview.css";
 import { FaStethoscope, FaRadiation } from "react-icons/fa";
 
 const Overview = () => {
