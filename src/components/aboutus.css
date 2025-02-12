@@ -27,8 +27,8 @@
     margin-top: 4rem;
 }
 .video-about {
-    width: 70%;
-    height: 25rem;
+    width: 80%;
+    height: 35rem;
     border-radius: 2rem;
     background-color: #052444;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -41,7 +41,7 @@
 .text-section{
     width: 85%;
     height: 40rem;
-    background-color: #0c27521f;
+    background-color: #0c275211;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 2rem 3rem 0rem 3rem;
