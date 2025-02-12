@@ -202,7 +202,6 @@
 .download-brochure {
     background: linear-gradient(to right, #78c9f8, #c5deee);
     border-radius: 0.5rem;
-    border: 1px solid #03071C;
     transition: all 0.2s ease-in-out;
 }
 
@@ -210,6 +209,7 @@
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background: linear-gradient(to right, #5fb3f3, #a1c9f5);
+    border: none;
 }
 
 /* Content Section 3 */
