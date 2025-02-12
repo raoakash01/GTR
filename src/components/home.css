@@ -10,18 +10,20 @@
     transition: background-image 1s ease-in-out;
 }
 
-@keyframes changeImage {
-    0% {
-        background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/1.png");
-    }
-    30% {
-        background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/2.png");
-    }
-    60% {
-        background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/5.png");
-    }
-    100% {
-        background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/8.png");
+@media (min-width: 769px) {
+    @keyframes changeImage {
+        0% {
+            background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/1.png");
+        }
+        30% {
+            background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/2.png");
+        }
+        60% {
+            background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/5.png");
+        }
+        100% {
+            background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/8.png");
+        }
     }
 }
 .home {
