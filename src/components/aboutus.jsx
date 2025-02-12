@@ -2,7 +2,6 @@ import React from "react";
 import "./aboutus.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import WhyGtr from './whygtr';
 
 function AboutUs() {
     return (
@@ -34,7 +33,6 @@ function AboutUs() {
                     </div>
                 </div>
             </div>
-            <WhyGtr />
         </div>
     );
 }

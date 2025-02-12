@@ -18,6 +18,7 @@ import Footer from './components/footer';
 import Navbar from './components/navbar';
 import Banner from './components/banner';
 import Overview from './components/overview';
+import WhyGtr2 from './components/whygtr2';
 
 function App() {
   return (
@@ -26,12 +27,13 @@ function App() {
       <div><Navbar /></div>
       <div id="home"><Home /></div>
       <div id="about"><AboutUs /></div>
+      <div id="whygtr"><WhyGtr2 /></div>
       <div id='banner2'><Banner2 /></div>
       <div id="vision"><Vision /></div>
       <div id="advisory"><Advisory /></div>
       <div id="banner3"><Banner3 /></div>
       <div id="whyus"><WhyUs /></div>
-      <div id="whygtr"><WhyGtr /></div>
+      <div><WhyGtr /></div>
       <div id="radiology"><Radiology /></div>
       <div id="modality"><Modality /></div>
       <div id="banner2"><Banner2 /></div>
