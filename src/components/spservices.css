@@ -1,0 +1,65 @@
+.spservices{
+    background-image: url('../assets/sp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2.6rem;
+}
+
+.spservices-h{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+.half-underline-sp{
+    height: 0.3rem;
+    width: 20rem;
+    background-color: white;
+}
+
+.spservices-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.spservices-grid-left,
+.spservices-grid-right{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.spservices-grid-item{
+    width: 80%;
+    height: 3rem;
+    background-color: rgba(219, 221, 235, 0.123);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    transition: all 0.3s ease;
+}
+
+.spservices-grid-item:hover{
+    background-color: rgba(219, 221, 235, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.2rem);
+}
+
+.spservices-p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    margin-top: 2.5rem;
+}
+
+.spservices-grid-p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+}
