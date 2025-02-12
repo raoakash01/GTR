@@ -1,0 +1,68 @@
+.bannerex {
+    background-color: #ffffff;
+    color: #2c3e50;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerex-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 88%;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.bannerex-text {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+.b-border-left,
+.b-border-right,
+.b-border-top,
+.b-border-bottom {
+    position: absolute;
+    border-width: 0.4rem;
+    border-style: solid;
+    border-color: #0C2752;
+    border-radius: 2rem;
+}
+
+
+
+.b-border-left {
+    border-left-width: 0.4rem;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+}
+
+.b-border-right {
+    border-right-width: 0.4rem;
+    top: 0;
+    bottom: 50%;
+    right: 0;
+}
+
+.b-border-top {
+    border-top-width: 0.4rem;
+    top: 0;
+    left: 50%;
+    right: 0;
+}
+
+.b-border-bottom {
+    border-bottom-width: 0.4rem;
+    bottom: 0;
+    right: 50%;
+    left: 0;
+}

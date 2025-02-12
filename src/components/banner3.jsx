@@ -1,84 +1,81 @@
-import React, { useEffect, useState } from "react";
-import './banner3.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe, faUser } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useEffect, useRef } from "react";
+import "./banner3.css";
 
-function Banner3(){
-    const [employees, setEmployees] = useState(0);
-    const [clients, setClients] = useState(0);
-    const [countries, setCountries] = useState(0);
-    const [experience, setExperience] = useState(0);
-    const [isInViewport, setIsInViewport] = useState(false);
+function Banner3() {
+  const [accuracy, setAccuracy] = useState(0);
+  const [rate, setRate] = useState(0);
+  const [countries, setCountries] = useState(0);
+  const [days, setDays] = useState(0);
+  const sectionRef = useRef(null);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) {
-                setIsInViewport(true);
-            } else {
-                setIsInViewport(false);
+  const duration = 2000; // 2 seconds total
+  const steps = 20; // 20 steps for smooth animation
+  const intervalTime = duration / steps; // Time per step
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          let stepAccuracy = 99.9 / steps;
+          let stepRate = 100 / steps;
+          let stepCountries = 1; // Increase by 1 per step
+          let stepDays = 19; // Increase by 5 per step
+
+          let currentStep = 0;
+          const timer = setInterval(() => {
+            currentStep++;
+
+            setAccuracy((prev) => Math.min(prev + stepAccuracy, 99.9));
+            setRate((prev) => Math.min(prev + stepRate, 100));
+            setCountries((prev) => Math.min(prev + stepCountries, 20));
+            setDays((prev) => Math.min(prev + stepDays, 365));
+
+            if (currentStep >= steps) {
+              clearInterval(timer);
             }
-        }, { root: null, rootMargin: "0px", threshold: 1.0 });
-
-        observer.observe(document.querySelector(".banner3"));
-        return () => observer.disconnect();
-    }, []);
-
-    useEffect(() => {
-        if (isInViewport) {
-            const timer = setInterval(() => {
-                if (employees < 100) {
-                    setEmployees(employees + 2);
-                }
-                if (clients < 2000) {
-                    setClients(clients + 50);
-                }
-                if (countries < 5) {
-                    setCountries(countries + 1);
-                }
-                if (experience < 12) {
-                    setExperience(experience + 1);
-                }
-            }, 20);
-            return () => clearInterval(timer);
+          }, intervalTime);
         }
-    }, [isInViewport, employees, clients, countries, experience]);
+      },
+      { root: null, rootMargin: "0px", threshold: 0.5 }
+    );
 
-    return(
-        <>
-        <div className="banner3">
-            <div className="layer-light">
-                <div className="icon-container">
-                    <FontAwesomeIcon className="icon" icon={faUser} style={{color: "#ffffff"}} />
-                    <div className="numbers">
-                        <h1 className="icon-numbers">{employees}</h1>
-                        <p className="number-text">Employees</p>
-                    </div>
-                </div>
-                <div className="icon-container">
-                    <FontAwesomeIcon className="icon" icon={faUser} style={{color: "#ffffff"}} />
-                    <div className="numbers">
-                        <h1 className="icon-numbers">{clients}</h1>
-                        <p className="number-text">+Clients</p>
-                    </div>
-                </div>
-                <div className="icon-container">
-                    <FontAwesomeIcon className="icon" icon={faGlobe} style={{color: "#ffffff"}} />
-                    <div className="numbers">
-                        <h1 className="icon-numbers">{countries}</h1>
-                        <p className="number-text">Countries</p>
-                    </div>
-                </div>
-                <div className="icon-container">
-                    <FontAwesomeIcon className="icon" icon={faUser} style={{color: "#ffffff"}} />
-                    <div className="numbers">
-                        <h1 className="icon-numbers">{experience}</h1>
-                        <p className="number-text">+Years Experience</p>
-                    </div>
-                </div>
-            </div>
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div className="banner3" ref={sectionRef}>
+      <div className="layer-light">
+        <div className="icon-container">
+          <div className="numbers">
+            <h1 className="icon-numbers">{accuracy.toFixed(1)}</h1>
+            <p className="number-text">Accuracy</p>
+          </div>
         </div>
-        </>
-    )
+        <div className="icon-container">
+          <div className="numbers">
+            <h1 className="icon-numbers">{rate}%</h1>
+            <p className="number-text">100% Happy Centre</p>
+          </div>
+        </div>
+        <div className="icon-container">
+          <div className="numbers">
+            <h1 className="icon-numbers">{countries}</h1>
+            <p className="number-text">Countries</p>
+          </div>
+        </div>
+        <div className="icon-container">
+          <div className="numbers">
+            <h1 className="icon-numbers">{days}</h1>
+            <p className="number-text">Support 24/7, 365 Days</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Banner3
+export default Banner3;
