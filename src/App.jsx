@@ -1,7 +1,6 @@
 import Home from './components/home';
 import AboutUs from './components/aboutus';
 import Banner2 from './components/banner2';
-import Vision from './components/vision';
 import Advisory from './components/advisory';
 import Banner3 from './components/banner3';
 import WhyUs from './components/whyus';
@@ -19,6 +18,7 @@ import Navbar from './components/navbar';
 import Banner from './components/banner';
 import Overview from './components/overview';
 import WhyGtr2 from './components/whygtr2';
+import Modalities from './components/modalities';
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
       <div id="about"><AboutUs /></div>
       <div id="whygtr"><WhyGtr2 /></div>
       <div id='banner2'><Banner2 /></div>
-      <div id="vision"><Vision /></div>
+      <div id='modalities' ><Modalities/></div>
       <div id="advisory"><Advisory /></div>
       <div id="banner3"><Banner3 /></div>
       <div id="whyus"><WhyUs /></div>
