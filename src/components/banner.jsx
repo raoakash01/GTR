@@ -5,10 +5,10 @@ function Banner() {
     return (
         <>
         <div className="banner">
-            <div className='bannner-left'>
+            <div className='banner-left'>
             <p className='banner-text'>The banner is to inform visitors of an important message</p>
             </div>
-            <div className='bannner-right'>
+            <div className='banner-right'>
             <p className='banner-text'>social icons</p>
             </div>
         </div>

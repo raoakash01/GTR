@@ -1,29 +1,82 @@
-.banner{
+/* Banner Container */
+.banner {
     background-color: rgba(3, 7, 28, 1);
     color: #fff;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 2rem;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: fixed;
-    top: 0;
-    left: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 10000;
 }
 
-.bannner-left{
-    display: flex;
-    margin-left: 4rem;
-}
-
-.bannner-right{
-    display: flex;
-    margin-right: 4rem;
-}
-
-.banner-text{
+/* Banner Text */
+.banner-text {
     font-size: 0.8rem;
+}
+
+/* Left Section */
+.banner-left {
+    margin-left: 1rem;
+}
+
+/* Right Section */
+.banner-right {
+    margin-right: 2rem;
+}
+
+/* ----------- Responsive Styles ----------- */
+@media (max-width: 1024px) {
+    .banner {
+        height: auto;
+        padding: 0.75rem 1rem;
+    }
+    .banner-left {
+        margin-left: 0.5rem;
+    }
+    .banner-right {
+        margin-right: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .banner-left {
+        margin-left: 0;
+    }
+    .banner-right {
+        display: none !important; /* Ensures it hides properly */
+    }
+    .banner-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: auto;
+        padding: 0rem;
+        width: 100vw;
+        position: sticky;
+    }
+    .banner-left {
+        margin-left: 0;
+    }
+    .banner-right {
+        display: none !important;
+    }
+    .banner-text {
+        font-size: 0.7rem;
+    }
 }
