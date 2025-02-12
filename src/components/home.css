@@ -1,8 +1,8 @@
-.home {
+#home{
     background-image: url("../assets/homebg.jpg");
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+.home {
     color: white;
     width: 100%;
     min-height: 100vh;
@@ -13,9 +13,9 @@
 @media (max-width: 768px) {
     #home{
         background-image: url("../assets/mobilebg.jpg");
+        background-size: contain;
     }
     .home {
-        background-image: url("../assets/mobilebg.jpg");
         background-size: contain;
         padding-bottom: 1.5rem;
     }
