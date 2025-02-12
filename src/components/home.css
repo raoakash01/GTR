@@ -11,7 +11,11 @@
 
 /* Responsive background and padding */
 @media (max-width: 768px) {
+    #home{
+        background-image: url("../assets/mobilebg.jpg");
+    }
     .home {
+        background-image: url("../assets/mobilebg.jpg");
         background-size: contain;
         padding-bottom: 1.5rem;
     }
