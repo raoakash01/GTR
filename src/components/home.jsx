@@ -1,65 +1,65 @@
-import React from 'react'
-import './home.css'
-import arrow from '../assets/down-arrow.png'
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
+import "./home.css";
+import arrow from "../assets/down-arrow.png";
 import { gsap } from "gsap";
 
 function Home() {
-    const listRef = useRef(null);
+    const textRef = useRef(null);
 
-  useEffect(() => {
-    gsap.to(listRef.current, {
-      x: "-50%",
-      duration: 5,
-      repeat: -1,
-      ease: "linear"
-    });
-  }, []);
+    useEffect(() => {
+        gsap.fromTo(
+            textRef.current,
+            { x: "100%" }, // Start completely outside from the right
+            { x: "-100%", duration: 5, repeat: -1, ease: "linear" } // Move to the left completely
+        );
+    }, []);
+
     return (
-        <div className='home'>
-            <div className='home-content'>
-                <div className='Tag-line'>
-                    <h1 className='tag-line-text'>Accuracy for Cure</h1>
-                    <p className='tag-line-text-2'>Grow smarter, grow faster as we need Solutions at the right place and at Smarttrak we are<br /> empowering all your digital twin needs</p>
+        <div className="home">
+            <div className="home-content">
+                <div className="Tag-line">
+                    <h1 className="tag-line-text">Accuracy for Cure</h1>
+                    <p className="tag-line-text-2">
+                        Global TeleRadiology is India’s leading Radiology service
+                        <br /> partner for Hospital and Diagnostic Centres.
+                    </p>
                 </div>
             </div>
-            <div className='home-content-2'>
-                <div className='arrow'>
-                    <img src={arrow} alt="arrow" className='arrow-icon' />
+            <div className="home-content-2">
+                <div className="home-content-2-left">
+                <div className="arrow">
+                    <img src={arrow} alt="arrow" className="arrow-icon" />
                 </div>
-                <div className='home-content-2-text'>
-                    <div className='content-2-text'>
-                        <p>We help companies design their<br /> products to be ready for web3 world</p>
-                        <div className='email-input'>
-                            <input type="email" placeholder='Enter your email' className='email-home' />
-                            <button className='get-started'>Get Started</button>
+                <div className="home-content-2-text">
+                    <div className="content-2-text">
+                        <p>
+                            We help companies design their
+                            <br /> products to be ready for the web3 world
+                        </p>
+                        <div className="email-input">
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                className="email-home"
+                            />
+                            <button className="get-started">Get Started</button>
                         </div>
                     </div>
                 </div>
+                </div>
+                <div className="home-content-2-right">
+                    <button className="download-brochure">Download Brochure</button>
+                    </div>
             </div>
-            <div className='home-content-3'>
-                <div className='home-content-3-box'>
-                    <div className='home-content-3-right'>
-                        <p className='home-content-3-right-text'>Trusted by 100K+</p>
-                    </div>
-                    <div className='home-content-3-left' style={{ overflow: 'hidden' }}>
-                        <ul ref={listRef} className="home-content-3-left-list-icons">
-        {[...Array(15)].map((_, i) => (
-          <li key={i} className="home-content-3-left-list-icon">
-            {i}
-          </li>
-        ))}
-        {[...Array(15)].map((_, i) => (
-          <li key={`duplicate-${i}`} className="home-content-3-left-list-icon">
-            {i}
-          </li>
-        ))}
-      </ul>
-                    </div>
+            <div className="home-content-3">
+                <div className="home-content-3-box">
+                    <p ref={textRef} className="home-content-3-text">
+                        We Serve Better - Excellence in Service - Quality Matters
+                    </p>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;
