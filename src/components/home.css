@@ -13,10 +13,10 @@
 @media (max-width: 768px) {
     #home{
         background-image: url("../assets/mobilebg.jpg");
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .home {
-        background-size: contain;
         padding-bottom: 1.5rem;
     }
 }
