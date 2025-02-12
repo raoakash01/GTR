@@ -1,11 +1,10 @@
 .banner3{
     width: 100%;
-    height: 10rem;
-    background-color: #001E3D;
+    height: 12rem;
+    background-image: linear-gradient(to right, #001E3D, #043c74ee);
 }
 
 .layer-light{
-    background-color: rgba(255, 255, 255, 0.253);
     width: 100%;
     height: 100%;
     display: flex;
