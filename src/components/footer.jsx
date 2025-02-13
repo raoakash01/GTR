@@ -51,12 +51,6 @@ function Footer(){
                         <li><a className='footer-link' href="#management">Management Team</a></li>
                     </ul>
                 </div>
-                <div className='footer-lower-3'><h3 className='footer-links-heading'>Cure</h3>
-                <ul className='footer-links'>
-                        <li><a className='footer-link' href="#proprietary-clip">Proprietary Clip</a></li>
-                        <li><a className='footer-link' href="#processflow">Work Flow</a></li>
-                        <li><a className='footer-link' href="#processflow">Quality Panel</a></li>
-                    </ul></div>
                 <div className='footer-lower-4'><h3 className='footer-links-heading'>Quick Links</h3> 
                 <ul className='footer-links'>
                         <li><a className='footer-link' href="#services">Services</a></li>

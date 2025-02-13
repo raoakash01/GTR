@@ -329,6 +329,7 @@
     .footer-lower-5{
         margin-top: 0;
         padding-top: 0;
+        margin-left: -5px;
         text-align: left;
     }
 }
