@@ -1,3 +1,4 @@
+/* Base Styles (No Changes for Large Screens) */
 .vision {
     background-image: linear-gradient(to bottom, #043c74ee, #00173d);
     display: flex;
@@ -46,3 +47,64 @@
     transition: color 0.3s ease-in-out;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .vision {
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .vision-left, .vision-center, .vision-right {
+        width: 28%;
+        padding: 1.5rem;
+    }
+
+    .vision-h {
+        font-size: 1.8rem;
+    }
+
+    .vision-p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .vision {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .vision-left, .vision-center, .vision-right {
+        width: 80%;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .vision-h {
+        font-size: 1.6rem;
+    }
+
+    .vision-p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision {
+        padding: 1.5rem;
+    }
+
+    .vision-left, .vision-center, .vision-right {
+        width: 90%;
+        padding: 1.2rem;
+    }
+
+    .vision-h {
+        font-size: 1.4rem;
+    }
+
+    .vision-p {
+        font-size: 1.2rem;
+    }
+}

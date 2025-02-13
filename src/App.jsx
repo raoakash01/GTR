@@ -41,7 +41,6 @@ function App() {
       <div><Vision/></div>
       <div id="overview"><Overview /></div>
       <div id="advisory"><Advisory /></div>
-      <div id="proprietary"><Proprietary /></div>
       <div id="faq"><Faq /></div>
       <div id="join"><GetStarted /></div>
       <div id="banner4"><Banner4 /></div>
