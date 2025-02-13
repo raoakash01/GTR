@@ -316,6 +316,119 @@
     font-size: 0.8rem;
     font-weight: 200;
     color: #ffffff;
-    text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
 }
 
+/* Ensure images don't overflow */
+.advisory-member-image, .img-team {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .advisory {
+        padding: 1.5rem;
+    }
+
+    .advisory-body{
+        flex-direction: column;
+        padding: 0rem;
+        padding-right: 0rem;
+    }
+
+    .advisory-header-title {
+        font-size: 1.1rem;
+    }
+
+    .advisory-header-text {
+        font-size: 0.6rem;
+    }
+    .advisory-header-left{
+        width: 100%;
+        margin-left: 0.7rem;
+    }
+
+    .advisory-members{
+        flex-direction: column;
+    }
+
+    .advisory-member{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .advisory-member-image {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .advisory-member-content{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .advisory-member-name{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .advisory-member-title{
+
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .advisory-member-text{
+        
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .know_our_team{
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .team-header-title{
+        display: none;
+    }
+
+    .team-heading{
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .team-header-text{
+        display: none;
+    }
+
+    .advisory-member-name{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .managing-director-title{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .half_underline{
+        border-bottom: 0.3rem solid #052444;
+        width: 5rem;
+        margin-left: 0.4rem;
+        margin-top: -1rem;
+    }
+
+    .managing-director-text{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
