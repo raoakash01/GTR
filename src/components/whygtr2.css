@@ -1,37 +1,26 @@
-.whygtr2-container{
+.whygtr2-container {
     margin-top: 1rem;
     background-color: white;
     padding-top: 2rem;
     padding-left: 5rem;
 }
 
-.whygtr2-heading{
+.whygtr2-heading {
     font-size: 2.8rem;
     font-weight: 700;
     color: #0C2752;
     margin-bottom: 1rem;
 }
 
-.whygtr2-grid{
+.whygtr2-grid {
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     align-items: center;
 }
 
-.whygtr2-left{
-    grid-column: 1/2;
-}
-
-.whygtr2-center{
-    grid-column: 2/3;
-}
-
-.whygtr2-right{
-    grid-column: 3/4;
-}
-.whygtr2-box{
+.whygtr2-box {
     background-color: #ffffff;
     border-radius: 1.3rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -42,19 +31,19 @@
     transition: transform 0.3s ease, box-shadow 0.6s ease;
 }
 
-.whygtr2-box:hover{
+.whygtr2-box:hover {
     transform: translateY(-0.5rem) scale(1.01);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-.whygtr2-box-heading{
+.whygtr2-box-heading {
     font-size: 2.5rem;
     font-weight: 600;
     color: #0C2752;
     margin: 0;
 }
 
-.half-underline{
+.half-underline {
     margin-top: 1rem;
     height: 0.3rem;
     width: 10rem;
@@ -83,3 +72,50 @@
     left: 0;
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .whygtr2-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .whygtr2-container {
+        padding-left: 2rem;
+    }
+    .whygtr2-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .whygtr2-container{
+        padding-left: 1rem;
+
+    }
+    .whygtr2-grid {
+        grid-template-columns: 1fr;
+        width: 23rem;
+    }
+    .whygtr2-container {
+        padding-left: 1rem;
+    }
+    .whygtr2-box {
+        padding: 1.5rem;
+    }
+    .whygtr2-box-heading {
+        font-size: 2rem;
+    }
+    .whygtr2-list-item {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .whygtr2-heading {
+        font-size: 2.2rem;
+    }
+    .whygtr2-box-heading {
+        font-size: 1.8rem;
+    }
+    .whygtr2-list-item {
+        font-size: 1.1rem;
+    }
+}

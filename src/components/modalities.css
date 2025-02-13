@@ -1,29 +1,31 @@
-.modalities{
+/* Base Styles */
+.modalities {
     align-items: center;
     padding: 2rem;
 }
 
-.modalities-heading{
+.modalities-heading {
     font-size: 2.8rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #0C2752;
 }
 
-.modalities-text{
+.modalities-text {
     font-size: 2rem;
     font-weight: 300;
     color: #0C2752;
 }
 
-.modalities-grid{
+/* Grid Layout */
+.modalities-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2rem;
 }
 
-.modalities-grid-item{
+.modalities-grid-item {
     background-color: #0C2752;
     color: white;
     padding: 1rem;
@@ -37,20 +39,83 @@
     transition: transform 0.3s ease, box-shadow 0.6s ease, width 0.3s ease;
 }
 
-.modalities-grid-item:hover{
+.modalities-grid-item:hover {
     transform: translateY(-0.5rem) scale(1.01);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     width: 40rem;
     padding: 1.2rem;
 }
 
-.modalities-grid-img{
+.modalities-grid-img {
     width: 4rem;
     height: 3rem;
 }
 
-.modalities-grid-text{
+.modalities-grid-text {
     margin-left: 1rem;
     font-size: 1.5rem;
     font-weight: 300;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .modalities-heading {
+        font-size: 2.5rem;
+    }
+    .modalities-text {
+        font-size: 1.8rem;
+    }
+    .modalities-grid-item {
+        width: 32rem;
+    }
+    .modalities-grid-item:hover {
+        width: 34rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .modalities-heading {
+        font-size: 2.2rem;
+    }
+    .modalities-text {
+        font-size: 1.6rem;
+    }
+    .modalities-grid-item {
+        width: 25rem;
+        margin: 1rem;
+    }
+    .modalities-grid-item:hover {
+        width: 30rem;
+    }
+    .modalities-grid-text {
+        font-size: 1.4rem;
+    }
+    .modalities-grid-img {
+        width: 3.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .modalities-heading {
+        font-size: 2rem;
+    }
+    .modalities-text {
+        font-size: 1.4rem;
+    }
+    .modalities-grid {
+        padding: 1rem;
+    }
+  
+    .modalities-grid-item:hover {
+        width: 95%;
+    }
+    .modalities-grid-text {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    .modalities-grid-img {
+        width: 3rem;
+        height: 2rem;
+    }
 }

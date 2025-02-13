@@ -1,10 +1,7 @@
-.about-us{
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding-top: 2rem;
-}
+/* Base styles (default for larger screens) */
 .about-us {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -13,19 +10,21 @@
 
 .about-us-1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     padding-bottom: 3rem;
 }
 
-.about-us-video{
+.about-us-video {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
     margin-top: 4rem;
 }
+
 .video-about {
     width: 80%;
     height: 35rem;
@@ -38,34 +37,35 @@
     width: 60%;
 }
 
-.text-section{
+.text-section {
     width: 85%;
-    height: 40rem;
+    height: auto;
     background-color: #0c275211;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 2rem 3rem 0rem 3rem;
+    padding: 2rem 3rem;
 }
 
-.text-title{
+.text-title {
     color: #2B7CFF;
 }
 
-.text-content-1{
+.text-content-1 {
     font-size: 2.8rem;
     font-weight: 500;
     color: #052444;
     margin-right: 4rem;
 }
-.text-content-2{
+
+.text-content-2 {
     font-size: 1.5rem;
     color: #052444;
     margin-right: 5rem;
 }
 
-.learn-more{
+.learn-more {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 2rem;
     background-color: #052444;
@@ -74,4 +74,81 @@
     width: 13rem;
     height: 3rem;
     font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .about-us-1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-us-video {
+        width: 80%;
+    }
+    .video-about {
+        width: 100%;
+        height: auto;
+    }
+    .about-us-text {
+        width: 90%;
+        margin-top: 2rem;
+    }
+    .text-content-1 {
+        font-size: 2.2rem;
+        margin-right: 0;
+    }
+    .text-content-2 {
+        font-size: 1.3rem;
+        margin-right: 0;
+    }
+    .learn-more {
+        width: 10rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us-video {
+        width: 90%;
+        margin-top: 2rem;
+        height: 20rem;
+        border-radius: 0.5rem;
+    }
+    .video-about {
+        height: 20rem;
+    }
+    .about-us-text {
+        width: 90%;
+        align-self: center;
+    }
+    .text-section {
+        padding: 1.5rem;
+        text-align: left;
+    }
+    .text-content-1 {
+        font-size: 1.5rem;
+    }
+    .text-content-2 {
+        font-size: 1.1rem;
+    }
+    .learn-more {
+        width: 9rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content-1 {
+        font-size: 1.3rem;
+    }
+    .text-content-2 {
+        font-size: 1.1rem;
+    }
+    .learn-more {
+        width: 8rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
 }

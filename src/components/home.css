@@ -221,6 +221,7 @@
 }
 
 
+
 /* Box Container */
 .home-content-3-box {
     display: flex;
@@ -236,8 +237,11 @@
 
 /* Responsive Box */
 @media (max-width: 768px) {
+    .home-content-3{
+        padding: 1rem 0;
+    }
     .home-content-3-box {
-        width: 190%;
+        width: 100%;
         overflow: hidden;
     }
 }
@@ -249,22 +253,10 @@
     text-align: center;
 }
 
-.home-content-3-left-list-icons {
-    display: flex;
-    justify-content: space-between;
-    color: #0C2752;
-}
-
-.home-content-3-left {
-    display: flex;
-    align-items: center;
-    width: 60%;
-}
 
 /* Responsive Left Section */
 @media (max-width: 768px) {
-    .home-content-3-left {
-        width: 90%;
-        justify-content: center;
-    }
+   .home-content-3-text{
+    font-size: 0.8rem;
+   }
 }
