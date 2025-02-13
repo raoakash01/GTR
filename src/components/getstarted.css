@@ -1,3 +1,4 @@
+/* Base styles remain the same */
 .getstarted {
     display: flex;
     flex-direction: column;
@@ -6,6 +7,7 @@
     padding: 2rem;
 }
 
+/* Upper Section */
 .getstarted-upper {
     display: flex;
     justify-content: space-between;
@@ -34,14 +36,19 @@
     background-color: #0056b3;
 }
 
+/* Middle Section */
 .getstarted-middle {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    text-align: center;
 }
 
 .getstarted-text-container {
     text-align: left;
+    max-width: 600px;
 }
 
 .getstarted-text {
@@ -58,6 +65,7 @@
     margin-top: 0rem;
 }
 
+/* Social Icons */
 .getstarted-social-container {
     display: flex;
     flex-direction: column;
@@ -74,6 +82,7 @@
     align-items: center;
     background-color: #ffffff;
     transition: all 1s ease-out;
+    margin-top: 1rem;
 }
 
 .icon-gs {
@@ -90,12 +99,13 @@
     color: white;
 }
 
-
+/* Lower Section */
 .getstarted-lower {
     width: 80%;
     padding-top: 2rem;
 }
 
+/* Form */
 .getstarted-form {
     width: 100%;
 }
@@ -104,20 +114,25 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
+    flex-wrap: wrap; /* Adjust layout for smaller screens */
 }
 
 .getstarted-form-inputs {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adds spacing between inputs */
     margin-bottom: 2rem;
 }
 
 .getstarted-form-inputs input {
+    flex: 1;
+    min-width: 250px; /* Ensures inputs don't shrink too much */
     padding: 0.75rem;
     padding-bottom: 1rem;
     border: none;
-    border-bottom: 2px solid #333; /* Darker border for better contrast */
+    border-bottom: 2px solid #333;
     font-size: 1rem;
     outline: none;
     background: transparent;
@@ -126,25 +141,24 @@
 }
 
 .getstarted-form-inputs input::placeholder {
-    color: #333; /* Darker placeholder */
+    color: #333;
     font-weight: 500;
 }
 
 .getstarted-form-inputs input:focus {
-    border-bottom: 2px solid #0a2540; /* Highlight effect on focus */
+    border-bottom: 2px solid #0a2540;
 }
 
-.getstarted-form-textarea{
+.getstarted-form-textarea {
     width: 100%;
 }
 
 .getstarted-form-textarea textarea {
-    width: 80%;
+    width: 100%;
     height: 5rem;
     padding: 0.75rem;
-    padding-bottom: 2rem;
     border: none;
-    border-bottom: 2px solid #333; /* Darker border for better contrast */
+    border-bottom: 2px solid #333;
     font-size: 1rem;
     outline: none;
     background: transparent;
@@ -153,15 +167,15 @@
 }
 
 .getstarted-form-textarea textarea::placeholder {
-    color: #333; /* Darker placeholder */
+    color: #333;
     font-weight: 500;
 }
 
 .getstarted-form-textarea textarea:focus {
-    border-bottom: 2px solid #0a2540; /* Highlight effect on focus */
+    border-bottom: 2px solid #0a2540;
 }
 
-/* Submit button styling */
+/* Submit Button */
 .getstarted-submit {
     padding: 1.5rem 3rem;
     background-color: #0a2540;
@@ -173,9 +187,8 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease-in-out;
     margin-top: 2rem;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .getstarted-submit:hover {
@@ -185,4 +198,99 @@
 .getstarted-submit::after {
     content: " →";
     font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .getstarted-heading {
+        font-size: 1.5rem;
+    }
+
+    .getstarted-bigheading {
+        font-size: 3rem;
+    }
+
+    .getstarted-middle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .getstarted-form-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .getstarted-form-inputs input {
+        width: 90%;
+    }
+
+    .getstarted-form-textarea textarea {
+        width: 90%;
+    }
+
+    .getstarted-submit {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .getstarted-heading {
+        font-size: 1.2rem;
+    }
+
+    .getstarted-bigheading {
+        font-size: 2.2rem;
+    }
+
+    .getstarted-text {
+        font-size: 1.2rem;
+    }
+
+    .getstarted-social-container {
+        flex-direction: row;
+    }
+
+    .icon-getstarted {
+        margin: 1rem;
+    }
+
+    .getstarted-middle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .getstarted-form-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .getstarted-form-inputs input {
+        width: 100%;
+    }
+
+    .getstarted-form-textarea textarea {
+        width: 100%;
+    }
+
+    .getstarted-submit {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contact-button {
+        height: 2.5rem;
+        font-size: 0.7rem;
+    }
+
+    .getstarted-submit{
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
+    }
 }
