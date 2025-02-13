@@ -1,3 +1,4 @@
+/* Base Styles (No Changes for Large Screens) */
 .bannerex {
     background-color: #ffffff;
     color: #2c3e50;
@@ -25,7 +26,6 @@
     font-weight: 500;
 }
 
-
 .b-border-left,
 .b-border-right,
 .b-border-top,
@@ -36,8 +36,6 @@
     border-color: #0C2752;
     border-radius: 2rem;
 }
-
-
 
 .b-border-left {
     border-left-width: 0.4rem;
@@ -65,4 +63,67 @@
     bottom: 0;
     right: 50%;
     left: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .bannerex {
+        padding: 3rem;
+    }
+
+    .bannerex-box {
+        width: 95%;
+        padding: 1.8rem;
+    }
+
+    .bannerex-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bannerex {
+        padding: 2rem;
+    }
+
+    .bannerex-box {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .bannerex-text {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    /* Adjusting Borders */
+    .b-border-left,
+    .b-border-right,
+    .b-border-top,
+    .b-border-bottom {
+        border-width: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bannerex {
+        padding: 1.5rem;
+    }
+
+    .bannerex-box {
+        padding: 1.2rem;
+        width: 100%;
+    }
+
+    .bannerex-text {
+        font-size: 1.4rem;
+    }
+
+    /* Borders More Minimal */
+    .b-border-left,
+    .b-border-right,
+    .b-border-top,
+    .b-border-bottom {
+        border-width: 0.2rem;
+    }
 }

@@ -1,16 +1,17 @@
-.partner{
+/* Base Styles - No Changes */
+.partner {
     margin-top: 1rem;
     margin-bottom: 2rem;
+    background-color: white;
 }
 
-.partner-h{
+.partner-h {
     font-size: 2.8rem;
     font-weight: 700;
     color: #0C2752;
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-left: 3rem;
-
 }
 
 .text-and-button {
@@ -45,13 +46,13 @@
     background-color: #08376b;
 }
 
-.partner-boxes{
+.partner-boxes {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.partner-top-line{
+.partner-top-line {
     height: 8rem;
     width: 95%;
     background-color: #0C2752;
@@ -61,27 +62,28 @@
     z-index: -10;
 }
 
-.partner-box{
+.partner-box {
     width: 20%;
     background-color: white;
     border-radius: 2rem;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     margin-top: -5rem;
     padding: 1.5rem;
 }
-.img-partner{
+
+.img-partner {
     width: 100%;
     height: 15rem;
     transition: all 0.3s ease-in-out;
 }
 
-.img-partner:hover{
+.img-partner:hover {
     transform: scale(1.1);
     margin-left: 1rem;
     margin-right: -1rem;
 }
 
-.text-partner-H1{
+.text-partner-H1 {
     font-size: 1.8rem;
     font-weight: 600;
     color: #0C2752;
@@ -89,10 +91,99 @@
     margin-bottom: 1rem;
 }
 
-.text-partner-P1{
+.text-partner-P1 {
     font-size: 1.8rem;
     font-weight: 300;
     color: #0C2752;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .partner-boxes {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .partner-box {
+        width: 30%;
+    }
+
+    .text-and-button {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .partner-p {
+        font-size: 1.6rem;
+        margin-left: 0;
+    }
+
+    .partner-button {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-box {
+        width: 45%;
+    }
+
+    .partner-h {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .partner-p {
+        font-size: 1.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .partner-button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .partner {
+        padding: 1.5rem;
+    }
+
+    .partner-h {
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .partner-top-line{
+        display: none;
+    }
+
+    .partner-box {
+        width: 90%;
+        margin-top: 1rem;
+        box-shadow: #040d1b 0px 4px 8px;
+    }
+
+    .text-partner-H1 {
+        font-size: 1.5rem;
+    }
+
+    .text-partner-P1 {
+        font-size: 1.2rem;
+    }
+
+    .partner-button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .text-and-button {
+        flex-direction: column;
+        text-align: center;
+    }
 }
