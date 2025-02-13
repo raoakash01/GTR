@@ -167,3 +167,98 @@
 .faq-right-button:hover{
     background-color: #3068a5;
 }
+
+/* Mobile screens (768px and below) */
+@media (max-width: 768px) {
+    .faq {
+        padding: 1.5rem;
+    }
+
+    .faq-left {
+        width: 80%;
+        padding: 1.5rem;
+    }
+
+    .faq-right {
+        width: 80%;
+        padding: 1.5rem;
+    }
+
+    .faq-left-top, .faq-left-bottom {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .faq-left-top-heading,
+    .faq-left-bottom-heading {
+        font-size: 1.8rem;
+    }
+
+    .faq-left-top-text,
+    .faq-left-top-contact-text {
+        font-size: 1rem;
+    }
+
+    .faq-left-bottom-form-input {
+        font-size: 0.9rem;
+    }
+
+    .faq-left-bottom-form-button {
+        width: 50%;
+        font-size: 0.9rem;
+    }
+
+    .faq-right-question-text {
+        font-size: 1.2rem;
+    }
+
+    .faq-right-button {
+        width: 40%;
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    .faq {
+        padding: 1rem;
+    }
+
+    .faq-left-top, .faq-left-bottom {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .faq-left-top-heading,
+    .faq-left-bottom-heading {
+        font-size: 1.5rem;
+    }
+
+    .faq-left-top-text,
+    .faq-left-top-contact-text {
+        font-size: 0.9rem;
+    }
+
+    .faq-left-bottom-form-input {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    .faq-left-bottom-form-button {
+        width: 70%;
+        font-size: 0.85rem;
+    }
+
+    .faq-right-question-text {
+        font-size: 1rem;
+    }
+
+    .faq-ans {
+        font-size: 1rem;
+    }
+
+    .faq-right-button {
+        width: 50%;
+        font-size: 0.85rem;
+    }
+}
