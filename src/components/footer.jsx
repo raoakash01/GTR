@@ -29,6 +29,7 @@ function Footer(){
             </div>
             <div className="footer-lower">
                 <div className='footer-lower-upper'>
+                    
                 <div className='footer-lower-1'>
                     <h1 className='footer-lower-heading'>Global Teleradiology Services</h1>
                     <p className='footer-lower-text'>Building Number 145, Ground Floor, Sector 44<br/>Gurgaon (Delhi NCR) – 122003, India,<br/><br/><br/>
@@ -41,6 +42,7 @@ function Footer(){
                         <FontAwesomeIcon  className='social-icon' icon={faInstagram} style={{color: "#ffffff"}} />
                     </div>
                 </div>
+                <div className='footer-lower-21'>
                 <div className='footer-lower-2'>
                     <h3 className='footer-links-heading'>About</h3>
                     <ul className='footer-links'>
@@ -66,6 +68,7 @@ function Footer(){
                         <li><a className='footer-link' href="#join">Contact us</a></li>
                         <li><a className='footer-link' href="#join">Careers</a></li>
                     </ul></div>
+                </div>
                 </div>
                 <div className='footer-lower-lower'>
                     <p className='footer-lower-text-2'>© Copyright  Global Teleradiology.. All Rights Reserved </p>

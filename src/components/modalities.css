@@ -82,11 +82,9 @@
         font-size: 1.6rem;
     }
     .modalities-grid-item {
-        width: 25rem;
-        margin: 1rem;
-    }
-    .modalities-grid-item:hover {
-        width: 30rem;
+        width: 23rem;
+        margin: 0rem;
+        margin-bottom: 18px;
     }
     .modalities-grid-text {
         font-size: 1.4rem;
@@ -98,6 +96,19 @@
 }
 
 @media (max-width: 480px) {
+    .modalities-grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .modalities-grid-left{
+        margin: -18px;
+        margin-bottom: 18px;
+    }
+    .modalities-grid-right{
+        margin: -18px;
+    }
     .modalities-heading {
         font-size: 2rem;
     }
@@ -107,10 +118,7 @@
     .modalities-grid {
         padding: 1rem;
     }
-  
-    .modalities-grid-item:hover {
-        width: 95%;
-    }
+
     .modalities-grid-text {
         font-size: 1rem;
         margin-top: 0.5rem;

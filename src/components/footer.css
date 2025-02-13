@@ -75,7 +75,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #171717;
-    padding-top: 5rem; /* Adjusted to provide space for floating button */
+    padding-top: 5rem;
     position: relative;
 }
 
@@ -102,7 +102,6 @@
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 .footer-lower-lower {
@@ -143,6 +142,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    text-align: left;
 }
 
 .footer-lower ul {
@@ -197,7 +197,7 @@
 /* Floating Center Button */
 .footer-center {
     position: absolute;
-    top: 39%; /* Position between upper and lower sections */
+    top: 39%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
@@ -238,16 +238,97 @@
     height: 4.5rem;
 }
 
-
-.footer-center-icon{
+.footer-center-icon {
     color: #1d1d1d;
     font-size: 1.5rem;
     font-weight: 600;
     transition: all 0.3s ease-in-out;
 }
 
-.footer-center-button:hover .footer-center-icon{
+.footer-center-button:hover .footer-center-icon {
     font-size: 1.8rem;
     font-weight: 600;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+.footer-lower-21{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-lower-21{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        align-items:flex-start;
+    }
+    .footer-upper, .footer-lower-upper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -3rem;
+    }
+    .footer-lower-1 {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    .footer-email {
+        width: 90%;
+    }
+
+    .footer-upper-left{
+        width: 80%;
+    }
+
+    .footer-heading{
+        font-size: 2rem;
+    }
+
+    .footer-upper-right{
+        margin-top: 1.2rem;
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+
+    .footer-lower{
+        padding-top: 5rem;
+    }
+
+    .footer-lower-heading{
+        font-size: 1.2rem;
+    }
+
+    .footer-lower-text{
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .footer-social-icon{
+        margin-top: 1rem;
+    }
+
+    .footer-lower-2{
+        margin-top: 0;
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .footer-lower-3{
+        margin-top: 0;
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .footer-lower-4{
+        margin-top: 0;
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .footer-lower-5{
+        margin-top: 0;
+        padding-top: 0;
+        text-align: left;
+    }
 }
