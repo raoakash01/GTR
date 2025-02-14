@@ -9,6 +9,9 @@ import Irshad from "../assets/IrshadGTR.jpg";
 import Mash from "../assets/MashGTR.jpg";
 import Ruchi from "../assets/RuchiGTR.jpg";
 import Sadique from "../assets/SadiqueGTR.jpg";
+import Manager2 from "../assets/manger2.png";
+import Manager3 from "../assets/manger3.png";
+import Bd3 from "../assets/bd3.png";
 
 const advisoryMembers = [
     {
@@ -19,15 +22,15 @@ const advisoryMembers = [
     },
     {
         name: "Dr. Vijai Kumar",
-        title: "Chief Medical Advisor, Global Health Institute.",
-        experience: "🏥 20+ years in global healthcare management<br/>🏗️ Specialized in telemedicine and hospital digital transformation<br/>🌍 Worked across 15 countries in policy and development",
+        title: "President and Chief Medical Officer of Excel Life Sciences, Inc., USA",
+        experience: "Healthcare Industry Veteran with 40+ years of experience.<br/>President & Chief Medical Officer at Excel Life Sciences, Inc., a leading US-based trial management and consulting firm.<br/>Expertise in clinical research, business strategy, clinical trial logistics, supply chain management, and regulatory affairs.<br/>Former Senior Executive at Sandoz & The Upjohn Company for 16 years.<br/>Recognized Thought Leader, featured on NPR & BBC TV for insights on clinical research globalization.<br/>Honored by Pharma Voice as one of the 100 inspiring leaders in Life Sciences (2010).",
         image: vijai,
     },
     {
         name: "Dr. D. S. Rana",
-        title: "Chairman, Board of Management,  Sir Ganga Ram Hospita",
-        experience: "🏥 20+ years in global healthcare management<br/>🏗️ Specialized in telemedicine and hospital digital transformation<br/>🌍 Worked across 15 countries in policy and development",
-        image: vijai,
+        title: "Chairman, Board of Management, Sir Ganga Ram Hospital, New Delhi, India.",
+        experience: "25+ years of experience in building and shaping successful organizations and brands across multiple industries.<br/>15+ years in the healthcare industry, assisting healthcare delivery and pharmaceutical companies in long-term business strategy.<br/>Founding member of India’s first multi-location integrated healthcare chain, contributing to the transformation of the healthcare landscape",
+        image: Bd3,
     },
 ];
 
@@ -43,24 +46,24 @@ const directors = [
         image: namita,
     },
     {
-        name: "Irshad Goyal",
-        title: "Director",
+        name: "Ritti Jarg",
+        title: "Executive Director",
         description: [
-            "Over 25 years of expertise in strategic business management, marketing, product launches, brand positioning, research, field marketing, event management, and public relations.",
-            "Focused experience in driving initiation and growth strategies for Healthcare businesses over the past 15 years.",
-            "Proven track record with leading global organizations across various industries.",
+            "With over 23 years of global experience, I have worked extensively with Fortune 500 companies across multiple industries. As an operations expert, I have led process initiation, migration, and optimization, ensuring seamless transitions and efficiency.",
+            "I specialize in setting up and developing new Operations Centers, driving growth across various industry verticals. My expertise lies in back-office management, utilizing the latest technologies to enhance productivity and streamline operations.",
+            "Leading and managing large teams, I focus on operational excellence, scalability, and innovation to deliver impactful business results.",
         ],
-        image: Irshad,
+        image: Manager2,
     },
     {
-        name: "Mash Goyal",
-        title: "Director",
+        name: "Vishal Chowdhary",
+        title: "Executive Director",
         description: [
-            "Over 25 years of expertise in strategic business management, marketing, product launches, brand positioning, research, field marketing, event management, and public relations.",
-            "Focused experience in driving initiation and growth strategies for Healthcare businesses over the past 15 years.",
-            "Proven track record with leading global organizations across various industries.",
+            "With over 25 years of experience, I have built and shaped multiple successful organizations and brands across various industry verticals.",
+            "For the past 15 years, I have been deeply involved in the healthcare industry, assisting healthcare delivery and pharmaceutical companies in establishing long-term business strategies.",
+            "As a founding member of India’s first multi-location integrated healthcare chain, I have played a key role in transforming the healthcare landscape.",
         ],
-        image: Mash,
+        image: Manager3,
     }
 ];
 
