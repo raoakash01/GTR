@@ -15,11 +15,14 @@
         0% {
             background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/1.png");
         }
-        30% {
+        25% {
             background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/2.png");
         }
-        60% {
-            background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/5.png");
+        50% {
+            background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/bgfornt4.webp");
+        }
+        75% {
+            background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/bgfornt3.jpg");
         }
         100% {
             background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/8.png");
