@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
+import Logoimg from "../assets/logo.png";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,11 @@ function Navbar() {
 
     return (
         <nav className="nav">
-            <div className="nav-logo">LOGO</div>
+            <div className="nav-logo">
+                <a href="#">
+                    <img src={Logoimg} alt="Logo"  className="nav-logo-img"/>
+                </a>
+            </div>
 
             {/* Hamburger Menu Icon */}
             <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>

@@ -6,7 +6,7 @@
     position: fixed;
     width: 100%;
     backdrop-filter: blur(10px);
-    background-color: rgba(37, 73, 109, 0.438);
+    background-color: rgba(13, 36, 59, 0.562);
     padding: 1rem 2rem;
     margin-top: 3rem;
     z-index: 1000;
@@ -14,11 +14,12 @@
 }
 
 .nav-logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: white;
     cursor: pointer;
     margin: 0;
+}
+.nav-logo-img{
+    width: 10rem;
+    height: 3rem;
 }
 /* Navigation Menu */
 .nav-menu {
