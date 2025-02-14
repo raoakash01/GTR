@@ -9,7 +9,7 @@ function GetStarted() {
         <div className="getstarted">
             <div className="getstarted-upper">
                 <h1 className="getstarted-heading">Global Teleradiology Services</h1>
-                <button className="contact-button">Contact Us</button>
+                <button className="contact-button" onClick={() => window.location.href = '#contact'}>Contact Us</button>
             </div>
             <div className="getstarted-middle">
                 <div className="getstarted-text-container">

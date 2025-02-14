@@ -10,7 +10,7 @@ function Partner() {
             <h1 className="partner-h">PARTNER WITH US</h1>
             <div className="text-and-button">
                 <p className="partner-p">For seamless, technology-driven radiology solutions that elevate patient care and diagnostic precision. 🚀</p>
-                <button className="partner-button">Contact Us</button>
+                <button className="partner-button" onClick={() => window.location.href = '#contact'}>Contact Us</button>
             </div>
             <div className="partner-top-line"></div>
             <div className="partner-boxes">
