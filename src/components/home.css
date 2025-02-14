@@ -19,7 +19,7 @@
             background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/2.png");
         }
         50% {
-            background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/bgfornt4.webp");
+            background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/bgfornt4.png");
         }
         75% {
             background-image: linear-gradient(to right, rgb(1, 16, 63), transparent), url("../assets/bgfornt3.jpg");

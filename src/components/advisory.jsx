@@ -23,6 +23,12 @@ const advisoryMembers = [
         experience: "🏥 20+ years in global healthcare management<br/>🏗️ Specialized in telemedicine and hospital digital transformation<br/>🌍 Worked across 15 countries in policy and development",
         image: vijai,
     },
+    {
+        name: "Dr. D. S. Rana",
+        title: "Chairman, Board of Management,  Sir Ganga Ram Hospita",
+        experience: "🏥 20+ years in global healthcare management<br/>🏗️ Specialized in telemedicine and hospital digital transformation<br/>🌍 Worked across 15 countries in policy and development",
+        image: vijai,
+    },
 ];
 
 const directors = [
