@@ -37,7 +37,7 @@ function App() {
       <div id="faq"><Faq /></div>
       <div id="join"><GetStarted /></div>
       <div id="banner4"><Banner4 /></div>
-      <div><Footer /></div>
+      <div id="contact"><Footer /></div>
     </>
   );
 }

@@ -24,8 +24,8 @@ function Navbar() {
                 <ul>
                     <li><a href="#" onClick={toggleMenu}>Home</a></li>
                     <li><a href="#about" onClick={toggleMenu}>About</a></li>
-                    <li><a href="#services" onClick={toggleMenu}>Services</a></li>
-                    <li><a href="#whyus" onClick={toggleMenu}>FAQs</a></li>
+                    <li><a href="#spservices" onClick={toggleMenu}>Services</a></li>
+                    <li><a href="#faq" onClick={toggleMenu}>FAQs</a></li>
                     <li><a href="#join" onClick={toggleMenu}>Join Us</a></li>
                 </ul>
             </div>
