@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     height: 10rem;
     position: relative;
     border-top: 0.2rem solid transparent;
@@ -17,6 +16,8 @@
     overflow: hidden;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     background-image: linear-gradient(to right, #052444 40%, #16A04B);
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .advisory-header::before,
