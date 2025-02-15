@@ -64,6 +64,7 @@
     }
     .banner4 {
         width: 90%;
+        height: 27rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
