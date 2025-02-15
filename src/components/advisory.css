@@ -14,6 +14,7 @@
     border-bottom: 0.2rem solid transparent;
     overflow: hidden;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
 }
 
 .advisory-header::before,
@@ -22,7 +23,7 @@
     position: absolute;
     width: 0;
     height: 0.2rem;
-    background-color: #052444;
+    background-color: white;
     transition: width 1.5s ease-in-out;
 }
 
@@ -69,7 +70,7 @@
     font-size: 3rem;
     font-weight: 700;
     text-transform: capitalize;
-    color: #052444;
+    color: white;
 }
 
 .advisory-header-left{
@@ -80,7 +81,7 @@
 .advisory-header-text{
     font-size: 1.2rem;
     font-weight: 300;
-    color: #052444;
+    color: white;
 }
 
 
@@ -161,6 +162,7 @@
 }
 
 .know_our_team{
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -179,7 +181,7 @@
     position: absolute;
     width: 0;
     height: 0.2rem;
-    background-color: #052444;
+    background-color: white;
     transition: width 1.5s ease-in-out;
 }
 
@@ -224,13 +226,13 @@
     font-size: 1.5rem;
     font-weight: 500;
     text-transform: capitalize;
-    color: #052444;
+    color: white;
 }
 .team-heading{
     font-size: 3rem;
     font-weight: 700;
     text-transform: capitalize;
-    color: #052444;
+    color: white;
     margin-top: -1rem;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
@@ -238,7 +240,7 @@
 .team-header-text{
     font-size: 1.2rem;
     font-weight: 300;
-    color: #052444;
+    color: white;
 }
 
 .remove_border{

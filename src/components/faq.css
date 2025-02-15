@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     border-top: 1.5rem solid transparent;
-    border-image: linear-gradient(to right, #c0d5f7, #0C2752) 1 100%;
+    border-image: linear-gradient(to right,#16A04B, #052444 40%, #16A04B);
     border-image-slice: 1;
     background-color: white;
 }
@@ -18,7 +18,7 @@
 
 .faq-left-top{
     width: 50%;
-    background-image: linear-gradient(to bottom right, rgb(182, 210, 241), #3068a5);
+    background-image: linear-gradient(to top left, #052444 20%, #16A04B);
     margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 2rem;
@@ -53,8 +53,9 @@
 .faq-left-bottom{
     width: 50%;
     background-color: #fff;
-    border-radius: 2rem;
-    border: 0.2rem solid #0C2752;
+    border: 0.2rem solid;
+    border-image: linear-gradient(to top left, #052444 20%, #16A04B);
+    border-image-slice: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 2rem;
     align-items: center;
@@ -97,7 +98,7 @@
 }
 .faq-left-bottom-form-button {
     width: 35%;
-    background-color: #0a2540;
+    background-image: linear-gradient(to top left, #052444 20%, #16A04B);
     color: white;
     border: none;
     border-radius: 0.8rem;
@@ -153,7 +154,7 @@
 
 .faq-right-button{
     width: 15%;
-    background-color: #0a2540;
+    background-image: linear-gradient(to top left, #052444 20%, #16A04B);
     color: white;
     border: none;
     border-radius: 0.8rem;

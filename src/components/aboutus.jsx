@@ -27,9 +27,6 @@ function AboutUs() {
                             diagnostic TeleRadiology interpretations with a mission of becoming the radiology industry game changer on
                             accuracy of reporting.
                         </p>
-                        <button className="learn-more">
-                            Learn More <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffff" }} />
-                        </button>
                     </div>
                 </div>
             </div>

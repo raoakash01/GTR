@@ -1,6 +1,6 @@
 /* Base Styles (No Changes for Large Screens) */
 .vision {
-    background-image: linear-gradient(to bottom, #043c74ee, #00173d);
+    background-image: linear-gradient(to bottom right, #052444 30%, #16A04B);
     display: flex;
     justify-content: space-around;
     align-items: center;

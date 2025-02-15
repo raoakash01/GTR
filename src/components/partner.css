@@ -60,7 +60,7 @@
 .partner-top-line {
     height: 8rem;
     width: 95%;
-    background-color: #0C2752;
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
     margin-left: 5rem;
     margin-top: 2rem;
     align-self: right;

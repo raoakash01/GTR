@@ -1,6 +1,6 @@
 /* Base Styles */
 .spservices {
-    background-image: url('../assets/sp.jpg');
+    background-image: linear-gradient(to top left, #05254446 40%, #16A04B), url('../assets/sp.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

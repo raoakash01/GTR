@@ -24,16 +24,17 @@
 
 .contact-button {
     height: 2.5rem;
-    background-color: #0C2752;
+    background-image: linear-gradient(to top right, #052444 20%, #16A04B);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-image 1s;
+
 }
 
 .contact-button:hover {
-    background-color: #0056b3;
+    background-image: linear-gradient(to top right, #052444 60%, #16A04B);
 }
 
 /* Middle Section */
@@ -178,7 +179,7 @@
 /* Submit Button */
 .getstarted-submit {
     padding: 1.5rem 3rem;
-    background-color: #0a2540;
+    background-image: linear-gradient(to right, #052444 20%, #16A04B);
     color: white;
     border: none;
     border-radius: 2rem;
@@ -188,11 +189,11 @@
     align-items: center;
     gap: 0.5rem;
     margin-top: 2rem;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-image 1s ease-in-out;
 }
 
 .getstarted-submit:hover {
-    background-color: #0c3a6b;
+    background-image: linear-gradient(to right, #052444 60%, #16A04B);
 }
 
 .getstarted-submit::after {
