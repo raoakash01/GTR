@@ -16,16 +16,13 @@ function AboutUs() {
                     <div className="text-section">
                         <h3 className="text-title">ABOUT US</h3>
                         <h1 className="text-content-1">
-                            At Global TeleRadiology we believe that technology should provide the key to improving performance.
+                        Welcome to Global TeleRadiology, your trusted partner in comprehensive Radiology Reporting Services.
                         </h1>
                         <p className="text-content-2">
-                            We are committed to our mission of becoming your go-to partner for accurate, time-sensitive, cost-effective
-                            imaging reports and interpretations that focus on high-quality patient care.
+                        We specialize in high-quality interpretations across multiple imaging modalities, including CT scans, MRI scans, CBCT, Ultrasound, X-rays, and Mammography.
                         </p>
                         <p className="text-content-2">
-                            Ensuring absolute reliability and high quality for all customers. Global TeleRadiology is dedicated to providing
-                            diagnostic TeleRadiology interpretations with a mission of becoming the radiology industry game changer on
-                            accuracy of reporting.
+                        Serving Imaging Centers, Diagnostic Centers, Radiology Clinics, and Hospitals across India and overseas, we operate 24/7 across all time zones, ensuring accurate, timely, and expert reporting whenever you need it.
                         </p>
                     </div>
                 </div>

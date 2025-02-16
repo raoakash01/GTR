@@ -1,9 +1,39 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faPlus } from "@fortawesome/free-solid-svg-icons";
+import {faPlus } from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 import "./faq.css";
 
 function Faq() {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "YOUR_SERVICE_ID", 
+                "YOUR_TEMPLATE_ID", 
+                form.current, 
+                "YOUR_PUBLIC_KEY"
+            )
+            .then(
+                (result) => {
+                    alert("Email sent successfully!");
+                    console.log(result.text);
+                },
+                (error) => {
+                    alert("Failed to send email.");
+                    console.log(error.text);
+                }
+            );
+
+        e.target.reset();
+    };
+
+
     const [answersVisible, setAnswersVisible] = React.useState({
         1: false,
         2: false,
@@ -36,7 +66,7 @@ function Faq() {
                 </div>
                 <div className="faq-left-bottom">
                     <h1 className="faq-left-bottom-heading">Ask a different question</h1>
-                    <form className="faq-left-bottom-form">
+                    <form ref={form} className="faq-left-bottom-form" onSubmit={sendEmail} method="POST">
                         <input className="faq-left-bottom-form-input" type="text" placeholder="Your Name" />
                         <input className="faq-left-bottom-form-input" type="email" placeholder="Your Email" />
                         <textarea className="faq-left-bottom-form-input" placeholder="Your Question" />

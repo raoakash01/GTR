@@ -32,8 +32,9 @@ function Footer(){
                     
                 <div className='footer-lower-1'>
                     <h1 className='footer-lower-heading'>Global Teleradiology Services</h1>
-                    <p className='footer-lower-text'>Building Number 145, Ground Floor, Sector 44<br/>Gurgaon (Delhi NCR) – 122003, India,<br/><br/><br/>
-                    Phone: + 91  9871130839 / +91 9810002910 <br/><br/>
+                    <p className='footer-lower-text'>403-406, Splendor Spectrum One, Tower-2,<br/>
+                    Golf Course Ext. Road, Sector 58,<br/>Gurgaon (Delhi NCR) - 122001, India<br/><br/><br/>
+                    Phone:+ 91 9319380444 / +91 9873613370 <br/><br/>
                     Email: info@global-teleradiology.com</p>
                     <div className='footer-social-icon'>
                         <FontAwesomeIcon className='social-icon' icon={faFacebook} style={{color: "#ffffff", marginRight: "1.1rem"}} />
