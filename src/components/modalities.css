@@ -27,7 +27,7 @@
 }
 
 .modalities-grid-item {
-    background-color: #0C2752;
+    background-image: linear-gradient(to right, #052444 60%, #16A04B);
     color: white;
     padding: 1rem;
     margin: 2rem;
