@@ -158,7 +158,7 @@
 }
 
 .get-started {
-    background-color: #03071C;
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
     border-radius: 2rem;
     width: 33%;
     height: 100%;
@@ -203,15 +203,18 @@
 }
 
 .download-brochure {
-    background: linear-gradient(to right, #78c9f8, #c5deee);
-    border-radius: 0.5rem;
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
+    border-radius: 0.8rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
     transition: all 0.2s ease-in-out;
 }
 
 .download-brochure:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to right, #5fb3f3, #a1c9f5);
+    background-image: linear-gradient(to right, #052444 20%, #16A04B);
     border: none;
 }
 
