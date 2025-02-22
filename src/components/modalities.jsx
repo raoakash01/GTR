@@ -13,11 +13,8 @@ function Modalities() {
     return(
         <div className="modalities">
             <h1 className="modalities-heading">Modalities Covered</h1>
-            <p className="modalities-text">We have our footprints
-                 across India and various Offshore locations.
-                  Our large team of senior and experienced
-                   radiologists are competent to report on
-                    all modalities across all sub-specialties. </p>
+            <div className="modalities-line"></div>
+            <p className="modalities-text">We have our footprints across India and various Offshore locations. Our large team of senior and experienced radiologists are competent to report on all modalities across all sub-specialties.  </p>
             <p className="modalities-text">We stand out in the healthcare
                  market for our accuracy in reporting and service quality.</p>
             <div className="modalities-grid-container">

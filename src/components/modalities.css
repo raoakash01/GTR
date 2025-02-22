@@ -10,6 +10,14 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #0C2752;
+    margin-bottom: 0.5rem;
+}
+
+.modalities-line{
+    width: 10rem;
+    height: 0.3rem;
+    background-color: #048B38;
+    margin: 0;
 }
 
 .modalities-text {
@@ -27,7 +35,8 @@
 }
 
 .modalities-grid-item {
-    background-image: linear-gradient(to right, #052444 60%, #16A04B);
+    background-color: #052444;
+    /* background-image: linear-gradient(to right, #052444 60%, #16A04B); */
     color: white;
     padding: 1rem;
     margin: 2rem;
