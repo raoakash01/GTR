@@ -32,9 +32,11 @@ function App() {
       <div id="spservices"><Spservices /></div>
       <div><Gtr/></div>
       <div id="accuracy"> <Accuracy/></div>
-      <div id="partner"><Partner/></div>
       <div id="banner3"><Banner2 /></div>
       <div id="overview"><Overview /></div>
+      <div id="partner"><Partner/></div>
+      
+      
       <div id="advisory"><Advisory /></div>
       <div id="faq"><Faq /></div>
       <div id="join"><GetStarted /></div>
