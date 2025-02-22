@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // ✅ Import Link
 import "./navbar.css";
 import Logoimg from "../assets/logo.png";
 
@@ -12,12 +13,12 @@ function Navbar() {
     return (
         <nav className="nav">
             <div className="nav-logo">
-                <a href="#">
-                    <img src={Logoimg} alt="Logo"  className="nav-logo-img"/>
-                </a>
+                <Link to="/">
+                    <img src={Logoimg} alt="Logo" className="nav-logo-img" />
+                </Link>
             </div>
 
-            {/* Hamburger Menu Icon */}
+            {/* Hamburger Menu */}
             <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
                 <span className="bar"></span>
                 <span className="bar"></span>
@@ -32,12 +33,16 @@ function Navbar() {
                     <li><a href="#spservices" onClick={toggleMenu}>Services</a></li>
                     <li><a href="#qa" onClick={toggleMenu}>Quality Assurance</a></li>
                     <li><a href="#faq" onClick={toggleMenu}>FAQs</a></li>
-                    <li><a href="#contact" onClick={toggleMenu}>Career</a></li>
+                    {window.location.pathname !== "/career" ? (
+                        <li><Link to="/career" onClick={toggleMenu}>Career</Link></li>
+                    ) : (
+                        <li><a href="javascript:window.history.back()" onClick={toggleMenu}>Back</a></li>
+                    )}
                     <li><a href="#join" onClick={toggleMenu}>Join Us</a></li>
                 </ul>
             </div>
 
-            {/* Contact Button (Hidden on Mobile) */}
+            {/* Contact Button */}
             <div className="nav-contact">
                 <h1 className="nav-contact-link">We Serve <span className="nav-contact-link-bold">Better</span></h1>
             </div>

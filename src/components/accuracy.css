@@ -46,6 +46,7 @@
 .accuracy-lower {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
 }
 
 .accuracy-l {
