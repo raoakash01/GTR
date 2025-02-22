@@ -15,7 +15,7 @@ import Modalities from './components/modalities';
 import Spservices from './components/spservices';
 import Partner from './components/partner';
 import Vision from './components/vision';
-import BannerEx from './components/bannerex';
+import Vision2 from './components/vision2';
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
       <div id="about"><AboutUs /></div>
       <div id="whygtr"><WhyGtr2 /></div>
       <div id='banner2'><Banner3 /></div>
+      <div id="vision"><Vision2 /></div>
       <div id='modalities' ><Modalities/></div>
       <div id="spservices"><Spservices /></div>
       <div id="partner"><Partner/></div>

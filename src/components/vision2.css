@@ -1,0 +1,51 @@
+.vision2{
+    background-image: url('../assets/bgline.jpg');
+    align-items: center;
+    padding: 2rem;
+}
+
+.vision2-line{
+    width: 10rem;
+    height: 0.3rem;
+    background-color: #048B38;
+}
+
+.vision2-h{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0C2752;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.vision2-p{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #0C2752;
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .vision2{
+        padding: 1rem;
+    }
+
+    .vision2-h{
+        font-size: 2rem;
+    }
+
+    .vision2-p{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision2-h{
+        font-size: 1.6rem;
+    }
+
+    .vision2-p{
+        font-size: 1.4rem;
+    }
+}
+
