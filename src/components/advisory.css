@@ -71,7 +71,7 @@
 
 .advisory-header-title{
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: capitalize;
     color: white;
 }
@@ -82,7 +82,7 @@
 }
 
 .advisory-header-text{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     color: white;
 }
@@ -135,7 +135,7 @@
 }
 
 .advisory-member-title{
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 300;
     color: #0C2752;
 }
@@ -147,7 +147,7 @@
 }
 
 .advisory-member-text{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     color: #0C2752;
 }
@@ -233,7 +233,7 @@
 }
 .team-heading{
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: capitalize;
     color: white;
     margin-top: -1rem;
@@ -241,7 +241,7 @@
 }
 
 .team-header-text{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     color: white;
 }
