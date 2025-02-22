@@ -1,26 +1,24 @@
 import React from "react";
 import "./getstarted.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faW } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Logo from "../assets/logo.png";
 
 function GetStarted() {
     return (
         <div className="getstarted">
             <div className="getstarted-upper">
-                <h1 className="getstarted-heading">Global Teleradiology Services</h1>
-                <button className="contact-button" onClick={() => window.location.href = '#contact'}>Contact Us</button>
+                <img src={Logo} alt="logo" className="getstarted-logo" />
+                {/* <button className="contact-button" onClick={() => window.location.href = '#contact'}>Contact Us</button> */}
             </div>
             <div className="getstarted-middle">
                 <div className="getstarted-text-container">
                     <p className="getstarted-text">Get Started</p>
-                    <h1 className="getstarted-bigheading">Get in touch with us.<br/> We're here to assist you.</h1>
+                    <h1 className="getstarted-bigheading">Get in touch or join us. 
+                    As a Business Associate.</h1>
                 </div>
                 <div className="getstarted-social-container">
-                    <div className="icon-getstarted"><FontAwesomeIcon icon={faFacebook}  className="icon-gs"/></div>
-                    <div className="icon-getstarted"><FontAwesomeIcon icon={faWhatsapp}  className="icon-gs"/></div>
-                    <div className="icon-getstarted"><FontAwesomeIcon icon={faTwitter}  className="icon-gs"/></div>
-                    <div className="icon-getstarted"><FontAwesomeIcon icon={faInstagram}  className="icon-gs"/></div>
+                    <div className="icon-getstarted"><FontAwesomeIcon icon={faLinkedin}  className="icon-gs"/></div>
                 </div>
             </div>
             <div className="getstarted-lower">

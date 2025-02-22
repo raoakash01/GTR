@@ -197,6 +197,10 @@
         margin: 0.5rem 0;
     }
 
+    .peer-review-container {
+        padding: 1rem;
+    }
+
     .peer-review-header {
         font-size: 2rem;
     }
@@ -225,6 +229,11 @@
 
     .accuracy-p {
         font-size: 1.2rem;
+    }
+
+    .peer-review-container {
+        width: 80%;
+        padding: 0.5rem;
     }
 
     .peer-review-header {
