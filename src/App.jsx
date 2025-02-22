@@ -25,11 +25,11 @@ function App() {
       <div id="home"><Home /></div>
       <div id="about"><AboutUs /></div>
       <div id="whygtr"><WhyGtr2 /></div>
-      <div id='banner2'><Banner2 /></div>
+      <div id='banner2'><Banner3 /></div>
       <div id='modalities' ><Modalities/></div>
       <div id="spservices"><Spservices /></div>
       <div id="partner"><Partner/></div>
-      <div id="banner3"><Banner3 /></div>
+      <div id="banner3"><Banner2 /></div>
       <div><Vision/></div>
       <div id="overview"><Overview /></div>
       <div id="advisory"><Advisory /></div>
