@@ -5,6 +5,7 @@ function WhyGtr2() {
     return (
         <div className="whygtr2-container">
             <h1 className="whygtr2-heading">WHY GLOBAL TELERADIOLOGY</h1>
+            <div className="half-underline"></div>
 <div className="whygtr2-grid">
     <div className="whygtr2-left">
     <div className="whygtr2-box">
