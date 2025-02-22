@@ -37,10 +37,7 @@ function Footer(){
                     Phone:+ 91 9319380444 / +91 9873613370 <br/><br/>
                     Email: info@global-teleradiology.com</p>
                     <div className='footer-social-icon'>
-                        <FontAwesomeIcon className='social-icon' icon={faFacebook} style={{color: "#ffffff", marginRight: "1.1rem"}} />
-                        <FontAwesomeIcon className='social-icon'  icon={faTwitter} style={{color: "#ffffff", marginRight: "1.1rem"}} />
                         <FontAwesomeIcon className='social-icon' icon={faLinkedin} style={{color: "#ffffff", marginRight: "1.1rem"}} />
-                        <FontAwesomeIcon  className='social-icon' icon={faInstagram} style={{color: "#ffffff"}} />
                     </div>
                 </div>
                 <div className='footer-lower-21'>

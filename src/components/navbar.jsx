@@ -32,6 +32,7 @@ function Navbar() {
                     <li><a href="#spservices" onClick={toggleMenu}>Services</a></li>
                     <li><a href="#qa" onClick={toggleMenu}>Quality Assurance</a></li>
                     <li><a href="#faq" onClick={toggleMenu}>FAQs</a></li>
+                    <li><a href="#contact" onClick={toggleMenu}>Career</a></li>
                     <li><a href="#join" onClick={toggleMenu}>Join Us</a></li>
                 </ul>
             </div>
