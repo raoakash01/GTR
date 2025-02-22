@@ -30,7 +30,6 @@ function App() {
       <div id="spservices"><Spservices /></div>
       <div id="partner"><Partner/></div>
       <div id="banner3"><Banner3 /></div>
-      <div><BannerEx/></div>
       <div><Vision/></div>
       <div id="overview"><Overview /></div>
       <div id="advisory"><Advisory /></div>

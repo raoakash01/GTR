@@ -1,7 +1,6 @@
 import React from "react";
 import "./aboutus.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import BannerEx from "./bannerex";
 
 function AboutUs() {
     return (
@@ -16,17 +15,15 @@ function AboutUs() {
                     <div className="text-section">
                         <h3 className="text-title">ABOUT US</h3>
                         <h1 className="text-content-1">
-                        Welcome to Global TeleRadiology, your trusted partner in comprehensive Radiology Reporting Services.
+                        Global TeleRadiology is India’s leading Radiology service partner for Hospitals and Diagnostic Centers.
                         </h1>
-                        <p className="text-content-2">
-                        We specialize in high-quality interpretations across multiple imaging modalities, including CT scans, MRI scans, CBCT, Ultrasound, X-rays, and Mammography.
-                        </p>
-                        <p className="text-content-2">
-                        Serving Imaging Centers, Diagnostic Centers, Radiology Clinics, and Hospitals across India and overseas, we operate 24/7 across all time zones, ensuring accurate, timely, and expert reporting whenever you need it.
+                        <p className="text-content-1">
+                        We offer cost-effective solutions with experienced radiology coverage, reduced management overheads and greater patient satisfaction.
                         </p>
                     </div>
                 </div>
             </div>
+            <BannerEx />
         </div>
     );
 }

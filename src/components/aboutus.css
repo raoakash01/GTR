@@ -27,8 +27,10 @@
 
 .video-about {
     width: 80%;
-    height: 33rem;
+    height: 25rem;
     border-radius: 2rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
     background-color: #052444;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -44,14 +46,17 @@
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 2rem 3rem;
+
 }
 
 .text-title {
-    color: #2B7CFF;
+    color: #048B38;
+    font-size: 3.5rem;
+    margin: 0;
 }
 
 .text-content-1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #052444;
     margin-right: 4rem;
