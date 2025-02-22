@@ -6,15 +6,15 @@
     position: fixed;
     width: 100%;
     backdrop-filter: blur(10px);
-    background-color: rgba(13, 36, 59, 0.562);
+    background-color: #ffffff;
     padding: 0rem 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     z-index: 1000;
     transition: all 0.3s ease-in-out;
 }
 
 .nav-logo {
-    padding: 0.5rem;
+    padding: 0.2rem;
     padding-left: 1rem;
     margin-left: -2rem;
 }
@@ -28,9 +28,9 @@
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
-    background-color: rgba(240, 248, 255, 0.205);
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
     height: 3.2rem;
-    margin-right: 15rem;
+    margin-right: 8rem;
 }
 
 .nav-menu ul {
@@ -61,16 +61,20 @@
 
 .nav-contact-link {
     text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+    color: #16A04B;
+    font-size: 2rem;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
 }
 
-.nav-contact-link:hover {
-    color: beige;
+.nav-contact-link-bold{
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 0;
+    margin-right: 0.5rem;
+    color: #0085B4;
 }
+
 
 /* -------------------------- */
 /*  Mobile Responsive Styles  */
@@ -82,7 +86,7 @@
         width: 100%;
         padding: 0.3rem 0;
         z-index: 1000;
-        background-color: rgba(37, 73, 109, 0.9);
+        background-color: #ffffff;
         justify-content: space-between;
         margin-top: 0;
     }
@@ -133,7 +137,7 @@
     .bar {
         width: 100%;
         height: 4px;
-        background-color: white;
+        background-color: #000000;
         border-radius: 2px;
         transition: all 0.4s ease-in-out;
     }

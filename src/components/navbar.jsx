@@ -28,8 +28,9 @@ function Navbar() {
             <div className={`nav-menu ${isOpen ? "active" : ""}`}>
                 <ul>
                     <li><a href="#" onClick={toggleMenu}>Home</a></li>
-                    <li><a href="#about" onClick={toggleMenu}>About</a></li>
+                    <li><a href="#about" onClick={toggleMenu}>About Us</a></li>
                     <li><a href="#spservices" onClick={toggleMenu}>Services</a></li>
+                    <li><a href="#qa" onClick={toggleMenu}>Quality Assurance</a></li>
                     <li><a href="#faq" onClick={toggleMenu}>FAQs</a></li>
                     <li><a href="#join" onClick={toggleMenu}>Join Us</a></li>
                 </ul>
@@ -37,7 +38,7 @@ function Navbar() {
 
             {/* Contact Button (Hidden on Mobile) */}
             <div className="nav-contact">
-                <a className="nav-contact-link" href="#contact">Contact Us</a>
+                <h1 className="nav-contact-link">We Serve <span className="nav-contact-link-bold">Better</span></h1>
             </div>
         </nav>
     );
