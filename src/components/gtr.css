@@ -1,0 +1,108 @@
+.gtr-container {
+    background-color: #ffffff;
+    padding: 3rem;
+}
+
+/* Heading styles */
+.gtr-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0C2752;
+    margin-bottom: 1rem;
+}
+
+.gtr-underline {
+    height: 0.3rem;
+    width: 15rem;
+    background-color: #048B38;
+    margin: 0;
+}
+
+/* Text styles */
+.gtr-text {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #0C2752;
+}
+
+/* Box container */
+.gtr-lower {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+/* Box styles */
+.gtr-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F1EEEE;
+    color: #0C2752;
+    width: 20%;
+    height: 25rem;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    transition: all 0.4s ease-in-out;
+}
+
+/* First and last box corner rounding */
+.gtr-box1 {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.gtr-box4 {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+/* Heading inside box */
+.gtr-box-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Text inside box */
+.gtr-box-text {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.gtr-box-text p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gtr-box {
+        width: 30%;
+        height: 22rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gtr-box {
+        width: 45%;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gtr-box {
+        width: 90%;
+        height: 18rem;
+    }
+}
+.gtr-box:hover {
+    background-image: linear-gradient(to top, #048B38, #0C2752 80% );
+    color: #ffffff;
+    border-radius: 2rem;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 2; 
+}
+
