@@ -1,21 +1,20 @@
 import React from 'react'
 import './banner.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faTwitter, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {faLinkedin}from "@fortawesome/free-brands-svg-icons";
+import Bmap from '../assets/bmap.png'
 
 function Banner() {
     return (
         <>
         <div className="banner">
             <div className='banner-left'>
-            <p className='banner-text'>The banner is to inform visitors of an important message</p>
+            <img className='bmap' src={Bmap} alt="Bmap" />
+            <p className='banner-text'>South Asia  I  Pacific  I  islands  I  Caribbeans  I  South Africa  I  Ghana  I  Uganda</p>
             </div>
             <div className='banner-right'>
             <p className='banner-text'>
-                <FontAwesomeIcon className='social-icon-b' icon={faFacebook} style={{color: "#ffffff", marginRight: "1.1rem"}} />
-                <FontAwesomeIcon className='social-icon-b'  icon={faTwitter} style={{color: "#ffffff", marginRight: "1.1rem"}} />
-                <FontAwesomeIcon className='social-icon-b' icon={faLinkedin} style={{color: "#ffffff", marginRight: "1.1rem"}} />
-                <FontAwesomeIcon  className='social-icon-b' icon={faInstagram} style={{color: "#ffffff"}} />
+                <FontAwesomeIcon className='social-icon-b' icon={faLinkedin}/>
             </p>
             </div>
         </div>

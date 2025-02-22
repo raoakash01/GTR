@@ -6,10 +6,10 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 2rem;
+    height: 1.5rem;
     position: fixed;
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 10000;
 }
@@ -17,16 +17,32 @@
 /* Banner Text */
 .banner-text {
     font-size: 0.8rem;
+    margin: 0;
 }
 
 /* Left Section */
 .banner-left {
     margin-left: 1rem;
+    display: flex;
 }
-
+.bmap{
+    width: 2.5rem;
+    height: 1.3rem;
+    margin-right: 0.5rem;
+}
 /* Right Section */
 .banner-right {
-    margin-right: 5rem;
+    margin-right: 4rem;
+}
+
+.social-icon-b{
+    font-size: 0.8rem;
+    color: "#ffffff"
+}
+
+.social-icon-b:hover{
+    scale: 1.2;
+    cursor: pointer;
 }
 
 /* ----------- Responsive Styles ----------- */
@@ -38,6 +54,7 @@
     .banner-left {
         margin-left: 0.5rem;
     }
+    
     .banner-right {
         margin-right: 5rem;
     }
@@ -48,12 +65,16 @@
         height: auto;
         flex-direction: column;
         text-align: center;
-        padding: 1rem;
+        padding: 1.5rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
     .banner-left {
         margin-left: 0;
+    }
+    .bmap{
+        width: 2rem;
+        height: 1.2rem;
     }
     .banner-right {
         display: none !important; /* Ensures it hides properly */
