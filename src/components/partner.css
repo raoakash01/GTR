@@ -19,6 +19,14 @@
     margin-left: 3rem;
 }
 
+.partner-line {
+    height: 0.3rem;
+    width: 15rem;
+    background-color: #048B38;
+    margin: 0;
+    margin-left: 3rem;
+}
+
 .text-and-button {
     display: flex;
     justify-content: space-between;
@@ -37,7 +45,7 @@
 
 .partner-button {
     padding: 0.75rem 1.5rem;
-    background-color: #0C2752;
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
     color: white;
     border: none;
     border-radius: 0.5rem;
