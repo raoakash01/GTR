@@ -16,6 +16,7 @@ import Spservices from './components/spservices';
 import Partner from './components/partner';
 import Vision2 from './components/vision2';
 import Gtr from './components/gtr';
+import Accuracy from './components/accuracy';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <div id='modalities' ><Modalities/></div>
       <div id="spservices"><Spservices /></div>
       <div><Gtr/></div>
+      <div id="accuracy"> <Accuracy/></div>
       <div id="partner"><Partner/></div>
       <div id="banner3"><Banner2 /></div>
       <div id="overview"><Overview /></div>
