@@ -31,9 +31,9 @@
 }
 
 .video-about {
+    margin-top: 2rem;
     width: 80%;
-    height: 25rem;
-    border-radius: 2rem;
+    height: max-content;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
     background-color: #052444;
