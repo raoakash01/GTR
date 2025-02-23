@@ -95,10 +95,9 @@
 }
 
 .footer-lower-2,
-.footer-lower-3,
 .footer-lower-4,
 .footer-lower-5 {
-    width: 10%;
+    width: 20%;
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -153,7 +152,7 @@
 }
 
 .footer-links-heading {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #ffffff;
     text-align: left;
@@ -165,7 +164,7 @@
 }
 
 .footer-link {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 100;
     color: #b8b6b6;
     text-align: left;
@@ -252,7 +251,7 @@
 }
 .footer-lower-21{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 50%;
 }
 

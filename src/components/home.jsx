@@ -9,8 +9,8 @@ function Home() {
     useEffect(() => {
         gsap.fromTo(
             textRef.current,
-            { x: "100%" }, // Start completely outside from the right
-            { x: "-100%", duration: 5, repeat: -1, ease: "linear" } // Move to the left completely
+            { x: "90%" }, // Start completely outside from the right
+            { x: "-90%", duration: 10, repeat: -1, ease: "linear" } // Move to the left completely
         );
     }, []);
 

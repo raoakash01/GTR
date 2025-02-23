@@ -13,7 +13,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 10000;
 }
-
 /* Banner Text */
 .banner-text {
     font-size: 1rem;
@@ -41,8 +40,8 @@
 }
 
 .social-icon-b:hover{
-    scale: 1.2;
-    cursor: pointer;
+    scale: 1.2 ! important;
+    cursor: pointer ! important;
 }
 
 /* ----------- Responsive Styles ----------- */

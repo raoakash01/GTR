@@ -13,6 +13,11 @@
     transition: all 0.3s ease-in-out;
 }
 
+.nav-logo-img2{
+    width: 15rem;
+    height: 3.5rem;
+}
+
 .nav-logo {
     padding: 0.2rem;
     padding-top: 0.5rem;

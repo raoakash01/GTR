@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom"; // ✅ Import Link
 import "./navbar.css";
 import Logoimg from "../assets/logo.png";
+import Serve from "../assets/betterserve.png";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +45,7 @@ function Navbar() {
 
             {/* Contact Button */}
             <div className="nav-contact">
-                <h1 className="nav-contact-link">We Serve <span className="nav-contact-link-bold">Better</span></h1>
+                <img src={Serve} alt="Logo" className="nav-logo-img2" />
             </div>
         </nav>
     );

@@ -1,8 +1,8 @@
 import React from 'react'
 import './footer.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faTwitter, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import {  faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {  faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function Footer(){
     return (
@@ -37,7 +37,9 @@ function Footer(){
                     Phone:+ 91 9319380444 / +91 9873613370 <br/><br/>
                     Email: info@global-teleradiology.com</p>
                     <div className='footer-social-icon'>
+                        <a href="https://www.linkedin.com/company/global-teleradiology/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon className='social-icon' icon={faLinkedin} style={{color: "#ffffff", marginRight: "1.1rem"}} />
+                        </a>
                     </div>
                 </div>
                 <div className='footer-lower-21'>

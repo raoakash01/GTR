@@ -15,7 +15,7 @@ function WhyGtr2() {
     <div className="whygtr2-left">
     <div className="whygtr2-box">
         <div style={{display:"flex", alignItems:"center"}}>
-        <h1 className="whygtr2-box-heading">Service Quality and TAT</h1>
+        <h1 className="whygtr2-box-heading">Service Quality & TAT</h1>
         <img src={p1} alt="p1" className="whygtr2-icon backG" /></div>
         <div className="half-underline"></div>
         <ul className="whygtr2-list">

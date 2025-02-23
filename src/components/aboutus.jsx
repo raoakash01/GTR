@@ -1,6 +1,7 @@
 import React from "react";
 import "./aboutus.css";
 import BannerEx from "./bannerex";
+import videoA from "../assets/video.mp4";
 
 function AboutUs() {
     return (
@@ -8,7 +9,7 @@ function AboutUs() {
             <div className="about-us-1">
                 <div className="about-us-video">
                     <div className="video-about">
-                        {/* Add video or content here if required */}
+                        <video src={videoA} autoPlay loop muted />
                     </div>
                 </div>
                 <div className="about-us-text">

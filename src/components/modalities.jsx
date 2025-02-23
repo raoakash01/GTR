@@ -30,11 +30,11 @@ function Modalities() {
                     </div>
                     <div className="modalities-grid-item">
                     <img src={Pet} alt="Pet" className="modalities-grid-img" />
-                    <h1 className="modalities-grid-text">POSITRON EMISSION TOMOGRAPHY </h1>
+                    <h1 className="modalities-grid-text">POSITRON EMISSION TOMOGRAPHY (PET) </h1>
                     </div>
                     <div className="modalities-grid-item">
                     <img src={Cbc} alt="Cbs" className="modalities-grid-img" />
-                    <h1 className="modalities-grid-text">A CONE-BEAM COMPUTED TOMOGRAPHY</h1>
+                    <h1 className="modalities-grid-text">CONE-BEAM COMPUTED TOMOGRAPHY (CBCT)</h1>
                     </div>
                     </div>
                     <div className="modalities-grid-right">

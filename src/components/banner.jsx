@@ -14,7 +14,9 @@ function Banner() {
             </div>
             <div className='banner-right'>
             <p className='banner-text'>
-                <FontAwesomeIcon className='social-icon-b' icon={faLinkedin}/>
+                <a href="https://www.linkedin.com/company/global-teleradiology/" target="_blank" rel="noopener noreferrer" className='social-icon-b'>
+                    <FontAwesomeIcon icon={faLinkedin} style={{ color: 'white'}}/>
+                </a>
             </p>
             </div>
         </div>

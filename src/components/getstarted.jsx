@@ -18,7 +18,9 @@ function GetStarted() {
                     As a Business Associate.</h1>
                 </div>
                 <div className="getstarted-social-container">
-                    <div className="icon-getstarted"><FontAwesomeIcon icon={faLinkedin}  className="icon-gs"/></div>
+                    <a href="https://www.linkedin.com/company/global-teleradiology/" target="_blank" rel="noopener noreferrer">
+                        <div className="icon-getstarted"><FontAwesomeIcon icon={faLinkedin}  className="icon-gs"/></div>
+                    </a>
                 </div>
             </div>
             <div className="getstarted-lower">
