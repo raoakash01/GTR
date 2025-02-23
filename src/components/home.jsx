@@ -7,11 +7,12 @@ function Home() {
     const textRef = useRef(null);
 
     useEffect(() => {
-        gsap.fromTo(
+        const animation = gsap.fromTo(
             textRef.current,
-            { x: "90%" }, // Start completely outside from the right
-            { x: "-90%", duration: 10, repeat: -1, ease: "linear" } // Move to the left completely
+            { x: "60%" }, // Start completely outside from the right
+            { x: "-60%", duration: 8, repeat: -1, ease: "linear" } // Move to the left completely
         );
+        return () => animation.kill(); // Make sure to kill it when the component is unmounted
     }, []);
 
     return (
@@ -52,9 +53,9 @@ function Home() {
                     </div>
             </div>
             <div className="home-content-3">
-                <div className="home-content-3-box">
+                <div className="home-content-3-box" style={{ overflow: "hidden" }}>
                     <p ref={textRef} className="home-content-3-text">
-                    Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support
+                    Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; cost efficient 
                     </p>
                 </div>
             </div>
