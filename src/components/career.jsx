@@ -26,6 +26,20 @@ function Career() {
                     <p className="career1-p">We are always in need of people who can participate in our vision and work with us shoulder to shoulder. If you have any experience in Information Technology, managing operations, doing market research, doing business development or medical transcriptionist, write to us at the below email address to explore the opportunity</p>
                     <p className="career1-p top-2">Write to us at <b>info@global-teleradiology.com</b> for more details.</p>
                 </div>
+                <div className="careemid">
+                  <h1 className="career1-h">CURRENT OPENING</h1>
+                  <div className="career1-line"></div>
+                  <div className="career-search">
+                    <select className="dropdown">
+                        <option className="job-type" value="" disabled selected>Job Type</option>
+                        <option>Full Time</option>
+                        <option>Part Time</option>
+                        <option>Intern</option>
+                    </select>
+                    <input className="job-title" type="name" placeholder="Job Title or Skills" />
+                  <button className="search-btn" type="submit">Search</button>
+                  </div>
+                </div>
                 <div className="career2">
                 <h1 className="career1-h">CARRER OPPORTUNITIES</h1>
                 <div className="career1-line"></div>
