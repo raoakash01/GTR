@@ -118,8 +118,8 @@
 .peer-review-header {
     background: linear-gradient(to right, #052444, #16A04B);
     color: white;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 300;
     padding: 1rem;
     border-radius: 10px;
     position: relative;
@@ -127,7 +127,6 @@
     display: inline-block;
     z-index: 1;
     margin-top: -3rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .peer-review-content {
