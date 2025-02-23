@@ -16,7 +16,7 @@
 
 /* Banner Text */
 .banner-text {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -26,8 +26,8 @@
     display: flex;
 }
 .bmap{
-    width: 2.5rem;
-    height: 1.3rem;
+    width: 2.7rem;
+    height: 1.4rem;
     margin-right: 0.5rem;
 }
 /* Right Section */
@@ -36,7 +36,7 @@
 }
 
 .social-icon-b{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: "#ffffff"
 }
 

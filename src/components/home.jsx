@@ -54,7 +54,7 @@ function Home() {
             <div className="home-content-3">
                 <div className="home-content-3-box">
                     <p ref={textRef} className="home-content-3-text">
-                        We Serve Better - Excellence in Service - Quality Matters
+                    Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support
                     </p>
                 </div>
             </div>

@@ -23,13 +23,13 @@ const advisoryMembers = [
     {
         name: "Dr. Vijai Kumar",
         title: "President and Chief Medical Officer of Excel Life Sciences, Inc., USA",
-        experience: "Healthcare Industry Veteran with 40+ years of experience.<br/>President & Chief Medical Officer at Excel Life Sciences, Inc., a leading US-based trial management and consulting firm.<br/>Expertise in clinical research, business strategy, clinical trial logistics, supply chain management, and regulatory affairs.<br/>Former Senior Executive at Sandoz & The Upjohn Company for 16 years.<br/>Recognized Thought Leader, featured on NPR & BBC TV for insights on clinical research globalization.<br/>Honored by Pharma Voice as one of the 100 inspiring leaders in Life Sciences (2010).",
+        experience: "Dr. Kumar is a seasoned Healthcare Industry Management veteran with over 40 years experience in multiple facets of the industry. He is currently the President and Chief Medical Officer of Excel Life Sciences, Inc., a leading US based company providing trial management services & consulting services to global biopharmaceutical and device industries. Dr. Kumar’s experience includes clinical research, business strategy, clinical trial logistics and supply chain management, regulatory affairs. He has also held senior executive positions at Sandoz and the Upjohn Company for 16 years. Dr. Kumar is a thought leader featured on NPR and BBC TV on issues related to globalization of clinical research. Pharma Voice recognized Dr. Kumar as one of the 100 inspiring leaders in the Life Sciences Industry in 2010.",
         image: vijai,
     },
     {
         name: "Dr. D. S. Rana",
         title: "Chairman, Board of Management, Sir Ganga Ram Hospital, New Delhi, India.",
-        experience: "25+ years of experience in building and shaping successful organizations and brands across multiple industries.<br/>15+ years in the healthcare industry, assisting healthcare delivery and pharmaceutical companies in long-term business strategy.<br/>Founding member of India’s first multi-location integrated healthcare chain, contributing to the transformation of the healthcare landscape",
+        experience: "Dr. Rana is the Chairman of Board of Management in one of the most prestigious multi-specialty state of the art hospitals in India. Dr. Rana is known for his remarkable achievements in the field of Nephrology. Apart from his M.B.B.S, MD & MNAMS degrees, he also holds an international scholarship from Cleveland Clinic, Ohio, USA. Always going few extramiles above his professional responsibilities, Dr. Rana has made valuable contribution to the growth of Healthcare in India, and has also been conferred one of the highest state awards of India the 'Padma Shree'.",
         image: Bd3,
     },
 ];
