@@ -5,6 +5,7 @@
     align-items: center;
     background-color: #f5f5f5;
     padding: 2rem;
+    padding-bottom: 5rem
 }
 
 /* Upper Section */
@@ -17,8 +18,9 @@
 }
 
 .getstarted-logo{
-    width: 25rem;
-    height: 8rem;
+    width: 20rem;
+    height: 6rem;
+    margin-left: 12rem;
 }
 
 .getstarted-heading {
@@ -55,7 +57,7 @@
 .getstarted-text-container {
     text-align: left;
     width: 35%;
-    margin-left: 3rem;
+    margin-left: 12rem;
 }
 
 .getstarted-text {

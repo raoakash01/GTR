@@ -79,6 +79,7 @@ function Faq() {
         <div className="faq">
             <div className="faq-left">
                 <h1 className="faq-left-heading">FAQs</h1>
+                <div className="faq-left-line"></div>
                 <div className="faq-left-bottom">
                     <h1 className="faq-left-bottom-heading">Ask a different question</h1>
                     <form ref={form} className="faq-left-bottom-form" onSubmit={sendEmail}>

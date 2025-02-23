@@ -7,6 +7,7 @@ function Accuracy() {
             <div className="accuracy-upper">
                 <div className="accuracy-hbox">
                     <h1 className="accuracy-h">Accuracy for Cure</h1>
+                    <h1 className="accuracy-h">We Serve Better</h1>
                 </div>
             </div>
             <div className="accuracy-lower">
