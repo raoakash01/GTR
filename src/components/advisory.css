@@ -82,8 +82,9 @@
 }
 
 .advisory-header-text{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
+    text-align: right;
     color: white;
 }
 
@@ -241,8 +242,9 @@
 }
 
 .team-header-text{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
+    text-align: right;
     color: white;
 }
 

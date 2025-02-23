@@ -17,7 +17,7 @@ const advisoryMembers = [
     {
         name: "Al Gillis",
         title: "Director, Healthcare Facilities Development, Harvard Medical International / Partners Healthcare, Boston, USA.",
-        experience: "🏥 Al – 16+ years at Harvard Medical International/Partners Healthcare<br/>🏗️ Expertise: Facilities Planning, Hospital Management, SOP Development<br/>🌍 International experience in 20+ countries<br/>🏢 Previous Roles:<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Director, Adam & Associates<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Senior Director, Healthcare International<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Director, Brigham & Women’s Hospital<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Vice President, Treasurer at HMS-PBBH-SFCC Radiology Foundation, Inc",
+        experience: "Al is an industry veteran and has been with Harvard Medical International/Partners Healthcare since last 16 years now. His expertise ranges from overall facilities planning (including medical equipment) to Organizational Development, HIS, Hospital Management, SOP’s development & commission et al. His international experience spans over 20 countries in multiple continents. Prior to joining HMI/Partners Healthcare, Al was Director of Healthcare Facility Development at Adam & Associates in MA (USA), Senior Director Clinical & Diagnostic Services, Healthcare International in Scotland and Director Administration & Finance at Brigham & Women’s Hospital, Harvard Medical School, Dept. of Radiology. Al was also the Vice President, Treasurer, HMS-PBBH-SFCC Radiology Foundation, Inc. USA.",
         image: algills,
     },
     {
@@ -148,13 +148,7 @@ function Advisory() {
                 </div>
                 <div className="advisory-header-left">
                     <p className="advisory-header-text">
-                        Our Board of Advisors comprises healthcare industry
-                        stalwarts from across the world. Alumni of some of the
-                        most prestigious healthcare facilities globally, known
-                        for their remarkable achievements, their expertise and
-                        opinion is highly sought after. Their association with
-                        Global TeleRadiology is an affirmation of our high
-                        standards of quality and world-class practices.
+                    Our Board of Advisors, top global healthcare leaders, uphold Global TeleRadiology’s excellence.
                     </p>
                 </div>
             </div>
@@ -199,10 +193,8 @@ function Advisory() {
                 </div>
                 <div className="advisory-header-left">
                     <p className="team-header-text">
-                        The Global TeleRadiology management team consists of
-                        industry experts in healthcare management, operations,
-                        marketing, and process development, with four founder
-                        members.
+                    Global TeleRadiology's management team, founded by 
+                    four members, comprises industry experts in healthcare, operations, marketing, and process development.
                     </p>
                 </div>
             </div>
