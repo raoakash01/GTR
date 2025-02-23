@@ -1,5 +1,10 @@
 import React from "react";
 import "./whygtr2.css";
+import p1 from "../assets/picon1.png";
+import p2 from "../assets/picon2.png";
+import p3 from "../assets/picon3.png";
+import p4 from "../assets/picon4.png";
+import p5 from "../assets/picon5.png";
 
 function WhyGtr2() {
     return (
@@ -9,7 +14,9 @@ function WhyGtr2() {
 <div className="whygtr2-grid">
     <div className="whygtr2-left">
     <div className="whygtr2-box">
+        <div style={{display:"flex", alignItems:"center"}}>
         <h1 className="whygtr2-box-heading">Service Quality and TAT</h1>
+        <img src={p1} alt="p1" className="whygtr2-icon backG" /></div>
         <div className="half-underline"></div>
         <ul className="whygtr2-list">
             <li className="whygtr2-list-item">Over a decade of reporting experience</li>
@@ -19,7 +26,9 @@ function WhyGtr2() {
         </ul>
     </div>
     <div className="whygtr2-box">
+    <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
     <h1 className="whygtr2-box-heading">Radiology Team</h1>
+    <img src={p2} alt="p2" className="whygtr2-icon backG" /></div>
         <div className="half-underline"></div>
         <ul className="whygtr2-list">
             <li className="whygtr2-list-item">Industry Best Radiologists</li>
@@ -32,7 +41,9 @@ function WhyGtr2() {
     </div>
     <div className="whygtr2-center">
     <div className="whygtr2-box">
+    <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
     <h1 className="whygtr2-box-heading">Quality Control</h1>
+    <img src={p3} alt="p3" className="whygtr2-icon backG" /></div>
         <div className="half-underline"></div>
         <ul className="whygtr2-list">
             <li className="whygtr2-list-item">Industry Best Quality Delivery</li>
@@ -50,7 +61,9 @@ function WhyGtr2() {
     </div>
     <div className="whygtr2-right">
     <div className="whygtr2-box">
+    <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
     <h1 className="whygtr2-box-heading">Reporting Pacs </h1>
+    <img src={p4} alt="p4" className="whygtr2-icon backG" /></div>
         <div className="half-underline"></div>
         <ul className="whygtr2-list">
             <li className="whygtr2-list-item">AI Enabled World Class Pacs</li>
@@ -62,7 +75,9 @@ function WhyGtr2() {
         </ul>
     </div>
     <div className="whygtr2-box">
+    <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
     <h1 className="whygtr2-box-heading">Customer Relations</h1>
+    <img src={p5} alt="p5" className="whygtr2-icon backG" /></div>
         <div className="half-underline"></div>
         <ul className="whygtr2-list">
             <li className="whygtr2-list-item">Patient Centric Approach</li>

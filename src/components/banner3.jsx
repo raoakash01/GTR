@@ -4,8 +4,9 @@ import "./banner3.css";
 function Banner3() {
   const [accuracy, setAccuracy] = useState(0);
   const [rate, setRate] = useState(0);
-  const [countries, setCountries] = useState(0);
-  const [days, setDays] = useState(0);
+  const [years, setYears] = useState(0);
+  const [read, setRead] = useState(0);
+  const [imgread, setImgread] = useState(0);
   const sectionRef = useRef(null);
 
   const duration = 2000; // 2 seconds total
@@ -18,8 +19,9 @@ function Banner3() {
         if (entries[0].isIntersecting) {
           let stepAccuracy = 99.9 / steps;
           let stepRate = 100 / steps;
-          let stepCountries = 1; // Increase by 1 per step
-          let stepDays = 19; // Increase by 5 per step
+          let stepRead = 1; // Increase by 5 per step
+          let stepyear = 1;
+          let imgread=1;
 
           let currentStep = 0;
           const timer = setInterval(() => {
@@ -27,8 +29,10 @@ function Banner3() {
 
             setAccuracy((prev) => Math.min(prev + stepAccuracy, 99.9));
             setRate((prev) => Math.min(prev + stepRate, 100));
-            setCountries((prev) => Math.min(prev + stepCountries, 20));
-            setDays((prev) => Math.min(prev + stepDays, 365));
+            setRead((prev) => Math.min(prev + stepRead, 4));
+            setYears((prev) => Math.min(prev + stepyear, 10));
+            setImgread((prev) => Math.min(prev + imgread, 10));
+
 
             if (currentStep >= steps) {
               clearInterval(timer);
@@ -49,28 +53,34 @@ function Banner3() {
   return (
     <div className="banner3" ref={sectionRef}>
       <div className="layer-light">
+      <div className="icon-container">
+          <div className="numbers">
+            <h1 className="icon-numbers">+{years}</h1>
+            <p className="number-text">Years of Experience</p>
+          </div>
+        </div>
+        <div className="icon-container">
+          <div className="numbers">
+            <h1 className="icon-numbers">{read}</h1>
+            <p className="number-text">Million Reports</p>
+          </div>
+        </div>
+        <div className="icon-container">
+          <div className="numbers">
+            <h1 className="icon-numbers">{imgread}</h1>
+            <p className="number-text">Million Images Read</p>
+          </div>
+        </div>
         <div className="icon-container">
           <div className="numbers">
             <h1 className="icon-numbers">{accuracy.toFixed(1)}</h1>
-            <p className="number-text">Accuracy</p>
+            <p className="number-text">Industry Best Quality</p>
           </div>
         </div>
         <div className="icon-container">
           <div className="numbers">
             <h1 className="icon-numbers">{rate}%</h1>
-            <p className="number-text">100% Happy Centre</p>
-          </div>
-        </div>
-        <div className="icon-container">
-          <div className="numbers">
-            <h1 className="icon-numbers">{countries}</h1>
-            <p className="number-text">Countries</p>
-          </div>
-        </div>
-        <div className="icon-container">
-          <div className="numbers">
-            <h1 className="icon-numbers">{days}</h1>
-            <p className="number-text">Support 24/7, 365 Days</p>
+            <p className="number-text">Happy Customers</p>
           </div>
         </div>
       </div>
