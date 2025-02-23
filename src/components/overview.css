@@ -89,4 +89,13 @@
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
+    .overview-card h3 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .overview-card p {
+        font-size: 1.2rem;
+    }
 }
