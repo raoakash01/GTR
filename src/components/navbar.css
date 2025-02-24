@@ -94,8 +94,9 @@
 /* -------------------------- */
 @media (max-width: 1420px) and (min-width: 768px) {
     .nav-menu {
+        margin-top: 0.5rem;
         margin-right: 5rem;
-        padding: 0.2rem 1rem;
+        padding: 0rem 1rem;
     }
 
     .nav-menu ul li a {
