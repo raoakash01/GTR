@@ -186,11 +186,11 @@
 
 /* Submit Button */
 .getstarted-submit {
-    padding: 1.5rem 3rem;
+    padding: auto 1.5rem;
     background-image: linear-gradient(to right, #052444 20%, #16A04B);
     color: white;
     border: none;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
