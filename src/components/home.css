@@ -62,6 +62,7 @@
     flex-direction: column;
     align-items: center;
     text-align: left;
+    margin-left: 4rem;
 }
 
 /* Main Heading */
@@ -115,18 +116,17 @@
 
 .home-content-2-left {
     display: flex;
-    align-items: center;
     padding-top: 5rem;
     padding-left: 3rem;
 }
 
 /* Arrow Icon */
 .arrow-icon {
-    margin-top: 1rem;
-    width: 2rem;
-    height: 2.2rem;
+    width: 2.4rem;
+    height: 2.8rem;
     border-radius: 50%;
-    margin-right: 2.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
     border: rgba(255, 255, 255, 0.726) 1px dashed;
     transition: all 0.5s ease-in-out;
 }

@@ -41,8 +41,8 @@ function Home() {
                 <div className="Tag-line">
                     <h1 className="tag-line-text">Accuracy for Cure</h1>
                     <p className="tag-line-text-2">
-                        Global TeleRadiology is India’s leading Radiology service
-                        <br /> partner for Hospitals and Diagnostic Centres.
+                        Global TeleRadiology is India’s Leading Radiology Service
+                        <br /> Partner for Hospitals and Diagnostic Centres.
                     </p>
                 </div>
             </div>
@@ -54,8 +54,8 @@ function Home() {
                 <div className="home-content-2-text">
                     <div className="content-2-text">
                         <p>
-                            We help companies design their
-                            <br /> products to be ready for the web3 world
+                        Reduce Your Radiology Cost upto
+                            <br /> 50% Register For Free Trial
                         </p>
                         <div className="email-input">
                             <input
