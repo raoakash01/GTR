@@ -12,7 +12,7 @@ function Home() {
             const distance = textRef.current.offsetWidth;
             animation.to(
                 textRef.current,
-                { x: `-${distance}px`, duration: 30, ease: "linear", onComplete: () => animation.restart() }
+                { x: `-${distance}px`, duration: 33, ease: "linear", onComplete: () => animation.restart() }
             );
         };
         updateAnimation();
