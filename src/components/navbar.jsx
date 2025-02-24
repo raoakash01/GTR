@@ -31,13 +31,13 @@ function Navbar() {
                     <li><a href="#about" onClick={toggleMenu}>About Us</a></li>
                     <li><a href="#spservices" onClick={toggleMenu}>Services</a></li>
                     <li><a href="#qa" onClick={toggleMenu}>Quality Control</a></li>
-                    <li><a href="#faq" onClick={toggleMenu}>FAQs</a></li>
                     {window.location.pathname !== "/career" ? (
                         <li><Link to="/career" onClick={toggleMenu}>Career</Link></li>
                     ) : (
                         <li><a href="javascript:window.history.back()" onClick={toggleMenu}>Back</a></li>
                     )}
-                    <li><a href="#join" onClick={toggleMenu}>Join Us</a></li>
+                    <li><a href="#join" onClick={toggleMenu}>Contact Us</a></li>
+                    <li><a href="#faq" onClick={toggleMenu}>FAQs</a></li>
                 </ul>
             </div>
 
