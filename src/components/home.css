@@ -206,8 +206,8 @@
 
 .home-content-2-right{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 5rem 5rem 0;
 }
 
@@ -218,7 +218,7 @@
     color: white;
     font-size: 1rem;
     transition: all 0.2s ease-in-out;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .download-brochure:hover {

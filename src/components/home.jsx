@@ -69,6 +69,7 @@ function Home() {
                 </div>
                 </div>
                 <div className="home-content-2-right">
+                <button className="download-brochure">Whatsapp</button>
                     <button className="download-brochure">Download Brochure</button>
                     </div>
             </div>

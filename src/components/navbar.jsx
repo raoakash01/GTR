@@ -14,9 +14,7 @@ function Navbar() {
     return (
         <nav className="nav">
             <div className="nav-logo">
-                <Link to="/">
-                    <img src={Logoimg} alt="Logo" className="nav-logo-img" />
-                </Link>
+            <img src={Serve} alt="Logo" className="nav-logo-img2" />
             </div>
 
             {/* Hamburger Menu */}
@@ -32,7 +30,7 @@ function Navbar() {
                     <li><a href="#" onClick={toggleMenu}>Home</a></li>
                     <li><a href="#about" onClick={toggleMenu}>About Us</a></li>
                     <li><a href="#spservices" onClick={toggleMenu}>Services</a></li>
-                    <li><a href="#qa" onClick={toggleMenu}>Quality Assurance</a></li>
+                    <li><a href="#qa" onClick={toggleMenu}>Quality Control</a></li>
                     <li><a href="#faq" onClick={toggleMenu}>FAQs</a></li>
                     {window.location.pathname !== "/career" ? (
                         <li><Link to="/career" onClick={toggleMenu}>Career</Link></li>
@@ -44,8 +42,10 @@ function Navbar() {
             </div>
 
             {/* Contact Button */}
-            <div className="nav-contact">
-                <img src={Serve} alt="Logo" className="nav-logo-img2" />
+            <div className="nav-contact nav-logo">
+                <Link to="/">
+                    <img src={Logoimg} alt="Logo" className="nav-logo-img" />
+                </Link>
             </div>
         </nav>
     );

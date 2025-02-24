@@ -16,6 +16,7 @@
 .nav-logo-img2{
     width: 15rem;
     height: 3.5rem;
+    margin-left: -1rem;
 }
 
 .nav-logo {
@@ -69,7 +70,7 @@
 }
 /* Contact Button */
 .nav-contact {
-    margin-right: 5rem;
+    margin-right: 4.5rem;
 }
 
 .nav-contact-link {
