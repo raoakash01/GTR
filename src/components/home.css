@@ -76,6 +76,8 @@
     color: white;
 }
 
+
+
 /* Responsive Text */
 @media (max-width: 1024px) {
     .tag-line-text {
@@ -135,6 +137,12 @@
     cursor: pointer;
     border: white 1px solid;
     transform: rotate(360deg);
+}
+
+.content-2-text p{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1.1px;
 }
 
 /* Email Input */
