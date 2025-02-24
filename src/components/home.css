@@ -239,7 +239,15 @@
     margin: auto;
     border-radius: 2rem;
     background-color: white;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+
+.home-content-3-text{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 /* Responsive Box */
@@ -259,13 +267,5 @@
     font-size: 1rem;
     font-weight: 1000;
     text-align: center;
-}
-
-
-/* Responsive Left Section */
-@media (max-width: 768px) {
-   .home-content-3-text{
-    flex-wrap: nowrap;
-    font-size: 0.8rem;
-   }
+    overflow: hidden;
 }

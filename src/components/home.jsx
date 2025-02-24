@@ -9,10 +9,10 @@ function Home() {
     useEffect(() => {
         const animation = gsap.fromTo(
             textRef.current,
-            { x: "60%" }, // Start completely outside from the right
-            { x: "-60%", duration: 8, repeat: -1, ease: "linear" } // Move to the left completely
+            { x: "100%" }, 
+            { x: "-100%", duration: 12, repeat: -1, ease: "linear" }
         );
-        return () => animation.kill(); // Make sure to kill it when the component is unmounted
+        return () => animation.kill(); 
     }, []);
 
     return (
@@ -54,7 +54,7 @@ function Home() {
             </div>
             <div className="home-content-3">
                 <div className="home-content-3-box" style={{ overflow: "hidden" }}>
-                    <p ref={textRef} className="home-content-3-text">
+                    <p ref={textRef} className="home-content-3-text" style={{ whiteSpace: "nowrap" }}>
                     Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;
                     </p>
                 </div>
