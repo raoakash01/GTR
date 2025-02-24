@@ -116,7 +116,7 @@
     background-image: linear-gradient(to top left, #052444 20%, #16A04B);
     color: white;
     border: none;
-    border-radius: 0.8rem;
+    border-radius: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
     margin-top: 1rem;
@@ -174,7 +174,7 @@
     background-image: linear-gradient(to top left, #052444 20%, #16A04B);
     color: white;
     border: none;
-    border-radius: 0.8rem;
+    border-radius: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
     margin-top: 1rem;
