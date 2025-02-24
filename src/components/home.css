@@ -254,6 +254,7 @@
 }
 
 .home-content-3-text {
+    flex-wrap: nowrap;
     color: #0C2752;
     font-size: 1rem;
     font-weight: 1000;
@@ -264,6 +265,7 @@
 /* Responsive Left Section */
 @media (max-width: 768px) {
    .home-content-3-text{
+    flex-wrap: nowrap;
     font-size: 0.8rem;
    }
 }

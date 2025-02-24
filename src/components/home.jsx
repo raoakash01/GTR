@@ -55,7 +55,7 @@ function Home() {
             <div className="home-content-3">
                 <div className="home-content-3-box" style={{ overflow: "hidden" }}>
                     <p ref={textRef} className="home-content-3-text">
-                    Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; cost efficient 
+                    Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;
                     </p>
                 </div>
             </div>
