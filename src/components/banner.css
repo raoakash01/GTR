@@ -35,8 +35,11 @@
 }
 
 .social-icon-b{
+    height: 2rem;
+    width: 2rem;
     font-size: 1.2rem;
-    color: "#ffffff"
+    color: "#ffffff";
+    margin-left: 0.5rem;
 }
 
 .social-icon-b:hover{
