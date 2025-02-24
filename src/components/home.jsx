@@ -10,7 +10,7 @@ function Home() {
         const animation = gsap.timeline({ repeat: -1 });
         animation.to(
             textRef.current,
-            { x: "-100%", duration: 25, ease: "linear", onComplete: () => animation.restart() }
+            { x: "-100%", duration: 30, ease: "linear", onComplete: () => animation.restart() }
         );
         return () => animation.kill();
     }, []);
