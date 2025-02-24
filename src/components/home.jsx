@@ -8,11 +8,19 @@ function Home() {
 
     useEffect(() => {
         const animation = gsap.timeline({ repeat: -1 });
-        animation.to(
-            textRef.current,
-            { x: "-100%", duration: 30, ease: "linear", onComplete: () => animation.restart() }
-        );
-        return () => animation.kill();
+        const updateAnimation = () => {
+            const distance = textRef.current.offsetWidth;
+            animation.to(
+                textRef.current,
+                { x: `-${distance}px`, duration: 30, ease: "linear", onComplete: () => animation.restart() }
+            );
+        };
+        updateAnimation();
+        window.addEventListener('resize', updateAnimation);
+        return () => {
+            animation.kill();
+            window.removeEventListener('resize', updateAnimation);
+        };
     }, []);
 
     return (
@@ -22,7 +30,7 @@ function Home() {
                     <h1 className="tag-line-text">Accuracy for Cure</h1>
                     <p className="tag-line-text-2">
                         Global TeleRadiology is India’s leading Radiology service
-                        <br /> partner for Hospital and Diagnostic Centres.
+                        <br /> partner for Hospitals and Diagnostic Centres.
                     </p>
                 </div>
             </div>

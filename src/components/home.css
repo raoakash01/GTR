@@ -61,7 +61,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 /* Main Heading */
@@ -70,7 +70,8 @@
     margin-left: 5rem;
     font-size: 5rem;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
+    margin-left: 2rem;
     color: white;
 }
 
@@ -93,7 +94,7 @@
     margin-top: -2rem;
     font-size: 1.5rem;
     font-weight: 300;
-    text-align: center;
+    text-align: left;
     color: white;
 }
 
