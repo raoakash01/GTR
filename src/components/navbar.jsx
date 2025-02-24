@@ -28,7 +28,16 @@ function Navbar() {
             <div className={`nav-menu ${isOpen ? "active" : ""}`}>
                 <ul>
                     <li><a href="#" onClick={toggleMenu}>Home</a></li>
-                    <li><a href="#about" onClick={toggleMenu}>About Us</a></li>
+                    <li className="dropdown">
+                        <a href="#about" onClick={toggleMenu} className="dropbtn">About Us</a>
+                        <div className="dropdown-content">
+                            <a href="#whygtr" onClick={toggleMenu}>Why GTR</a>
+                            <a href="#vision" onClick={toggleMenu}>Vision Mission</a>
+                            <a href="#advisory" onClick={toggleMenu}>Advisory Board</a>
+                            <a href="#management" onClick={toggleMenu}>Management Team</a>
+                            <a href="#accuracy" onClick={toggleMenu}>Quality Pannel</a>
+                        </div>
+                    </li>
                     <li><a href="#spservices" onClick={toggleMenu}>Services</a></li>
                     <li><a href="#qa" onClick={toggleMenu}>Quality Control</a></li>
                     {window.location.pathname !== "/career" ? (

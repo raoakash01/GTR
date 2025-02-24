@@ -31,7 +31,7 @@ function Homepage() {
       <div id='modalities' ><Modalities/></div>
       <div id="spservices"><Spservices /></div>
       <div id="qa"><Gtr/></div>
-      <div > <Accuracy/></div>
+      <div id='accuracy'> <Accuracy/></div>
       <div id="banner3"><Banner2 /></div>
       <div id="overview"><Overview /></div>
       <div id="partner"><Partner/></div>
