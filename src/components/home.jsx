@@ -5,20 +5,32 @@ import { gsap } from "gsap";
 
 function Home() {
     const textRef = useRef(null);
+    const textRef2 = useRef(null);
 
     useEffect(() => {
-        const animation = gsap.timeline({ repeat: -1 });
+        const animation1 = gsap.timeline({ repeat: -1 });
+        const animation2 = gsap.timeline({ repeat: -1 });
+
         const updateAnimation = () => {
-            const distance = textRef.current.offsetWidth;
-            animation.to(
+            const distance1 = textRef.current.offsetWidth;
+            const distance2 = textRef2.current.offsetWidth;
+
+            animation1.to(
                 textRef.current,
-                { x: `-${distance}px`, duration: 35, ease: "linear", onComplete: () => animation.restart() }
+                { x: `-${distance1}px`, duration: 10, ease: "linear", onComplete: () => animation1.restart() }
+            );
+
+            animation2.to(
+                textRef2.current,
+                { x: `-${distance2}px`, duration: 10, ease: "linear", onComplete: () => animation2.restart() }
             );
         };
+
         updateAnimation();
         window.addEventListener('resize', updateAnimation);
         return () => {
-            animation.kill();
+            animation1.kill();
+            animation2.kill();
             window.removeEventListener('resize', updateAnimation);
         };
     }, []);
@@ -63,7 +75,10 @@ function Home() {
             <div className="home-content-3">
                 <div className="home-content-3-box" style={{ overflow: "hidden" }}>
                     <p ref={textRef} className="home-content-3-text" style={{ whiteSpace: "nowrap" }}>
-                    Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp;- &nbsp;&nbsp;Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp;- &nbsp;&nbsp;Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp;- &nbsp;&nbsp;Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp;
+                    &nbsp;&nbsp;10+ Years of Experience&nbsp;&nbsp; - &nbsp;&nbsp;4 Million Reports&nbsp;&nbsp; - &nbsp;&nbsp;10 Million Images Read&nbsp;&nbsp; - &nbsp;&nbsp;99.9 Industry Best Quality&nbsp;&nbsp; - &nbsp;&nbsp;100% Happy Customers&nbsp;&nbsp;
+                    </p>
+                    <p ref={textRef2} className="home-content-3-text" style={{ whiteSpace: "nowrap" }}>
+                    &nbsp;&nbsp; 10+ Years of Experience&nbsp;&nbsp; - &nbsp;&nbsp;4 Million Reports&nbsp;&nbsp; - &nbsp;&nbsp;10 Million Images Read&nbsp;&nbsp; - &nbsp;&nbsp;99.9 Industry Best Quality&nbsp;&nbsp; - &nbsp;&nbsp;100% Happy Customers&nbsp;&nbsp;
                     </p>
                 </div>
             </div>
