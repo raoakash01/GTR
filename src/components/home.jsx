@@ -7,12 +7,12 @@ function Home() {
     const textRef = useRef(null);
 
     useEffect(() => {
-        const animation = gsap.fromTo(
+        const animation = gsap.timeline({ repeat: -1 });
+        animation.to(
             textRef.current,
-            { x: "100%" }, 
-            { x: "-100%", duration: 12, repeat: -1, ease: "linear" }
+            { x: "-100%", duration: 25, ease: "linear", onComplete: () => animation.restart() }
         );
-        return () => animation.kill(); 
+        return () => animation.kill();
     }, []);
 
     return (
@@ -55,7 +55,7 @@ function Home() {
             <div className="home-content-3">
                 <div className="home-content-3-box" style={{ overflow: "hidden" }}>
                     <p ref={textRef} className="home-content-3-text" style={{ whiteSpace: "nowrap" }}>
-                    Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;
+                    Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp;- &nbsp;&nbsp;Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp;- &nbsp;&nbsp;Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp;- &nbsp;&nbsp;Coast efficient &nbsp;&nbsp;  -  &nbsp;&nbsp; Industry Best Radiologists &nbsp;&nbsp;  -  &nbsp;&nbsp; Round The Clock Technical Support &nbsp;&nbsp;  -  &nbsp;&nbsp;  Stringent 3 Tier Quality System &nbsp;&nbsp;  -  &nbsp;&nbsp; Subspeciality Experts &nbsp;&nbsp;
                     </p>
                 </div>
             </div>
