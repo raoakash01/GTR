@@ -6,8 +6,13 @@ function Vision2() {
         <div className="vision2">
             <h1 className="vision2-h">VISION AND MISSION</h1>
             <div className="vision2-line"></div>
-                <p className="vision2-p">At Global TeleRadiology we believe that technology should provide the key to improving performance. We are committed to our mission of becoming your go-to-partner for accurate, time-sensitive, cost-effective imaging reports and interpretations that focus on high quality patient care. Ensuring absolute reliability and high quality for all customers.<br/>
-                Global TeleRadiology is dedicated to providing diagnostic TeleRadiology interpretations with a mission of becoming the radiology industry game changer on accuracy of reporting.</p>
+                <p className="vision2-p"><b>At Global Teleradiology</b> we believe that technology should provide the key to improving Performance.
+                     We are committed to our mission of becoming your go-to-partner
+                     for a Accurate, Time- Sensitive and Cost Effective imaging reports 
+                     and interpretations. Our focus is always on best patient care. We ensure 
+                     absolute reliability and high quality of our diagnostic reports.<br/><br/>
+                     Global TeleRadiology is dedicated to providing diagnostic TeleRadiology interpretations
+                      with a mission of becoming the radiology industry game changer on accuracy of reporting.</p>
             </div>
     );
 }

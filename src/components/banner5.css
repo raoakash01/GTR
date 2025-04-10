@@ -1,0 +1,30 @@
+.banner5-bg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
+    padding: 0rem 5rem;
+    text-align: center;
+}
+
+.banner5-text{
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.banner5-bg-line{
+    height: 2rem;
+    background-image: linear-gradient(to right, #052444 40%, #16A04B, #052444);
+}
+
+@media screen and (max-width: 480px){
+    .banner5-bg{
+        padding: 0rem 1rem;
+    }
+    .banner5-text{
+        font-size: 1rem;
+    }
+}

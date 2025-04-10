@@ -1,18 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./advisory.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import algills from "../assets/Al-Gillis.jpg";
-import vijai from "../assets/vijai.jpg";
-import namita from "../assets/namita.jpg";
-import Irshad from "../assets/IrshadGTR.jpg";
-import Mash from "../assets/MashGTR.jpg";
-import Ruchi from "../assets/RuchiGTR.jpg";
-import Sadique from "../assets/SadiqueGTR.jpg";
+import algills from "../assets/AI-Gillis.png";
+import vijai from "../assets/vijai.png";
+import namita from "../assets/namita.png";
+import Irshad from "../assets/IrshadGTR.png";
+import Mash from "../assets/MashGTR.png";
+import Ruchi from "../assets/RuchiGTR.png";
+import Sadique from "../assets/SadiqueGTR.png";
 import Manager2 from "../assets/manger2.png";
 import Manager3 from "../assets/manger3.png";
 import Bd3 from "../assets/bd3.png";
-
+import Ankur from "../assets/Ankur.png";
+import Sumeet from "../assets/sumeet.png";
+import Kavita from "../assets/kavita.png";
 const advisoryMembers = [
     {
         name: "Al Gillis",
@@ -140,7 +140,8 @@ function Advisory() {
 
     return (
         <div className="advisory">
-            <div ref={headerRef} className="advisory-header">
+            
+            {/* <div ref={headerRef} className="advisory-header">
                 <div className="advisory-header-right">
                     <h2 className="advisory-header-title">
                         Board<br /> of Advisory
@@ -151,9 +152,100 @@ function Advisory() {
                     Our Board of Advisors, top global healthcare leaders, uphold Global TeleRadiology’s excellence.
                     </p>
                 </div>
+            </div> */}
+            <div className="advisory-tittle">
+                <h1 className="advisory-tittle-text">ADVISORY BOARD</h1>
             </div>
             <div className="advisory-body">
-                <div className="advisory-members">
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={algills}/>
+                        <h1 className="advisory-member-name">Dr. Algills</h1>
+                        <h1 className="advisory-member-name">Former Director</h1>
+                        <p className="advisory-member-title">Harvard Medical International, USA / Partner Group</p>
+                </div>
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={vijai}/>
+                        <h1 className="advisory-member-name">Dr. D. S. Rana</h1>
+                        <h1 className="advisory-member-name">Chairman</h1>
+                        <p className="advisory-member-title">Sir Ganga Ram Hospital, India</p>
+                </div>
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={Bd3}/>
+                        <h1 className="advisory-member-name">DR. Vijai Kumar</h1>
+                        <h1 className="advisory-member-name">President</h1>
+                        <p className="advisory-member-title">Excel Life Sciences, USA</p>
+                </div>
+                </div>
+                <div className="advisory-tittle">
+                <h1 className="advisory-tittle-text">QUALITY PANEL</h1>
+            </div>
+            <div className="advisory-body">
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={Ankur}/>
+                        <h1 className="advisory-member-name">Dr. Ankur Gadodia</h1>
+                        <h1 className="advisory-member-name">Radiology Head</h1>
+                        <p className="advisory-member-title">(MBBS, MD, AIMS, DNB,FRCR [UK])<br/>
+                        20 years’ experience</p>
+                </div>
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={Sumeet}/>
+                        <h1 className="advisory-member-name">Dr. Sumeet Bhargava</h1>
+                        <h1 className="advisory-member-name">Quality Director</h1>
+                        <p className="advisory-member-title">(MBBS, DNB, FCGP, FICR, FIAMS, FIMSA, FRCR)<br/>
+20 years’ experience
+</p>
+                </div>
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={Kavita}/>
+                        <h1 className="advisory-member-name">Dr. Kavita Mittal</h1>
+                        <h1 className="advisory-member-name">Quality Director</h1>
+                        <p className="advisory-member-title">(MBBS, MD)<br/>
+                        10 years’ experience</p>
+                </div>
+                </div>
+                <div className="advisory-tittle">
+                <h1 className="advisory-tittle-text">MANAGEMENT TEAM</h1>
+            </div>
+            <div className="advisory-body">
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={namita}/>
+                        <h1 className="advisory-member-name">Namita Chowdhary</h1>
+                        <h1 className="advisory-member-name">Managing Director</h1>
+                        <p className="advisory-member-title">Strategy and Management Expert</p>
+                </div>
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={Manager2}/>
+                        <h1 className="advisory-member-name">Ritti Jarg</h1>
+                        <h1 className="advisory-member-name">Executive Director</h1>
+                        <p className="advisory-member-title">Operation and Process Specialist</p>
+                </div>
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={Manager3}/>
+                        <h1 className="advisory-member-name">Vishal Chowdhary</h1>
+                        <h1 className="advisory-member-name">Executive Director</h1>
+                        <p className="advisory-member-title">Healthcare And Management 
+                        Professional</p>
+                </div>
+                </div>
+                {/* <div className="advisory-members">
                     <button className="nav-button left" onClick={handlePrevMember}>
                         <FontAwesomeIcon icon={faArrowLeft} />
                     </button>
@@ -184,9 +276,9 @@ function Advisory() {
                     <button className="nav-button right" onClick={handleNextMember}>
                         <FontAwesomeIcon icon={faArrowRight} />
                     </button>
-                </div>
-            </div>
-            <div ref={teamRef} className="know_our_team extra-top-1">
+                </div> */}
+            
+            {/* <div ref={teamRef} className="know_our_team extra-top-1">
                 <div className="advisory-header-right">
                     <h2 className="team-header-title">YOUR SUBTITLE GOES HERE</h2>
                     <h2 className="team-heading">MEET OUR TEAM</h2>
@@ -228,7 +320,7 @@ function Advisory() {
                         <FontAwesomeIcon icon={faArrowRight} />
                     </button>
                 </div>
-            </div>
+            </div> */}
             <div className="team">
                 <div className="team-members">
                     <div className="member-card">

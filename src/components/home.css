@@ -116,8 +116,19 @@
     flex-wrap: wrap;
 }
 
+.red-text-bg{
+    background-color: #FA0A0A;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.336);
+}
+
+.red-text-h1{
+    font-size: 1.5rem;
+}
+
 .home-content-2-left {
-    display: flex;
     padding-top: 5rem;
     padding-left: 3rem;
 }
@@ -148,14 +159,14 @@
 /* Email Input */
 .email-input {
     background-color: white;
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 20rem;
     height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0rem;
-    margin-left: -0.5rem;
+    margin-left: -0rem;
 }
 
 /* Responsive Email Input */
@@ -168,11 +179,11 @@
 
 .get-started {
     background-image: linear-gradient(to right, #052444 40%, #16A04B);
-    border-radius: 2rem;
-    width: 33%;
+    border-radius: 1rem;
+    width: 45%;
     height: 100%;
     color: white;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     display: flex;
     justify-content: center;

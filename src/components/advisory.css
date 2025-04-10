@@ -5,6 +5,20 @@
     background-color: white;
 }
 
+.advisory-tittle{
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
+    color: white;
+    width: 30%;
+    padding: 0.8rem 1rem;
+    text-align: center;
+}
+
+.advisory-tittle-text{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: auto;
+}
 .advisory-header {
     display: flex;
     justify-content: space-between;
@@ -91,7 +105,7 @@
 
 .advisory-body{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     padding: 5rem;
     padding-right: 0rem;
@@ -104,19 +118,18 @@
 }
 
 .advisory-member-image{
-    width: 25rem;
+    width: 28rem;
     height: 30rem;
-    background-color: #7c8996;
-    border-radius: 2rem;
+    background-color: #EEEEEE;
+    /* border-radius: 2rem; */
     border: 0.3rem solid #052444;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .advisory-member{
-    display: flex;
-    justify-content: space-between;
+    background-color: #EEEEEE;
     text-align: center;
-    width: 80%;
+    width: 25%;
 }
 
 .advisory-member-content{
@@ -128,17 +141,19 @@
     width: 90%;
 }
 .advisory-member-name{
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: 600;
-    margin-bottom: -1rem;
+    margin: 0;
     text-transform: capitalize;
     color: #052444;
 }
 
 .advisory-member-title{
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 400;
     color: #0C2752;
+    margin: 0;
+    padding: 0rem 1rem;
 }
 
 .linkedin-icon{
@@ -290,7 +305,7 @@
 .member-card {
     width: 15rem;
     height: 22rem;
-    background-color: #0C2752;
+    background-color: #EEEEEE;
     border-radius: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 2rem;
@@ -311,18 +326,19 @@
 }
 
 .name-team {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
-    color: #ffffff;
-    font-weight: 400;
-    text-shadow: 1px 1px 1px #0000007c, 2px 2px 1px #00000069, 3px 3px 1px #00000093;
+    color: #052444;
+    font-weight: 600;
+    margin: 0;
+    
 }
 
 .role-team {
-    margin-top: -0.8rem;
-    font-size: 0.8rem;
-    font-weight: 200;
-    color: #ffffff;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #052444;
 }
 
 /* Ensure images don't overflow */
@@ -441,5 +457,14 @@
     .managing-director-text{
         font-size: 1rem;
         font-weight: 300;
+    }
+    .advisory-tittle{
+        padding:0.8rem 1.5rem;
+    }
+    .advisory-tittle-text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: auto;
     }
 }

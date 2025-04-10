@@ -4,36 +4,36 @@ import arrow from "../assets/down-arrow.png";
 import { gsap } from "gsap";
 
 function Home() {
-    const textRef = useRef(null);
-    const textRef2 = useRef(null);
+    // const textRef = useRef(null);
+    // const textRef2 = useRef(null);
 
-    useEffect(() => {
-        const animation1 = gsap.timeline({ repeat: -1 });
-        const animation2 = gsap.timeline({ repeat: -1 });
+    // useEffect(() => {
+    //     const animation1 = gsap.timeline({ repeat: -1 });
+    //     const animation2 = gsap.timeline({ repeat: -1 });
 
-        const updateAnimation = () => {
-            const distance1 = textRef.current.offsetWidth;
-            const distance2 = textRef2.current.offsetWidth;
+    //     const updateAnimation = () => {
+    //         const distance1 = textRef.current.offsetWidth;
+    //         const distance2 = textRef2.current.offsetWidth;
 
-            animation1.to(
-                textRef.current,
-                { x: `-${distance1}px`, duration: 10, ease: "linear", onComplete: () => animation1.restart() }
-            );
+    //         animation1.to(
+    //             textRef.current,
+    //             { x: `-${distance1}px`, duration: 10, ease: "linear", onComplete: () => animation1.restart() }
+    //         );
 
-            animation2.to(
-                textRef2.current,
-                { x: `-${distance2}px`, duration: 10, ease: "linear", onComplete: () => animation2.restart() }
-            );
-        };
+    //         animation2.to(
+    //             textRef2.current,
+    //             { x: `-${distance2}px`, duration: 10, ease: "linear", onComplete: () => animation2.restart() }
+    //         );
+    //     };
 
-        updateAnimation();
-        window.addEventListener('resize', updateAnimation);
-        return () => {
-            animation1.kill();
-            animation2.kill();
-            window.removeEventListener('resize', updateAnimation);
-        };
-    }, []);
+    //     updateAnimation();
+    //     window.addEventListener('resize', updateAnimation);
+    //     return () => {
+    //         animation1.kill();
+    //         animation2.kill();
+    //         window.removeEventListener('resize', updateAnimation);
+    //     };
+    // }, []);
 
     return (
         <div className="home">
@@ -48,22 +48,24 @@ function Home() {
             </div>
             <div className="home-content-2">
                 <div className="home-content-2-left">
-                <div className="arrow">
+                    <div className="red-text-bg">
+                        <h1 className="red-text-h1">
+                        We Help Reduce Your Radiology Cost upto 50% 
+                        </h1>
+                    </div>
+                {/* <div className="arrow">
                     <img src={arrow} alt="arrow" className="arrow-icon" />
-                </div>
+                </div> */}
                 <div className="home-content-2-text">
                     <div className="content-2-text">
-                        <p>
-                        Reduce Your Radiology Cost upto
-                            <br /> 50% Register For Free Trial
-                        </p>
+                        
                         <div className="email-input">
                             <input
                                 type="email"
                                 placeholder="Enter your email"
                                 className="email-home"
                             />
-                            <button className="get-started">Get Started</button>
+                            <button className="get-started">For Free Trial</button>
                         </div>
                     </div>
                 </div>
@@ -73,7 +75,7 @@ function Home() {
                     <button className="download-brochure">Download Brochure</button>
                     </div>
             </div>
-            <div className="home-content-3">
+            {/* <div className="home-content-3">
                 <div className="home-content-3-box" style={{ overflow: "hidden" }}>
                     <p ref={textRef} className="home-content-3-text" style={{ whiteSpace: "nowrap" }}>
                     &nbsp;&nbsp;10+ Years of Experience&nbsp;&nbsp; - &nbsp;&nbsp;4 Million Reports&nbsp;&nbsp; - &nbsp;&nbsp;10 Million Images Read&nbsp;&nbsp; - &nbsp;&nbsp;99.9 Industry Best Quality&nbsp;&nbsp; - &nbsp;&nbsp;100% Happy Customers&nbsp;&nbsp;
@@ -82,7 +84,7 @@ function Home() {
                     &nbsp;&nbsp; 10+ Years of Experience&nbsp;&nbsp; - &nbsp;&nbsp;4 Million Reports&nbsp;&nbsp; - &nbsp;&nbsp;10 Million Images Read&nbsp;&nbsp; - &nbsp;&nbsp;99.9 Industry Best Quality&nbsp;&nbsp; - &nbsp;&nbsp;100% Happy Customers&nbsp;&nbsp;
                     </p>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

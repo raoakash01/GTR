@@ -9,9 +9,51 @@ import p5 from "../assets/picon5.png";
 function WhyGtr2() {
     return (
         <div className="whygtr2-container">
-            <h1 className="whygtr2-heading">WHY GLOBAL TELERADIOLOGY</h1>
+            <h1 className="whygtr2-heading">GOBAL TELERADIOLOGY</h1>
             <div className="half-underline"></div>
-<div className="whygtr2-grid">
+
+        <div className="gtr2-content">
+            <div className="gtr2-left">
+                <div className="gtr2-grid">
+                    <div className="gtr2-grid-item ">
+                        <img src={p1} alt="p1" className="gtr2-grid-img" />
+                        <h1 className="gtr2-grid-text">Service Quality & TAT</h1>
+                    </div>
+                    <div className="gtr2-grid-item ">
+                        <img src={p4} alt="p1" className="gtr2-grid-img" />
+                        <h1 className="gtr2-grid-text">Radiology Team</h1>
+                    </div>
+                    <div className="gtr2-grid-item ">
+                        <img src={p2} alt="p1" className="gtr2-grid-img" />
+                        <h1 className="gtr2-grid-text">Quality Control</h1>
+                    </div>
+                    <div className="gtr2-grid-item ">
+                        <img src={p3} alt="p1" className="gtr2-grid-img" />
+                        <h1 className="gtr2-grid-text">Reporting Pacs</h1>
+                    </div>
+                    <div className="gtr2-grid-item ">
+                        <img src={p5} alt="p1" className="gtr2-grid-img" />
+                        <h1 className="gtr2-grid-text">Customer Relations</h1>
+                    </div>
+                </div>
+            </div>
+            <div className="gtr2-right">
+                <div className="gtr2-right-box">
+                    <ul className="whygtr2-list">
+                        <li className="whygtr2-list-item"><span className="disc"></span>Industry Best Radiologists</li>
+                        <li className="whygtr2-list-item"><span className="disc"></span>Experienced in Remote Reporting</li>
+                        <li className="whygtr2-list-item"><span className="disc"></span>Subspeciality Experts</li>
+                        <li className="whygtr2-list-item"><span className="disc"></span>Stringent Selection & Screening Process</li>
+                        <li className="whygtr2-list-item"><span className="disc"></span>Competent In Handling Client Concerns And Reviews</li>
+                        <li className="whygtr2-list-item"><span className="disc"></span>Industry Best Quality</li>
+                        <li className="whygtr2-list-item"><span className="disc"></span>Quicker TAT</li>
+                        <li className="whygtr2-list-item"><span className="disc"></span>365 Days Coverage</li>
+                        <li className="whygtr2-list-item"><span className="disc"></span>Over a decade of reporting experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+{/* <div className="whygtr2-grid">
     <div className="whygtr2-left">
     <div className="whygtr2-box">
         <div style={{display:"flex", alignItems:"center"}}>
@@ -89,7 +131,7 @@ function WhyGtr2() {
         </ul>
     </div>
     </div>
-</div>
+</div> */}
 
         </div>
     );

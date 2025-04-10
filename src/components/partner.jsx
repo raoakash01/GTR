@@ -10,7 +10,7 @@ function Partner() {
             <h1 className="partner-h">PARTNER WITH US</h1>
             <div className="partner-line"></div>
             <div className="text-and-button">
-                <p className="partner-p">For seamless, technology-driven radiology solutions that elevate patient care and diagnostic precision. 🚀</p>
+                <p className="partner-p">For seamless, technology-driven radiology solutions that elevate patient care and diagnostic precision. </p>
                 <button className="partner-button" onClick={() => window.location.href = '#contact'}>Contact Us</button>
             </div>
             <div className="partner-top-line"></div>
@@ -21,7 +21,7 @@ function Partner() {
                     </div>
                     <div className="text-partner">
                         <div className="text-partner-H">
-                            <h1 className="text-partner-H1">Imaging Centers and  Individual Radiologists</h1>
+                            <h1 className="text-partner-H1">Imaging Centers and  Radiology Companies</h1>
                         </div>
                         <div className="text-partner-P">
                             <p className="text-partner-P1">We offer expert teleradiology services for Individual Radiology and Imaging Centers, ensuring accurate, timely, and reliable diagnostic reporting.</p>

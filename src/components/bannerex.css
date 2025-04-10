@@ -2,7 +2,7 @@
 .bannerex {
     background-color: #ffffff;
     color: #2c3e50;
-    padding: 4rem;
+    padding: 0rem 4rem;
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
@@ -13,20 +13,22 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    width: 88%;
+    /* padding: 2rem; */
+    width: 100%;
     background-color: #fff;
-    border-radius: 1rem;
+    /* border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
     margin-bottom: 0;
 }
 
 .bannerex-text {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 500;
+    color: #052444;
+    margin: 0;
 }
-
+/* 
 .b-border-left,
 .b-border-right,
 .b-border-top,
@@ -64,7 +66,7 @@
     bottom: 0;
     right: 50%;
     left: 0;
-}
+} */
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {

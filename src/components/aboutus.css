@@ -3,31 +3,64 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: white;
-    padding-top: 2rem;
+    padding: 2rem 4rem;
+}
+
+.about-us-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.about-us-line{
+    width: 10rem;
+    height: 0.3rem;
+    background-color: #048B38;
+    margin: 0;
 }
 
 .videosize{
     width: 100%;
     height: 100%;
 }
-
 .about-us-1 {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     padding-bottom: 3rem;
+    padding-left: 4rem;
 }
 
-.about-us-video {
+
+.v-text-box{
+    position: absolute;
+    height: 2.5rem;
+    width: 13rem;
+    background-image: linear-gradient(to right, #052444 20%, #16A04B);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    z-index: 10;
+    margin-top: 5rem;
+    margin-left: -3rem;
+}
+
+.v-text{
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+
+.about-us-video {
     justify-content: center;
     align-items: center;
     width: 40%;
-    margin-top: 0rem;
+    margin: auto;
 }
 
 .video-about {
@@ -38,20 +71,20 @@
     border-bottom-right-radius: 0;
     background-color: #052444;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 0;
 }
 
 .about-us-text {
-    width: 60%;
+    width: 70%;
 }
 
 .text-section {
     width: 85%;
     height: auto;
-    background-color: #0c275211;
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* background-color: #0c275211; */
+    /* border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     padding: 2rem 3rem;
-
 }
 
 .text-title {

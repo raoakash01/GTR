@@ -17,6 +17,9 @@ import Partner from './components/partner';
 import Vision2 from './components/vision2';
 import Gtr from './components/gtr';
 import Accuracy from './components/accuracy';
+import Banner5 from "./components/banner5";
+import Banner6 from './components/banner6';
+import Bline from './components/bline';
 
 function Homepage() {
   return (
@@ -25,19 +28,23 @@ function Homepage() {
       <div><Navbar /></div>
       <div id="home"><Home /></div>
       <div id="about"><AboutUs /></div>
+      <div ><Banner5/></div>
       <div id="whygtr"><WhyGtr2 /></div>
       <div id='banner2'><Banner3 /></div>
       <div id="vision"><Vision2 /></div>
       <div id='modalities' ><Modalities/></div>
       <div id="spservices"><Spservices /></div>
       <div id="qa"><Gtr/></div>
+      <div ><Banner6/></div>
       <div id='accuracy'> <Accuracy/></div>
-      <div id="banner3"><Banner2 /></div>
-      <div id="overview"><Overview /></div>
+      {/* <div id="banner3"><Banner2 /></div> */}
+      {/* <div id="overview"><Overview /></div> */}
       <div id="partner"><Partner/></div>
       <div id="advisory"><Advisory /></div>
       <div id="faq"><Faq /></div>
+      <div><Bline/></div>
       <div id="join"><GetStarted /></div>
+      <div><Bline/></div>
       <div id="banner4"><Banner4 /></div>
       <div id="contact"><Footer /></div>
     </>

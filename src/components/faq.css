@@ -67,7 +67,7 @@
 .faq-left-bottom{
     width: 50%;
     background-color: #fff;
-    border: 0.2rem solid;
+    border: 0.5rem solid;
     border-image: linear-gradient(to top left, #052444 20%, #16A04B);
     border-image-slice: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

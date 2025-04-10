@@ -4,19 +4,17 @@ import './spservices.css'
 function Spservices() {
     return (
         <div className="spservices">
-            <h1 className="spservices-h">OUR SPECIALIZED SERVICES</h1>
+            <h1 className="spservices-h">SPECIALIZED SERVICES</h1>
             <div className="half-underline-sp"></div>
-            <p className="spservices-p">Throughout the year we are
-                 dedicated to meeting your needs and customize
-                  solutions accordingly. We also provide high-quality,
-                accurate preliminary reads across the globe.
-             Our complete teleradiology coverage provides
-             staffing flexibility and saves money by converting
-             fixed professional costs into variable costs and accurate
-             reporting for best patient care.</p>
-            <p className="spservices-p">We provide a variety of
-                 reports and reading options to meet your
-                  daytime daytime coverage requirements including:</p>
+            <p className="spservices-p">Throughout the year we are 
+                dedicated to meeting your needs and customize the 
+                solutions accordingly. We also provide high-quality, 
+                accurate preliminary reads across the globe. Our complete 
+                teleradiology coverage provides staffing flexibility and 
+                saves money by converting fixed professional costs into variable costs. </p>
+            <p className="spservices-p">We provide a variety of reports and 
+                reading options to meet your everyday coverage requirements 
+                including:</p>
             <div className="spservices-grid">
                 <div className="spservices-grid-left">
                     <div className="spservices-grid-item">

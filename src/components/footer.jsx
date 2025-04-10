@@ -36,11 +36,11 @@ function Footer(){
                     Golf Course Ext. Road, Sector 58,<br/>Gurgaon (Delhi NCR) - 122001, India<br/><br/><br/>
                     Phone:+ 91 9319380444 / +91 9873613370 <br/><br/>
                     Email: info@global-teleradiology.com</p>
-                    <div className='footer-social-icon'>
+                    {/* <div className='footer-social-icon'>
                         <a href="https://www.linkedin.com/company/global-teleradiology/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon className='social-icon' icon={faLinkedin} style={{color: "#ffffff", marginRight: "1.1rem"}} />
                         </a>
-                    </div>
+                    </div> */}
                 </div>
                 <div className='footer-lower-21'>
                 <div className='footer-lower-2'>

@@ -39,7 +39,7 @@ function Navbar() {
                         </div>
                     </li>
                     <li><a href="#spservices" onClick={toggleMenu}>Services</a></li>
-                    <li><a href="#qa" onClick={toggleMenu}>Quality Control</a></li>
+                    <li><a href="#qa" onClick={toggleMenu}>Accuracy For Cure</a></li>
                     {window.location.pathname !== "/career" ? (
                         <li><Link to="/career" onClick={toggleMenu}>Career</Link></li>
                     ) : (

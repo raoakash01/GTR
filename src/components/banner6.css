@@ -1,0 +1,25 @@
+.banner6-bg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
+    padding: 0rem 5rem;
+    text-align: center;
+}
+
+.banner6-text{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .banner6-bg{
+        padding: 0rem 1rem;
+    }
+    .banner6-text{
+        font-size: 1.5rem;
+    }
+}

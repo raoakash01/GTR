@@ -19,20 +19,19 @@ function Banner3() {
         if (entries[0].isIntersecting) {
           let stepAccuracy = 99.9 / steps;
           let stepRate = 100 / steps;
-          let stepRead = 1; // Increase by 5 per step
-          let stepyear = 1;
-          let imgread=1;
+          let stepRead = 0.2; // Increase by 5 per step
+          let stepYear = 1;
+          let stepImgRead = 1;
 
           let currentStep = 0;
           const timer = setInterval(() => {
             currentStep++;
 
-            setAccuracy((prev) => Math.min(prev + stepAccuracy, 99.9));
-            setRate((prev) => Math.min(prev + stepRate, 100));
-            setRead((prev) => Math.min(prev + stepRead, 4));
-            setYears((prev) => Math.min(prev + stepyear, 10));
-            setImgread((prev) => Math.min(prev + imgread, 10));
-
+            setAccuracy((prev) => Math.min(parseFloat((prev + stepAccuracy).toFixed(2)), 99.9));
+            setRate((prev) => Math.min(parseFloat((prev + stepRate).toFixed(2)), 100));
+            setRead((prev) => Math.min(parseFloat((prev + stepRead).toFixed(2)), 1.2));
+            setYears((prev) => Math.min(parseFloat((prev + stepYear).toFixed(2)), 10));
+            setImgread((prev) => Math.min(parseFloat((prev + stepImgRead).toFixed(2)), 10));
 
             if (currentStep >= steps) {
               clearInterval(timer);
@@ -67,8 +66,8 @@ function Banner3() {
         </div>
         <div className="icon-container">
           <div className="numbers">
-            <h1 className="icon-numbers">{imgread}</h1>
-            <p className="number-text">Million Images Read</p>
+            <h1 className="icon-numbers">0%</h1>
+            <p className="number-text">TAT Deviation</p>
           </div>
         </div>
         <div className="icon-container">
