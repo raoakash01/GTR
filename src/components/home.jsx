@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./home.css";
-import arrow from "../assets/down-arrow.png";
-import { gsap } from "gsap";
+import Whatsapp from "../assets/Whatsapp.png";
 
 function Home() {
     // const textRef = useRef(null);
@@ -58,7 +57,6 @@ function Home() {
                 </div> */}
                 <div className="home-content-2-text">
                     <div className="content-2-text">
-                        
                         <div className="email-input">
                             <input
                                 type="email"
@@ -67,11 +65,13 @@ function Home() {
                             />
                             <button className="get-started">For Free Trial</button>
                         </div>
+                        <div className="whatsapp-icon">
+                            <img src={Whatsapp} alt="whatsapp" className="whatsapp-icon" />
+                        </div>
                     </div>
                 </div>
                 </div>
                 <div className="home-content-2-right">
-                <button className="download-brochure">Whatsapp</button>
                     <button className="download-brochure">Download Brochure</button>
                     </div>
             </div>

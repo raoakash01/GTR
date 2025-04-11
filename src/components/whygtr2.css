@@ -26,7 +26,7 @@
     padding: 2rem;
 }
 
-.gtr2-grid-item{
+.gtr2-grid-item {
     background-color: #F0F0F0;
     color: #0C2752;
     padding: 0.5rem;
@@ -40,7 +40,7 @@
     transition: transform 0.3s ease, box-shadow 0.6s ease, width 0.3s ease;
 }
 
-.gtr2-grid-item:hover{
+.gtr2-grid-item.active {
     background-image: linear-gradient(to right, #052444 60%, #16A04B);
     color: white;
 }
