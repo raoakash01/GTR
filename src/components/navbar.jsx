@@ -34,8 +34,8 @@ function Navbar() {
                             <a href="#whygtr" onClick={toggleMenu}>Why GTR</a>
                             <a href="#vision" onClick={toggleMenu}>Vision Mission</a>
                             <a href="#advisory" onClick={toggleMenu}>Advisory Board</a>
-                            <a href="#management" onClick={toggleMenu}>Management Team</a>
-                            <a href="#accuracy" onClick={toggleMenu}>Quality Pannel</a>
+                            <a href="#management-team" onClick={toggleMenu}>Management Team</a>
+                            <a href="#quality-panel" onClick={toggleMenu}>Quality Panel</a>
                         </div>
                     </li>
                     <li><a href="#spservices" onClick={toggleMenu}>Services</a></li>

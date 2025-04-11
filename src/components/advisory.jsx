@@ -182,7 +182,7 @@ function Advisory() {
                         <p className="advisory-member-title">Excel Life Sciences, USA</p>
                 </div>
                 </div>
-                <div className="advisory-tittle">
+                <div className="advisory-tittle" id="quality-panel">
                 <h1 className="advisory-tittle-text">QUALITY PANEL</h1>
             </div>
             <div className="advisory-body">
@@ -215,7 +215,7 @@ function Advisory() {
                         10 years’ experience</p>
                 </div>
                 </div>
-                <div className="advisory-tittle">
+                <div className="advisory-tittle" id="management-team">
                 <h1 className="advisory-tittle-text">MANAGEMENT TEAM</h1>
             </div>
             <div className="advisory-body">
