@@ -62,7 +62,12 @@ function GetStarted() {
                     <form className="getstarted-form">
                     <div className="getstarted-form-container">
                     <div className="getstarted-form-inputs">
-                        <input type="text" id="Role" name="role" placeholder="I am a Radiologist" />
+                        <select className="getstarted-select" id="Role" name="role">
+                            <option value="" disabled selected>I am a...</option>
+                            <option value="Radiologist">Radiologist</option>
+                            <option value="Healthcare Professional">Healthcare Professional</option>
+                            <option value="Demo Customer">Demo Customer</option>
+                        </select>
                     </div>
                     <div className="getstarted-form-inputs">
                         <input type="text" id="name" name="name" placeholder="Your Name" style={{width: 'calc(33.33% - 1rem)'}} />

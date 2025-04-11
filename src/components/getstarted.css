@@ -82,13 +82,14 @@
 
 .contact-box{
     height: 32rem;
-    width: 22rem;
+    width: 27rem;
     border-radius: 1rem;
     background-color: #0C2752;
     color: white;
     padding-top: 1.5rem;
     padding-right: 1rem;
     padding-left: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .contact-h{
@@ -142,6 +143,8 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+
 
 /* Social Icons */
 .getstarted-social-container {
@@ -205,7 +208,7 @@
     margin-bottom: 2rem;
 }
 
-.getstarted-form-inputs input {
+.getstarted-form-inputs input{
     flex: 1;
     min-width: 250px;
     padding: 0.75rem;
@@ -218,6 +221,42 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s ease-in-out;
 }
+
+.getstarted-select{
+    flex: 1;
+    min-width: 250px;
+    padding: 0.75rem;
+    padding-bottom: 1rem;
+    border: none;
+    border-bottom: 2px solid #33333336;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+    color: #333;
+    font-weight: 500;
+}
+
+.getstarted-select option::placeholder{
+    color: #333;
+    font-weight: 500;
+}
+
+.getstarted-select option{
+    padding: 0.75rem;
+    padding-bottom: 1rem;
+    border: none;
+    border-bottom: 2px solid #33333336;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+    color: #333;
+    font-weight: 500;
+}
+
 
 .getstarted-form-inputs input::placeholder {
     color: #333;
