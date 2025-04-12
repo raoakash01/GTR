@@ -15,7 +15,7 @@ function Career() {
             <Home />
             </div>
             <div className="career">
-                <div className="career1">
+                {/* <div className="career1">
                     <h1 className="career1-h">
                     PARTNER WITH GRS - WE SERVE BETTER
                     </h1>
@@ -25,7 +25,7 @@ function Career() {
                     <p className="career1-sh">Join our team of energetic and motivated staff</p>
                     <p className="career1-p">We are always in need of people who can participate in our vision and work with us shoulder to shoulder. If you have any experience in Information Technology, managing operations, doing market research, doing business development or medical transcriptionist, write to us at the below email address to explore the opportunity</p>
                     <p className="career1-p top-2">Write to us at <b>info@global-teleradiology.com</b> for more details.</p>
-                </div>
+                </div> */}
                 <div className="careemid">
                   <h1 className="career1-h">CURRENT OPENING</h1>
                   <div className="career1-line"></div>
