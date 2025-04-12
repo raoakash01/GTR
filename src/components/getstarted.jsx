@@ -48,13 +48,13 @@ function GetStarted() {
                             <a href="https://api.whatsapp.com/send?phone=+919667226960&text=Hi%20I%20am%20interested%20in%20knowing%20more%20about%20Global%20Teleradiology" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="icons-gtr-line-a" icon={faWhatsapp}/>
                             </a>
-                            <a href="https://www.instagram.com/globalteleradiology/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/company/global-teleradiology/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="icons-gtr-line-a" icon={faLinkedin} ></FontAwesomeIcon>
                             </a>
-                            <a href="https://www.linkedin.com/company/global-teleradiology/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/ctscansmrimammogramsxrays" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="icons-gtr-line-a" icon={faFacebook} ></FontAwesomeIcon>
                             </a>
-                            <a href="https://twitter.com/GlobalTelrad" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/global.teleradiology/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="icons-gtr-line-a" icon={faInstagram} ></FontAwesomeIcon>
                             </a>                            
                         </div>
