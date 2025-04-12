@@ -1,10 +1,43 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './footer.css'
+import emailjs from "emailjs-com"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {  faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function Footer(){
+    const form = useRef();
+
+    const [formData, setFormData] = useState({
+        email: ""
+    });
+
+    const handleEmailChange = (e) => {
+        setFormData({ email: e.target.value });
+    };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+            .sendForm(
+                'service_0na5oa3', 
+                'template_kzqf4ls', 
+                form.current, 
+                'k0U8ChESXX4ryjPZZ'
+            )
+            .then(
+                (result) => {
+                    alert("Email sent successfully!");               
+                    console.log(result.text);
+                },
+                (error) => {
+                    alert("Failed to send email.");
+                    console.log(error.text);
+                }
+            );
+
+        setFormData({ email: "" });
+    };
+
     return (
         <>
         <div className="footer">
@@ -15,8 +48,15 @@ function Footer(){
                 </div>
                 <div className='footer-upper-right'>
                     <div className='footer-email'>
-                    <input className='footer-input' placeholder='Enter your email address'></input>
-                    <button className='footer-button'>Subscribe</button>
+                    <form ref={form} className="email-form" onSubmit={sendEmail}>
+                    <input className='footer-input' placeholder='Enter your email address'
+                     type="email"
+                     name="email" 
+                     value={formData.email}
+                    onChange={handleEmailChange}
+                    required></input>
+                    <button type="submit" className='footer-button'>Subscribe</button>
+                    </form>
                     </div>
                 </div>
             </div>

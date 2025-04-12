@@ -24,7 +24,13 @@ function Faq() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, "YOUR_PUBLIC_KEY")
+        emailjs
+        .sendForm(
+            'service_0na5oa3', 
+            'template_kzqf4ls',
+            form.current,
+            'k0U8ChESXX4ryjPZZ'
+          )
             .then(
                 (result) => {
                     alert("Email sent successfully!");
@@ -113,3 +119,5 @@ function Faq() {
 }
 
 export default Faq;
+
+

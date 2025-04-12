@@ -1,8 +1,42 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import "./home.css";
 import Whatsapp from "../assets/Whatsapp.png";
+import emailjs from "emailjs-com"
 
 function Home() {
+    const form = useRef();
+
+    const [formData, setFormData] = useState({
+        email: ""
+    });
+
+    const handleEmailChange = (e) => {
+        setFormData({ email: e.target.value });
+    };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+            .sendForm(
+                'service_0na5oa3', 
+                'template_kzqf4ls', 
+                form.current, 
+                'k0U8ChESXX4ryjPZZ'
+            )
+            .then(
+                (result) => {
+                    alert("Email sent successfully!");                    
+                    console.log(result.text);
+                },
+                (error) => {
+                    alert("Failed to send email.");
+                    console.log(error.text);
+                }
+            );
+
+        setFormData({ email: "" });
+    };
+
     // const textRef = useRef(null);
     // const textRef2 = useRef(null);
 
@@ -58,12 +92,18 @@ function Home() {
                 <div className="home-content-2-text">
                     <div className="content-2-text">
                         <div className="email-input">
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="email-home"
-                            />
-                            <button className="get-started">For Free Trial</button>
+                        <form ref={form} className="email-form" onSubmit={sendEmail}>
+            <input
+                type="email"
+                name="email" 
+                placeholder="Enter your email"
+                className="email-home"
+                value={formData.email}
+                onChange={handleEmailChange}
+                required
+            />
+            <button type="submit" className="get-started">For Free Trial</button>
+        </form>
                         </div>
                         <a className="whatsapp-icon" href="https://api.whatsapp.com/send?phone=+919319380444&text=Hi%20I%20am%20interested%20in%20knowing%20more%20about%20Global%20Teleradiology" target="_blank" rel="noopener noreferrer">
                             <img src={Whatsapp} alt="whatsapp" className="whatsapp-icon" />
@@ -72,8 +112,10 @@ function Home() {
                 </div>
                 </div>
                 <div className="home-content-2-right">
-                    <button className="download-brochure">Download Brochure</button>
-                    </div>
+                    <a href="https://drive.google.com/file/d/1xi_KzsNLUhkHQz2Xr5QujdwtrK3-AQH9/view" target="_blank" rel="noopener noreferrer">
+                        <button className="download-brochure">Download Brochure</button>
+                    </a>
+                </div>
             </div>
             {/* <div className="home-content-3">
                 <div className="home-content-3-box" style={{ overflow: "hidden" }}>

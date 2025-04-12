@@ -36,6 +36,34 @@
     padding-bottom: 2.5rem;
 }
 
+.email-input{
+    padding: 0;
+}
+
+.email-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.get-started{
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
+    border-radius: 1rem;
+    width: 45%;
+    height: 100%;
+    color: white;
+    font-size: 1rem;
+    margin-right: -0.1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
 /* Responsive background and padding */
 @media (max-width: 768px) {
     #home{
@@ -177,6 +205,19 @@
     align-items: center;
     padding: 0 0rem;
     margin-left: -0rem;
+}
+
+.get-started{
+    background-image: linear-gradient(to right, #052444 40%, #16A04B);
+    border-radius: 1rem;
+    width: 45%;
+    height: 100%;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsive Email Input */
