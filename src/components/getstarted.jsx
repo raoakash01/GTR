@@ -65,7 +65,7 @@ function GetStarted() {
                         <select className="getstarted-select" id="Role" name="role">
                             <option value="" disabled selected>I am a...</option>
                             <option value="Radiologist">Radiologist</option>
-                            <option value="Healthcare Professional">Healthcare Professional</option>
+                            <option value="Healthcare Professional">Demo Customer</option>
                             <option value="Demo Customer">Demo Customer</option>
                         </select>
                     </div>
