@@ -65,9 +65,9 @@ function Home() {
                             />
                             <button className="get-started">For Free Trial</button>
                         </div>
-                        <div className="whatsapp-icon">
+                        <a className="whatsapp-icon" href="https://api.whatsapp.com/send?phone=+919319380444&text=Hi%20I%20am%20interested%20in%20knowing%20more%20about%20Global%20Teleradiology" target="_blank" rel="noopener noreferrer">
                             <img src={Whatsapp} alt="whatsapp" className="whatsapp-icon" />
-                        </div>
+                        </a>
                     </div>
                 </div>
                 </div>

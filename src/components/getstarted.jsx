@@ -45,7 +45,7 @@ function GetStarted() {
                         <p className="contact-pp">Assistance hours: Monday - Friday 9 am to 8 pm IST</p>
                         <p className="contact-pp">Contact us with : </p>
                         <div className="icons-gtr-line">
-                            <a href="https://api.whatsapp.com/send?phone=+919667226960&text=Hi%20I%20am%20interested%20in%20knowing%20more%20about%20Global%20Teleradiology" target="_blank" rel="noopener noreferrer">
+                            <a href="https://api.whatsapp.com/send?phone=+919319380444&text=Hi%20I%20am%20interested%20in%20knowing%20more%20about%20Global%20Teleradiology" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="icons-gtr-line-a" icon={faWhatsapp}/>
                             </a>
                             <a href="https://www.linkedin.com/company/global-teleradiology/" target="_blank" rel="noopener noreferrer">
