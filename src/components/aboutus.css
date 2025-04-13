@@ -151,48 +151,67 @@
         font-size: 1rem;
     }
 }
-
-@media (max-width: 768px) {
-    .about-us-video {
+@media (max-width: 480px) {
+    .about-us {
+        padding: 1rem;
+    }
+    .about-us-heading {
+        font-size: 2rem;
+    }
+    .about-us-line {
         width: 90%;
+    }
+    .about-us-1 {
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+    }
+    .about-us-video {
+        width: 100%;
+        height: 15rem;
+        margin-left: -2rem;
         margin-top: 2rem;
-        height: 20rem;
         border-radius: 0.5rem;
     }
     .video-about {
-        height: 20rem;
+        height: 11rem;
     }
     .about-us-text {
-        width: 90%;
+        width: 100%;
+        margin-top: 0rem;
         align-self: center;
+        margin-left: -3.5rem;
     }
     .text-section {
-        padding: 1.5rem;
+        padding: 0rem;
         text-align: left;
     }
     .text-content-1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .text-content-2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
-    .learn-more {
-        width: 9rem;
+    
+    .v-text-box{
+        position: absolute;
         height: 2.5rem;
-        font-size: 0.9rem;
+        width: 10rem;
+        background-image: linear-gradient(to right, #052444 20%, #16A04B);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        z-index: 10;
+        margin-top: 3rem;
+        margin-left: -1rem;
+    }
+
+    .v-text{
+        font-size: 0.8rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        color: white;
     }
 }
 
-@media (max-width: 480px) {
-    .text-content-1 {
-        font-size: 1.3rem;
-    }
-    .text-content-2 {
-        font-size: 1.1rem;
-    }
-    .learn-more {
-        width: 8rem;
-        height: 2rem;
-        font-size: 0.8rem;
-    }
-}

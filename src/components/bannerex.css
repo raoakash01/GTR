@@ -86,17 +86,17 @@
 
 @media (max-width: 768px) {
     .bannerex {
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .bannerex-box {
         width: 100%;
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .bannerex-text {
-        font-size: 1.6rem;
-        text-align: center;
+        font-size: 1.5rem;
+        text-align: left;
     }
 
     /* Adjusting Borders */
@@ -110,7 +110,7 @@
 
 @media (max-width: 480px) {
     .bannerex {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .bannerex-box {

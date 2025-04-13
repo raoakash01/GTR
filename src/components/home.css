@@ -330,6 +330,10 @@
         width: 100%;
         overflow: hidden;
     }
+
+    .download-brochure {
+        margin: 0;
+    }
 }
 
 .home-content-3-text {

@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <nav className="nav">
             <div className="nav-logo">
-            <img src={Serve} alt="Logo" className="nav-logo-img2" />
+            <img src={window.innerWidth < 768 ? Logoimg : Serve} alt="Logo" className="nav-logo-img2" />
             </div>
 
             {/* Hamburger Menu */}
