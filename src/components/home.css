@@ -96,7 +96,6 @@
 /* Main Heading */
 .tag-line-text {
     margin-top: 9rem;
-    margin-left: 5rem;
     font-size: 5rem;
     font-weight: 500;
     text-align: left;
@@ -118,6 +117,7 @@
     .tag-line-text {
         font-size: 3rem;
         margin-top: 5rem;
+        margin-left: -1.6rem;
     }
 }
 
@@ -334,12 +334,32 @@
     .download-brochure {
         margin: 0;
     }
-}
-
-.home-content-3-text {
+    .home-content-3-text {
     flex-wrap: nowrap;
     color: #0C2752;
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
+    }
+    .home-content-2-left {
+        padding-top: 5rem;
+        padding-left: 0.5rem;
+    }
+
+    .red-text-bg{
+        
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+
+    }
+    .red-text-h1{
+        font-size: 1rem;
+        margin: 0%;
+    }
+    .home-content-2-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem 1rem 0;
+    }
 }

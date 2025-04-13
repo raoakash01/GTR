@@ -48,13 +48,6 @@
     transition: transform 0.3s ease, box-shadow 0.6s ease, width 0.3s ease;
 }
 
-.modalities-grid-item:hover {
-    transform: translateY(-0.5rem) scale(1.01);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    width: 40rem;
-    padding: 1.2rem;
-}
-
 .modalities-grid-img {
     width: 4rem;
     height: 3rem;
@@ -67,18 +60,21 @@
 }
 
 /* Responsive Styles */
+@media (min-width: 769px) {
+    .modalities-grid-item:hover {
+        transform: translateY(-0.5rem) scale(1.01);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        width: 40rem;
+        padding: 1.2rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .modalities-heading {
         font-size: 2.5rem;
     }
     .modalities-text {
         font-size: 1.8rem;
-    }
-    .modalities-grid-item {
-        width: 32rem;
-    }
-    .modalities-grid-item:hover {
-        width: 34rem;
     }
 }
 
@@ -90,7 +86,7 @@
         font-size: 1.6rem;
     }
     .modalities-grid-item {
-        width: 23rem;
+        width: 20rem;
         margin: 0rem;
         margin-bottom: 18px;
     }
@@ -101,20 +97,26 @@
         width: 3.5rem;
         height: 2.5rem;
     }
+    .modalities-grid-item:hover {
+        transform: none;
+        box-shadow: none;
+        width: 20rem;
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
-    .modalities-grid-container{
+    .modalities-grid-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
     }
-    .modalities-grid-left{
+    .modalities-grid-left {
         margin: -18px;
         margin-bottom: 18px;
     }
-    .modalities-grid-right{
+    .modalities-grid-right {
         margin: -18px;
     }
     .modalities-heading {
@@ -126,7 +128,6 @@
     .modalities-grid {
         padding: 1rem;
     }
-
     .modalities-grid-text {
         font-size: 1rem;
         margin-top: 0.5rem;
@@ -135,4 +136,16 @@
         width: 3rem;
         height: 2rem;
     }
+    .modalities-grid-item {
+        width: 20rem;
+        margin: 0rem;
+        margin-bottom: 18px;
+    }
+    .modalities-grid-item:hover {
+        transform: none;
+        box-shadow: none;
+        width: 20rem;
+        padding: 1rem;
+    }
 }
+
