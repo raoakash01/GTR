@@ -1,18 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./advisory.css";
-import algills from "../assets/AI-Gillis.png";
+import algills from "../assets/AI-Gillis.webp";
 import vijai from "../assets/vijai.png";
-import namita from "../assets/namita.png";
-import Irshad from "../assets/IrshadGTR.png";
+import namita from "../assets/namita.webp";
+import Irshad from "../assets/IrshadGTR.webp";
 import Mash from "../assets/MashGTR.png";
 import Ruchi from "../assets/RuchiGTR.png";
 import Sadique from "../assets/SadiqueGTR.png";
-import Manager2 from "../assets/manger2.png";
-import Manager3 from "../assets/manger3.png";
-import Bd3 from "../assets/bd3.png";
-import Ankur from "../assets/Ankur.png";
+import Manager2 from "../assets/manger2.webp";
+import Manager3 from "../assets/manger3.webp";
+import Bd3 from "../assets/bd3.webp";
+import Ankur from "../assets/Ankur.webp";
 import Sumeet from "../assets/sumeet.png";
-import Kavita from "../assets/kavita.png";
+import Kavita from "../assets/kavita.webp";
 const advisoryMembers = [
     {
         name: "Al Gillis",

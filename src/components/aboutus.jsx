@@ -17,7 +17,7 @@ function AboutUs() {
                             </p>
                         </div>
                     <div className="video-about">
-                        <video src={videoA} autoPlay loop muted playsInline  className="videosize"/>
+                        <video src={videoA} autoPlay loop muted playsInline loading="lazy"  className="videosize"/>
                     </div>
                 </div>
                 <div className="about-us-text">

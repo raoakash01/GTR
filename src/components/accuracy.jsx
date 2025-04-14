@@ -1,6 +1,6 @@
 import React from "react";
 import "./accuracy.css";
-import WorkFlow from "../assets/workflow.png";
+import WorkFlow from "../assets/workflow.webp";
 
 function Accuracy() {
     return(

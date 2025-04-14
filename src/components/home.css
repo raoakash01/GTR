@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/8.png");
+    background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/8.webp");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -13,19 +13,19 @@
 @media (min-width: 769px) {
     @keyframes changeImage {
         0% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/1.png");
+            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/1.webp");
         }
         25% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/2.png");
+            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/2.webp");
         }
         50% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/bgfornt4.png");
+            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/bgfornt3.webp");
         }
         75% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/bgfornt3.jpg");
+            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/bgfornt4.webp");
         }
         100% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/8.png");
+            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/8.webp");
         }
     }
 }
