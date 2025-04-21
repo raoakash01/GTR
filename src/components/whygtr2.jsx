@@ -36,7 +36,7 @@ function WhyGtr2() {
 
     return (
         <div className="whygtr2-container">
-            <h1 className="whygtr2-heading">GOBAL TELERADIOLOGY</h1>
+            <h1 className="whygtr2-heading">WHY GOBAL TELERADIOLOGY</h1>
             <div className="half-underline"></div>
 
             <div className="gtr2-content">
