@@ -1,6 +1,7 @@
 .gtr-container {
     background-color: #ffffff;
     padding: 3rem;
+    margin-bottom: 1rem;
 }
 
 /* Heading styles */
@@ -32,6 +33,7 @@
     flex-wrap: wrap;
     margin-top: 3rem;
     background-color: #ffffff;
+    margin-bottom: 1rem;
 }
 
 /* Box styles */
