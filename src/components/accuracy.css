@@ -3,7 +3,6 @@
     background-color: #ffffff;
     padding-top: 2rem;
 }
-
 .accuracy-upper {
     position: relative;
     display: flex;
@@ -76,6 +75,7 @@
     font-weight: 300;
     color: #0C2752;
     margin-left: 3rem;
+    flex-wrap: nowrap;
 }
 
 .top-2 {
