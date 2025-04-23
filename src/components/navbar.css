@@ -14,8 +14,8 @@
 }
 
 .nav-logo-img2{
-    width: 13rem;
-    height: 3rem;
+    width: 12rem;
+    height: 2.5rem;
     margin-left: 0.5rem;
 }
 
@@ -26,8 +26,9 @@
     margin-left: -2rem;
 }
 .nav-logo-img{
-    width: 15.5rem;
-    height: 4.2rem;
+    margin-top: 0.5rem;
+    width: 15rem;
+    height: 4rem;
 }
 /* Navigation Menu */
 .nav-menu {
