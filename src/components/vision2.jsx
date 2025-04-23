@@ -6,7 +6,7 @@ function Vision2() {
         <div className="vision2">
             <h1 className="vision2-h">VISION AND MISSION</h1>
             <div className="vision2-line"></div>
-                <p className="vision2-p"><b>At Global Teleradiology</b> we believe that technology should provide the key to improving Performance.
+                <p className="vision2-p"><strong>At Global Teleradiology</strong> we believe that technology should provide the key to improving Performance.
                      We are committed to our mission of becoming your go-to-partner
                      for a Accurate, Time- Sensitive and Cost Effective imaging reports 
                      and interpretations. Our focus is always on best patient care. We ensure 

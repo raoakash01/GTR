@@ -23,11 +23,11 @@ function AboutUs() {
                 <div className="about-us-text">
                     <div className="text-section">
                         <h1 className="text-content-1">
-                        The <b>Health Diagnostics sector</b> has emerged as one of the primary game-changers in the dynamic Global Healthcare Industry. Over the 
-                        last decade, <b>Radiology</b> has witnessed a pervasive technological transformation, significantly benefitting  patient diagnosis
+                        The <strong>Health Diagnostics sector</strong> has emerged as one of the primary game-changers in the dynamic Global Healthcare Industry. Over the 
+                        last decade, <strong>Radiology</strong> has witnessed a pervasive technological transformation, significantly benefitting  patient diagnosis
                         </h1>
                         <p className="text-content-1">
-                        <b>Global Tele-Radiology</b> was born out of our belief and deep commitment to make technology deliver best patient care. The founding 
+                        <strong>Global Tele-Radiology</strong> was born out of our belief and deep commitment to make technology deliver best patient care. The founding 
                         members brought their extensive CXO level healthcare experience and compassion to successfully create a patient & customer centric organization.
                         </p>
                     </div>

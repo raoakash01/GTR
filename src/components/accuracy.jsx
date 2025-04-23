@@ -28,7 +28,7 @@ function Accuracy() {
                     <h1 className="accuracy-p white">Audit by quality head</h1>
                     </div>
                 </div>
-                <p className="accuracy-p top-2"><b>Together all 3 ensure that reports delivered by our Radiologists are of highest Quality</b></p>
+                <p className="accuracy-p top-2"><strong>Together all 3 ensure that reports delivered by our Radiologists are of highest Quality</strong></p>
                 <div className="img-Container-workflow">
                     <img src={WorkFlow} alt="accuracy" className="img-workflow" />
                 </div>
