@@ -10,8 +10,7 @@ function WhyGtr2() {
     const [text, setText] = useState("Service Quality & TAT");
     const [activeId, setActiveId] = useState("1");
 
-    const handleClick = (e) => {
-        const id = e.target.getAttribute("data-id");
+    const handleClick = (id) => {
         setActiveId(id);
         switch (id) {
             case "1":
@@ -34,6 +33,14 @@ function WhyGtr2() {
         }
     };
 
+    const items = [
+        { id: "1", img: p1, label: "Service Quality & TAT" },
+        { id: "4", img: p4, label: "Radiology Team" },
+        { id: "2", img: p2, label: "Quality Control" },
+        { id: "3", img: p3, label: "Reporting Pacs" },
+        { id: "5", img: p5, label: "Customer Relations" },
+    ];
+
     return (
         <div className="whygtr2-container">
             <h1 className="whygtr2-heading">WHY GOBAL TELERADIOLOGY</h1>
@@ -42,16 +49,11 @@ function WhyGtr2() {
             <div className="gtr2-content">
                 <div className="gtr2-left">
                     <div className="gtr2-grid">
-                        {[{ id: "1", img: p1, label: "Service Quality & TAT" },
-                          { id: "4", img: p4, label: "Radiology Team" },
-                          { id: "2", img: p2, label: "Quality Control" },
-                          { id: "3", img: p3, label: "Reporting Pacs" },
-                          { id: "5", img: p5, label: "Customer Relations" }].map(({ id, img, label }) => (
+                        {items.map(({ id, img, label }) => (
                             <div
                                 key={id}
-                                className={`gtr2-grid-item ${activeId === id ? 'active' : ''}`}
-                                data-id={id}
-                                onClick={handleClick}
+                                className={`gtr2-grid-item ${activeId === id ? "active" : ""}`}
+                                onClick={() => handleClick(id)}
                             >
                                 <img src={img} alt={`p${id}`} className="gtr2-grid-img" />
                                 <h1 className="gtr2-grid-text">{label}</h1>
@@ -59,6 +61,7 @@ function WhyGtr2() {
                         ))}
                     </div>
                 </div>
+
                 <div className="gtr2-right">
                     <div className="gtr2-right-box">
                         <ul className="whygtr2-list">
@@ -75,7 +78,7 @@ function WhyGtr2() {
                                     <li className="whygtr2-list-item"><span className="disc"></span>Industry best radiologists</li>
                                     <li className="whygtr2-list-item"><span className="disc"></span>Subspeciality experts</li>
                                     <li className="whygtr2-list-item"><span className="disc"></span>Stringent selection & screening process</li>
-                                    <li className="whygtr2-list-item"><span className="disc"></span>Competent in handling client concerns and reviews</li>                                    
+                                    <li className="whygtr2-list-item"><span className="disc"></span>Competent in handling client concerns and reviews</li>
                                 </>
                             )}
                             {text === "Quality Control" && (
@@ -94,7 +97,7 @@ function WhyGtr2() {
                             {text === "Reporting Pacs" && (
                                 <>
                                     <li className="whygtr2-list-item"><span className="disc"></span>AI enabled world class pacs</li>
-                                    <li className="whygtr2-list-item"><span className="disc"></span>Customer friendly </li>
+                                    <li className="whygtr2-list-item"><span className="disc"></span>Customer friendly</li>
                                     <li className="whygtr2-list-item"><span className="disc"></span>Accessible anytime - anywhere</li>
                                     <li className="whygtr2-list-item"><span className="disc"></span>Secure image transfer & storage</li>
                                     <li className="whygtr2-list-item"><span className="disc"></span>Instant integration & installation</li>
@@ -120,4 +123,3 @@ function WhyGtr2() {
 }
 
 export default WhyGtr2;
-
