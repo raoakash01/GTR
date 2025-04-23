@@ -15,7 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 b{
-  font-weight: bold;
+  font-weight: bold !important;
+}
+strong{
+  font-weight: bold !important;
 }
 
 body {
