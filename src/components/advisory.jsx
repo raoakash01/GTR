@@ -321,7 +321,38 @@ function Advisory() {
                     </button>
                 </div>
             </div> */}
-            <div className="team">
+            <div className="advisory-body slide">
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={Mash}/>
+                        <h1 className="advisory-member-name">Mahesh Malhotra</h1>
+                        <p className="advisory-member-title">Vice President, Head <br />
+                        Sales & Marketing</p>
+                </div>
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={Ruchi}/>
+                        <h1 className="advisory-member-name">Ruchi Sharma</h1>
+                        <p className="advisory-member-title">Head – Customer Relations</p>
+                </div>
+                <div className="advisory-member">
+                    <img
+                        className="advisory-member-image"
+                        src={Irshad}/>
+                        <h1 className="advisory-member-name">Irshad Ahmad</h1>
+                        <p className="advisory-member-title">Head – Customer Relations</p>
+                </div>
+                <div className="advisory-member noRightMargin">
+                    <img
+                        className="advisory-member-image"
+                        src={Sadique}/>
+                        <h1 className="advisory-member-name">Sadique Khan</h1>
+                        <p className="advisory-member-title">Head – Customer Relations</p>
+                </div>
+                </div>
+            {/* <div className="team">
                 <div className="team-members">
                     <div className="member-card">
                         <img className="img-team" src={Mash} alt="Mahesh Malhotra"></img>
@@ -355,7 +386,7 @@ function Advisory() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

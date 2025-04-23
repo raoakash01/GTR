@@ -63,6 +63,21 @@
     animation: border-bottom-animation 1.5s ease-in-out forwards;
 }
 
+
+.advisory-body::-webkit-scrollbar {
+    height: 0.5rem;
+}
+
+.advisory-body::-webkit-scrollbar-thumb {
+    background-color: #052444;
+    border-radius: 1rem;
+}
+
+.advisory-member {
+    min-width: 20rem;
+    margin-right: 4rem;
+}
+
 @keyframes border-top-animation {
     0% {
         width: 0;
@@ -343,9 +358,25 @@
 
 /* Ensure images don't overflow */
 .advisory-member-image, .img-team {
-    max-width: 100%;
+    max-width: 97%;
     object-fit: cover;
 }
+@media (min-width: 769px) {
+    
+.slide {
+    display: flex;
+    overflow-x: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    scrollbar-width: thin;
+    scrollbar-color: #052444 white;
+}
+
+.noRightMargin {
+    margin-right: 0;
+}
+}
+
 
 
 @media (max-width: 768px) {
