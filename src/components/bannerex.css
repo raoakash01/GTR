@@ -87,6 +87,7 @@
 @media (max-width: 768px) {
     .bannerex {
         padding: 1rem;
+        padding-top: 0rem;
     }
 
     .bannerex-box {
@@ -97,6 +98,7 @@
     .bannerex-text {
         font-size: 1.5rem;
         text-align: left;
+        margin-top: 0rem;
     }
 
     /* Adjusting Borders */
@@ -111,15 +113,17 @@
 @media (max-width: 480px) {
     .bannerex {
         padding: 1rem;
+        padding-top: 0rem;
     }
 
     .bannerex-box {
-        padding: 1.2rem;
+        padding: 1rem;
         width: 100%;
     }
 
     .bannerex-text {
         font-size: 1.4rem;
+        margin-top: 0rem;
     }
 
     /* Borders More Minimal */
