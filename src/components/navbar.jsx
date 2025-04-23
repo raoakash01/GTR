@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // ✅ Import Link
+import { Link } from "react-router-dom";
 import "./navbar.css";
 import Logoimg from "../assets/logo.png";
 import Serve from "../assets/betterserve.png";
