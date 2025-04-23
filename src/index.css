@@ -14,7 +14,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+b{
+  font-weight: bold;
+}
 
 body {
   margin: 0;
