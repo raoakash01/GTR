@@ -15,11 +15,39 @@
     font-weight: 500;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 1024px) {
     .banner6-bg{
-        padding: 0rem 1rem;
+        padding: 0rem 5rem;
+    }
+    .banner6-text{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .banner6-bg{
+        padding: 0rem 3rem;
+    }
+    .banner6-text{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .banner6-bg{
+        padding: 0rem 2rem;
     }
     .banner6-text{
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 479px) {
+    .banner6-bg{
+        padding: 0rem 1rem;
+    }
+    .banner6-text{
+        font-size: 1.2rem;
+    }
+}
+
