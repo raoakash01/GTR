@@ -63,7 +63,7 @@
 
 /* Heading inside box */
 .gtr-box-heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
     text-wrap: wrap;
@@ -72,7 +72,7 @@
 
 /* Text inside box */
 .gtr-box-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
