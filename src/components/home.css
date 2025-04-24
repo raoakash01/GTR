@@ -12,20 +12,18 @@
 
 @media (min-width: 769px) {
     @keyframes changeImage {
-        0% {
+        0%,
+        100% {
             background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/1.webp");
         }
         25% {
             background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/2.webp");
         }
         50% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/bgfornt3.webp");
+            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/8.webp");
         }
         75% {
             background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/bgfornt4.webp");
-        }
-        100% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/8.webp");
         }
     }
 }
