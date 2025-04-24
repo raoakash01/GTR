@@ -66,6 +66,8 @@
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    text-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 /* Text inside box */
@@ -87,6 +89,8 @@
     .gtr-text,
     .gtr-box-heading {
         font-size: 1.8rem;
+        text-wrap: wrap;
+        flex-wrap: wrap;
     }
     .gtr-box-text {
         font-size: 1.5rem;
