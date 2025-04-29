@@ -16,7 +16,7 @@ function Spservices() {
                             item.style.transform = 'translateX(0)';
                             item.style.opacity = 1;
                             item.style.transition = 'transform 0.5s ease-out, opacity 0.5s';
-                        }, (index + 1) * 200); // Increment delay to prevent initial display
+                        }, (index + 1) * 400); // Increment delay to prevent initial display
                     });
                     const rightItems = document.querySelectorAll('.spservices-grid-right .spservices-grid-item');
                     rightItems.forEach((item, index) => {
@@ -27,7 +27,7 @@ function Spservices() {
                             item.style.transform = 'translateX(0)';
                             item.style.opacity = 1;
                             item.style.transition = 'transform 0.5s ease-out, opacity 0.5s';
-                        }, (index + 1) * 200); // Increment delay to prevent initial display
+                        }, (index + 1) * 400); // Increment delay to prevent initial display
                     });
                 }
             });

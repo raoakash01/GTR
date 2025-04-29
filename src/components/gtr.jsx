@@ -9,7 +9,7 @@ function Gtr() {
         const interval = setInterval(() => {
             setActiveBox(index);
             index = (index + 1) % 4;
-        }, 3000);
+        }, 2000);
         return () => clearInterval(interval);
     }, []);
 
