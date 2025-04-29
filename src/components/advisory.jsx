@@ -327,8 +327,8 @@ function Advisory() {
                         className="advisory-member-image"
                         src={Mash}/>
                         <h1 className="advisory-member-name">Mahesh Malhotra</h1>
-                        <p className="advisory-member-title">Vice President, Head <br />
-                        Sales & Marketing</p>
+                        <p className="advisory-member-title">Vice President,<br />
+                        Corporate Sales</p>
                 </div>
                 <div className="advisory-member">
                     <img
