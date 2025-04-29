@@ -50,7 +50,7 @@
 .get-started{
     background-image: linear-gradient(to right, #052444 40%, #16A04B);
     border-radius: 1rem;
-    width: 45%;
+    width: 100%;
     height: 100%;
     color: white;
     font-size: 1rem;
@@ -196,7 +196,7 @@
 .email-input {
     background-color: white;
     border-radius: 1rem;
-    width: 20rem;
+    width: 15rem;
     height: 3rem;
     display: flex;
     justify-content: space-between;
@@ -208,10 +208,11 @@
 .get-started{
     background-image: linear-gradient(to right, #052444 40%, #16A04B);
     border-radius: 1rem;
-    width: 45%;
+    width: 100%;
     height: 100%;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    padding: 0;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -229,7 +230,7 @@
 .get-started {
     background-image: linear-gradient(to right, #052444 40%, #16A04B);
     border-radius: 1rem;
-    width: 45%;
+    width: 100%;
     height: 100%;
     color: white;
     font-size: 1rem;
@@ -242,7 +243,7 @@
 /* Responsive Button */
 @media (max-width: 768px) {
     .get-started {
-        width: 40%;
+        width: 100%;
         font-size: 0.7rem;
     }
 }

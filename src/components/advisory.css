@@ -136,7 +136,7 @@
     width: 28rem;
     height: 30rem;
     background-color: #EEEEEE;
-    /* border-radius: 2rem; */
+    border-radius: 1.5rem;
     border: 0.3rem solid #052444;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
@@ -145,6 +145,7 @@
     background-color: #EEEEEE;
     text-align: center;
     width: 25%;
+    border-radius: 1.5rem;
 }
 
 .advisory-member-content{

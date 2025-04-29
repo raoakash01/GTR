@@ -51,8 +51,11 @@ function GetStarted() {
                         <div className="contact-b">
                             <p className="contact-pb"><FontAwesomeIcon icon={faPhone} style={{ color: 'white'}}/> +91 9667226960</p>
                         </div>
+                        <div className="contact-b">
+                            <p className="contact-pb"><FontAwesomeIcon icon={faPhone} style={{ color: 'white'}}/> +91 9873613370</p>
+                        </div>
                         {/* <p className="contact-ppp">Assistance hours: Monday - Friday 9 am to 8 pm IST</p> */}
-                        <p className="contact-pp">Contact us with : </p>
+                        {/* <p className="contact-pp">Contact us with : </p> */}
                         <div className="icons-gtr-line">
                             <a href="https://api.whatsapp.com/send?phone=+919319380444&text=Hi%20I%20am%20interested%20in%20knowing%20more%20about%20Global%20Teleradiology" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="icons-gtr-line-a" icon={faWhatsapp}/>
@@ -71,7 +74,7 @@ function GetStarted() {
                     <form ref={formRef} onSubmit={sendEmail} className="getstarted-form">
                     <div className="getstarted-form-container">
                     <div className="getstarted-form-inputs">
-                        <select className="getstarted-select" id="Role" name="role">
+                        <select className="getstarted-select" id="Role" name="role" required>
                             <option value="" disabled selected>I am a...</option>
                             <option value="Radiologist">Radiologist</option>
                             <option value="Healthcare Professional">Demo Customer</option>
@@ -79,13 +82,13 @@ function GetStarted() {
                         </select>
                     </div>
                     <div className="getstarted-form-inputs">
-                        <input type="text" id="name" name="name" placeholder="Your Name" style={{width: 'calc(33.33% - 1rem)'}} />
-                        <input type="text" id="number" name="number" placeholder="Phone Number" style={{width: 'calc(33.33% - 1rem)'}} />
-                        <input type="text" id="email" name="email" placeholder="Your Email" style={{width: 'calc(33.33% - 1rem)'}} />
+                        <input type="text" id="name" name="name" placeholder="Your Name" required style={{width: 'calc(33.33% - 1rem)'}} />
+                        <input type="text" id="number" name="number" placeholder="Phone Number" required style={{width: 'calc(33.33% - 1rem)'}} />
+                        <input type="text" id="email" name="email" placeholder="Your Email" required style={{width: 'calc(33.33% - 1rem)'}} />
                     </div>
                     </div>
                     <div className="getstarted-form-textarea">
-                        <textarea id="message" name="message" placeholder="Your Message" />
+                        <textarea id="message" name="message" placeholder="Your Message" required />
                     </div>
                     
                     <button type="submit" className="getstarted-submit">Leave us a message</button>
