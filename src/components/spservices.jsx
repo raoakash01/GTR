@@ -1,7 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './spservices.css'
 
 function Spservices() {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const leftItems = document.querySelectorAll('.spservices-grid-left .spservices-grid-item');
+                    leftItems.forEach((item, index) => {
+                        item.style.transform = 'translateX(-100%)';
+                        item.style.opacity = 0;
+                        item.style.transition = 'none'; // Reset transition
+                        setTimeout(() => {
+                            item.style.transform = 'translateX(0)';
+                            item.style.opacity = 1;
+                            item.style.transition = 'transform 0.5s ease-out, opacity 0.5s';
+                        }, (index + 1) * 200); // Increment delay to prevent initial display
+                    });
+                    const rightItems = document.querySelectorAll('.spservices-grid-right .spservices-grid-item');
+                    rightItems.forEach((item, index) => {
+                        item.style.transform = 'translateX(100%)';
+                        item.style.opacity = 0;
+                        item.style.transition = 'none'; // Reset transition
+                        setTimeout(() => {
+                            item.style.transform = 'translateX(0)';
+                            item.style.opacity = 1;
+                            item.style.transition = 'transform 0.5s ease-out, opacity 0.5s';
+                        }, (index + 1) * 200); // Increment delay to prevent initial display
+                    });
+                }
+            });
+        }, { rootMargin: '0px 0px -100px 0px' });
+        observer.observe(document.querySelector('.spservices-grid-left'));
+        observer.observe(document.querySelector('.spservices-grid-right'));
+    }, []);
+
     return (
         <div className="spservices">
             <h1 className="spservices-h">SPECIALIZED SERVICES</h1>
