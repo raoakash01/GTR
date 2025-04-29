@@ -10,7 +10,7 @@ function Banner() {
         <div className="banner">
             <div className='banner-left'>
             <img className='bmap' src={Bmap} alt="Bmap" />
-            <p className='banner-text'>India | South Asia  |  Pacific islands  |  Caribbeans  |  South Africa  |  Ghana  |  Uganda</p>
+            <p className='banner-text'>India | South Asia  |  Pacific Islands  |  Caribbeans  |  South Africa  |  Ghana  |  Uganda</p>
             </div>
             <div className='banner-right'>
             <p className='banner-text'>
