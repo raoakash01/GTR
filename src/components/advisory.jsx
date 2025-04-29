@@ -161,7 +161,7 @@ function Advisory() {
                     <img
                         className="advisory-member-image"
                         src={algills}/>
-                        <h1 className="advisory-member-name">Dr. Algills</h1>
+                        <h1 className="advisory-member-name">AI gills</h1>
                         <h1 className="advisory-member-name">Former Director</h1>
                         <p className="advisory-member-title">Harvard Medical International, USA / Partner Group</p>
                 </div>
@@ -169,17 +169,17 @@ function Advisory() {
                     <img
                         className="advisory-member-image"
                         src={vijai}/>
-                        <h1 className="advisory-member-name">Dr. D. S. Rana</h1>
-                        <h1 className="advisory-member-name">Chairman</h1>
-                        <p className="advisory-member-title">Sir Ganga Ram Hospital, India</p>
+                        <h1 className="advisory-member-name">DR. Vijai Kumar</h1>
+                        <h1 className="advisory-member-name">President</h1>
+                        <p className="advisory-member-title">Excel Life Sciences, USA</p>                        
                 </div>
                 <div className="advisory-member">
                     <img
                         className="advisory-member-image"
                         src={Bd3}/>
-                        <h1 className="advisory-member-name">DR. Vijai Kumar</h1>
-                        <h1 className="advisory-member-name">President</h1>
-                        <p className="advisory-member-title">Excel Life Sciences, USA</p>
+                        <h1 className="advisory-member-name">Dr. D. S. Rana</h1>
+                        <h1 className="advisory-member-name">Chairman</h1>
+                        <p className="advisory-member-title">Sir Ganga Ram Hospital, India</p>                        
                 </div>
                 </div>
                 <div className="advisory-tittle" id="quality-panel">
@@ -342,14 +342,14 @@ function Advisory() {
                         className="advisory-member-image"
                         src={Irshad}/>
                         <h1 className="advisory-member-name">Irshad Ahmad</h1>
-                        <p className="advisory-member-title">Head – Customer Relations</p>
+                        <p className="advisory-member-title">Head – Operations</p>
                 </div>
                 <div className="advisory-member noRightMargin">
                     <img
                         className="advisory-member-image"
                         src={Sadique}/>
                         <h1 className="advisory-member-name">Sadique Khan</h1>
-                        <p className="advisory-member-title">Head – Customer Relations</p>
+                        <p className="advisory-member-title">Head – Corporate Sales</p>
                 </div>
                 </div>
             {/* <div className="team">

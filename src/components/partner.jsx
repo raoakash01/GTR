@@ -21,10 +21,10 @@ function Partner() {
                     </div>
                     <div className="text-partner">
                         <div className="text-partner-H">
-                            <h1 className="text-partner-H1">Imaging Centers and  Radiology Companies</h1>
+                            <h1 className="text-partner-H1">Imaging Centres and  Radiology Companies</h1>
                         </div>
                         <div className="text-partner-P">
-                            <p className="text-partner-P1">We offer expert teleradiology services for Individual Radiology and Imaging Centers, ensuring accurate, timely, and reliable diagnostic reporting.</p>
+                            <p className="text-partner-P1">We offer expert teleradiology services for Individual Radiology and Imaging Centres, ensuring accurate, timely, and reliable diagnostic reporting.</p>
                         </div>
                     </div>
                 </div>
@@ -34,10 +34,10 @@ function Partner() {
                     </div>
                     <div className="text-partner">
                         <div className="text-partner-H">
-                            <h1 className="text-partner-H1">Hospitals and Diagnostics Centre</h1>
+                            <h1 className="text-partner-H1">Hospitals and Diagnostics Centres</h1>
                         </div>
                         <div className="text-partner-P">
-                            <p className="text-partner-P1">Delivering expert teleradiology reporting support to hospitals and diagnostic centers for seamless, accurate, and timely diagnostics.</p>
+                            <p className="text-partner-P1">Delivering expert teleradiology reporting support to hospitals and diagnostic centres for seamless, accurate, and timely diagnostics.</p>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ function Partner() {
                     </div>
                     <div className="text-partner">
                         <div className="text-partner-H">
-                            <h1 className="text-partner-H1">Medical Groups of Imaging Centre</h1>
+                            <h1 className="text-partner-H1">Medical Groups of Imaging Centres</h1>
                         </div>
                         <div className="text-partner-P">
                             <p className="text-partner-P1">We provide expert teleradiology services to Public-Private Partnerships and health organizations, ensuring accurate and timely diagnostics.</p>
