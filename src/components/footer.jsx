@@ -99,8 +99,8 @@ function Footer(){
                     </ul></div>
                 <div className='footer-lower-5'><h3 className='footer-links-heading'>Company</h3> <ul className='footer-links'>
                         <li><a className='footer-link' href="#about">About us</a></li>
-                        <li><a className='footer-link' href="#join">Contact us</a></li>
-                        <li><a className='footer-link' href="#join">Careers</a></li>
+                        <li><a className='footer-link' href="#contactus">Contact us</a></li>
+                        <li><a className='footer-link' href="#contactus">Careers</a></li>
                     </ul></div>
                 </div>
                 </div>

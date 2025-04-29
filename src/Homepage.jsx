@@ -43,7 +43,7 @@ function Homepage() {
       <div id="advisory"><Advisory /></div>
       <div id="faq"><Faq /></div>
       <div><Bline/></div>
-      <div id="join"><GetStarted /></div>
+      <div id="contactus"><GetStarted /></div>
       <div><Bline/></div>
       <div id="banner4"><Banner4 /></div>
       <div id="contact"><Footer /></div>

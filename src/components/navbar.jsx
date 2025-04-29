@@ -45,7 +45,7 @@ function Navbar() {
                     ) : (
                         <li><a href="javascript:window.history.back()" onClick={toggleMenu}>Back</a></li>
                     )}
-                    <li><a href="#join" onClick={toggleMenu}>Contact Us</a></li>
+                    <li><a href="#contactus" onClick={toggleMenu}>Contact Us</a></li>
                     <li><a href="#faq" onClick={toggleMenu}>FAQs</a></li>
                 </ul>
             </div>
