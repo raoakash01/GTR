@@ -105,7 +105,7 @@ function Footer(){
                 </div>
                 </div>
                 <div className='footer-lower-lower'>
-                    <p className='footer-lower-text-2'>© Copyright  Global Teleradiology.. All Rights Reserved </p>
+                    <p className='footer-lower-text-2'>© Copyright Global Teleradiology. All Rights Reserved <a className='footer-link' href="https://drive.google.com/file/d/1NoWK4S4ukcgDJVOn_wLNqUO_DZGNjYnq/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
                 </div>
             </div>
         </div>
