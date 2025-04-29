@@ -137,13 +137,3 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     z-index: 2;
 }
-
-/* Optional: User hover */
-.gtr-box:hover {
-    background-image: linear-gradient(to top, #048B38, #0C2752 80%);
-    color: #ffffff;
-    border-radius: 2rem;
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-}
