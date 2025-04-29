@@ -46,8 +46,8 @@
     width: 20%;
     height: 25rem;
     padding: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     margin-right: 0.5rem;
     transition: all 0.4s ease-in-out;
 }
