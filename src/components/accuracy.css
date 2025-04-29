@@ -68,7 +68,7 @@
 }
 
 .accuracy-p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0;
     margin-right: 1rem;
     padding: 0;
@@ -76,6 +76,11 @@
     color: #0C2752;
     margin-left: 3rem;
     flex-wrap: nowrap;
+}
+
+.marginauto{
+    margin-right: 0;
+    margin: auto;
 }
 
 .top-2 {
@@ -197,7 +202,7 @@
     }
 
     .accuracy-p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-left: 1.5rem;
     }
 
@@ -209,6 +214,7 @@
     .acc-box1 {
         width: 80%;
         margin: 0.5rem 0;
+        text-align: center;
     }
 
     .peer-review-container {

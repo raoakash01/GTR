@@ -19,7 +19,7 @@ function Accuracy() {
                 <p className="accuracy-p top-2">In addition to Self Check, we have 3 tiers of check-ins build into the system.</p>
                 <div className="acc-box">
                     <div className="acc-box1">
-                        <h1 className="accuracy-p white">Peer to Peer Reviews</h1>
+                        <h1 className="accuracy-p white marginauto">Peer to Peer Reviews</h1>
                     </div>
                     <div className="acc-box1">
                         <h1 className="accuracy-p white">Checks by Quality Panel</h1>
