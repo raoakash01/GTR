@@ -51,7 +51,7 @@ function GetStarted() {
                         <div className="contact-b">
                             <p className="contact-pb"><FontAwesomeIcon icon={faPhone} style={{ color: 'white'}}/> +91 9667226960</p>
                         </div>
-                        <p className="contact-pp">Assistance hours: Monday - Friday 9 am to 8 pm IST</p>
+                        <p className="contact-ppp">Assistance hours: Monday - Friday 9 am to 8 pm IST</p>
                         <p className="contact-pp">Contact us with : </p>
                         <div className="icons-gtr-line">
                             <a href="https://api.whatsapp.com/send?phone=+919319380444&text=Hi%20I%20am%20interested%20in%20knowing%20more%20about%20Global%20Teleradiology" target="_blank" rel="noopener noreferrer">
