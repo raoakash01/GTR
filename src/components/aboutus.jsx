@@ -28,7 +28,7 @@ function AboutUs() {
                         </h1>
                         <p className="text-content-1">
                         <strong>Global Tele-Radiology</strong> was born out of our belief and deep commitment to make technology deliver best patient care. The founding 
-                        members brought their extensive CXO level healthcare experience and compassion to successfully create a patient & customer centric organization.
+                        members brought their extensive cxo level healthcare experience and compassion to successfully create a patient & customer centric organization.
                         </p>
                     </div>
                 </div>
