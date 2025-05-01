@@ -29,6 +29,8 @@ function Accuracy() {
                     </div>
                 </div>
                 <p className="accuracy-p top-2"><strong>Together all 3 ensure that reports delivered by our Radiologists are of highest Quality</strong></p>
+                <h1 className="accuracy-l" style={{marginTop:"2rem"}}>HOW IT WORKS</h1>
+                <div className="underline-half-acc"></div>
                 <div className="img-Container-workflow">
                     <img src={WorkFlow} alt="accuracy" className="img-workflow" />
                 </div>
