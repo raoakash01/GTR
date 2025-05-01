@@ -1,57 +1,38 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
 import Whatsapp from "../assets/Whatsapp.png";
-import img1 from "../assets/1.webp?fm=webp&q=60";
-import img2 from "../assets/2.webp?fm=webp&q=60";
-import img3 from "../assets/4.webp?fm=webp&q=60";
-import img4 from "../assets/8.webp?fm=webp&q=60";
+import img1 from "../assets/1.webp";
+import img2 from "../assets/2.webp";
+import img3 from "../assets/4.webp";
+import img4 from "../assets/8.webp";
+
+const imagesArr = [img1, img2, img3, img4];
 
 function Home() {
-    const [images, setImages] = useState([]);
     const [imageIndex, setImageIndex] = useState(0);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const imageUrls = [
-            img1,
-            img2,
-            img3,
-            img4,
-        ];
-
-        const loadImages = async () => {
-            try {
-                const loadedImages = await Promise.all(
-                    imageUrls.map(url => url)
-                );
-                setImages(loadedImages);
-                setLoading(false);
-            } catch (error) {
-                console.error("Error loading images", error);
-            }
-        };
-
-        loadImages();
-    }, []);
+    const [fade, setFade] = useState(true);
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setImageIndex((imageIndex + 1) % images.length);
-        }, 3000);
+            setFade(false); // start fade out
+            setTimeout(() => {
+                setImageIndex((prev) => (prev + 1) % imagesArr.length);
+                setFade(true); // start fade in
+            }, 500); // match with CSS transition
+        }, 4000);
 
         return () => clearInterval(timer);
-    }, [images, imageIndex]);
+    }, []);
 
     return (
-        <div
-            className="home"
-            id="home"
-            style={{
-                backgroundImage: loading ? "linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(" + img1 + ")" : `linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(${images[imageIndex]})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center"
-            }}
-        >
+        <div className="home" id="home">
+            <div
+                className={`home-background ${fade ? "fade-in" : "fade-out"}`}
+                style={{
+                    backgroundImage: `linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(${imagesArr[imageIndex]})`
+                }}
+            ></div>
+
             <div className="home-content">
                 <div className="Tag-line">
                     <h1 className="tag-line-text">Accuracy for Cure</h1>
@@ -65,7 +46,7 @@ function Home() {
                 <div className="home-content-2-left">
                     <div className="red-text-bg">
                         <h1 className="red-text-h1">
-                        We Help Reduce Your Radiology Cost upto 50% 
+                            We Help Reduce Your Radiology Cost upto 50%
                         </h1>
                     </div>
                     <div className="home-content-2-text">
@@ -90,4 +71,3 @@ function Home() {
 }
 
 export default Home;
-
