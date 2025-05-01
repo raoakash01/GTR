@@ -6,7 +6,7 @@ import namita from "../assets/namita.webp";
 import Irshad from "../assets/IrshadGTR.webp";
 import Mash from "../assets/MashGTR.png";
 import Ruchi from "../assets/RuchiGTR.png";
-import Sadique from "../assets/SadiqueGTR.png";
+import Sadique from "../assets/SadiqueGTR.webp";
 import Manager2 from "../assets/manger2.webp";
 import Manager3 from "../assets/manger3.webp";
 import Bd3 from "../assets/bd3.webp";
