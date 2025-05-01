@@ -2,31 +2,8 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(to right, rgba(9, 50, 83,  0.479), transparent), url("../assets/8.webp");
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    animation: changeImage 10s infinite;
-    transition: background-image 1s ease-in-out;
 }
 
-@media (min-width: 769px) {
-    @keyframes changeImage {
-        0%,
-        100% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url("../assets/1.webp");
-        }
-        25% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url("../assets/2.webp");
-        }
-        50% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83,  0.479), transparent), url("../assets/8.webp");
-        }
-        75% {
-            background-image: linear-gradient(to right, rgba(9, 50, 83,  0.479), transparent), url("../assets/4.webp");
-        }
-    }
-}
 .home {
     color: white;
     width: 100%;

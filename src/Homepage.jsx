@@ -26,7 +26,7 @@ function Homepage() {
     <>
       <div ><Banner/></div>
       <div><Navbar /></div>
-      <div id="home"><Home /></div>
+      <div ><Home /></div>
       <div id="about"><AboutUs /></div>
       <div ><Banner5/></div>
       <div id="whygtr"><WhyGtr2 /></div>
