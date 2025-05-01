@@ -10,7 +10,7 @@ function WhyGtr2() {
     const [text, setText] = useState("Service Quality & TAT");
     const [activeId, setActiveId] = useState("1");
 
-    const handleClick = (id) => {
+    const handleMouseOver = (id) => {
         setActiveId(id);
         switch (id) {
             case "1":
@@ -33,6 +33,11 @@ function WhyGtr2() {
         }
     };
 
+    const handleMouseOut = () => {
+        setActiveId("1");
+        setText("Service Quality & TAT");
+    };
+
     const items = [
         { id: "1", img: p1, label: "Service Quality & TAT" },
         { id: "4", img: p4, label: "Radiology Team" },
@@ -53,7 +58,8 @@ function WhyGtr2() {
                             <div
                                 key={id}
                                 className={`gtr2-grid-item ${activeId === id ? "active" : ""}`}
-                                onClick={() => handleClick(id)}
+                                onMouseOver={() => handleMouseOver(id)}
+                                onMouseOut={handleMouseOut}
                             >
                                 <img src={img} alt={`p${id}`} className="gtr2-grid-img" />
                                 <h1 className="gtr2-grid-text">{label}</h1>
@@ -123,3 +129,4 @@ function WhyGtr2() {
 }
 
 export default WhyGtr2;
+
