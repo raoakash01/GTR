@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(to right, rgba(9, 50, 83, 0.753), transparent), url("../assets/8.webp");
+    background-image: linear-gradient(to right, rgba(9, 50, 83,  0.479), transparent), url("../assets/8.webp");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
