@@ -54,7 +54,7 @@ function Banner3() {
       <div className="layer-light">
       <div className="icon-container">
           <div className="numbers">
-            <h1 className="icon-numbers">+{years}</h1>
+            <h1 className="icon-numbers">{years}+</h1>
             <p className="number-text">Years of Experience</p>
           </div>
         </div>
