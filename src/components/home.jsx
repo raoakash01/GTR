@@ -33,7 +33,7 @@ function Home() {
     useEffect(() => {
         const timer = setInterval(() => {
             setImageIndex((imageIndex + 1) % images.length);
-        }, 10000);
+        }, 3000);
 
         return () => clearInterval(timer);
     }, [images, imageIndex]);
@@ -46,7 +46,7 @@ function Home() {
                 backgroundImage: loading ? "linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(../assets/1.webp)" : `linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(${images[imageIndex]})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                transition: "background-image 1s ease-in-out"
+                opacity: loading ? 0 : 1
             }}
         >
             <div className="home-content">
