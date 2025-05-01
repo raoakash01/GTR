@@ -163,6 +163,13 @@
     text-transform: capitalize;
     color: #052444;
 }
+.advisory-member-name2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    text-transform: capitalize;
+    color: #052444;
+}
 
 .advisory-member-title{
     font-size: 1.8rem;

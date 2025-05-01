@@ -162,7 +162,7 @@ function Advisory() {
                         className="advisory-member-image"
                         src={algills}/>
                         <h1 className="advisory-member-name">AL gills</h1>
-                        <h1 className="advisory-member-name">Former Director</h1>
+                        <h1 className="advisory-member-name2">Former Director</h1>
                         <p className="advisory-member-title">Harvard Medical International, USA / Partner Group</p>
                 </div>
                 <div className="advisory-member">
@@ -170,7 +170,7 @@ function Advisory() {
                         className="advisory-member-image"
                         src={vijai}/>
                         <h1 className="advisory-member-name">DR. Vijai Kumar</h1>
-                        <h1 className="advisory-member-name">President</h1>
+                        <h1 className="advisory-member-name2">President</h1>
                         <p className="advisory-member-title">Excel Life Sciences, USA</p>                        
                 </div>
                 <div className="advisory-member">
@@ -178,7 +178,7 @@ function Advisory() {
                         className="advisory-member-image"
                         src={Bd3}/>
                         <h1 className="advisory-member-name">Dr. D. S. Rana</h1>
-                        <h1 className="advisory-member-name">Chairman</h1>
+                        <h1 className="advisory-member-name2">Chairman</h1>
                         <p className="advisory-member-title">Sir Ganga Ram Hospital, India</p>                        
                 </div>
                 </div>
@@ -191,18 +191,18 @@ function Advisory() {
                         className="advisory-member-image"
                         src={Ankur}/>
                         <h1 className="advisory-member-name">Dr. Ankur Gadodia</h1>
-                        <h1 className="advisory-member-name">Radiology Head</h1>
-                        <p className="advisory-member-title">(MBBS, MD, AIMS, DNB,FRCR [UK])<br/>
-                        20 years’ experience</p>
+                        <h1 className="advisory-member-name2">Radiology Head</h1>
+                        <p className="advisory-member-title">(MBBS, MD-AIIMS, DNB,FRCR [UK])<br/>
+                        20 years experience</p>
                 </div>
                 <div className="advisory-member">
                     <img
                         className="advisory-member-image"
                         src={Sumeet}/>
                         <h1 className="advisory-member-name">Dr. Sumeet Bhargava</h1>
-                        <h1 className="advisory-member-name">Quality Director</h1>
+                        <h1 className="advisory-member-name2">Quality Director</h1>
                         <p className="advisory-member-title">(MBBS, DNB, FCGP, FICR, FIAMS, FIMSA, FRCR)<br/>
-20 years’ experience
+20 years experience
 </p>
                 </div>
                 <div className="advisory-member">
@@ -210,9 +210,9 @@ function Advisory() {
                         className="advisory-member-image"
                         src={Kavita}/>
                         <h1 className="advisory-member-name">Dr. Kavita Mittal</h1>
-                        <h1 className="advisory-member-name">Quality Director</h1>
+                        <h1 className="advisory-member-name2">Quality Director</h1>
                         <p className="advisory-member-title">(MBBS, MD)<br/>
-                        10 years’ experience</p>
+                        10 years experience</p>
                 </div>
                 </div>
                 <div className="advisory-tittle" id="management-team">
@@ -224,7 +224,7 @@ function Advisory() {
                         className="advisory-member-image"
                         src={namita}/>
                         <h1 className="advisory-member-name">Namita Chowdhary</h1>
-                        <h1 className="advisory-member-name">Managing Director</h1>
+                        <h1 className="advisory-member-name2">Managing Director</h1>
                         <p className="advisory-member-title">Strategy and Management Expert</p>
                 </div>
                 <div className="advisory-member">
@@ -232,7 +232,7 @@ function Advisory() {
                         className="advisory-member-image"
                         src={Manager2}/>
                         <h1 className="advisory-member-name">Ritti Jarg</h1>
-                        <h1 className="advisory-member-name">Executive Director</h1>
+                        <h1 className="advisory-member-name2">Executive Director</h1>
                         <p className="advisory-member-title">Operation and Process Specialist</p>
                 </div>
                 <div className="advisory-member">
@@ -240,7 +240,7 @@ function Advisory() {
                         className="advisory-member-image"
                         src={Manager3}/>
                         <h1 className="advisory-member-name">Vishal Chowdhary</h1>
-                        <h1 className="advisory-member-name">Executive Director</h1>
+                        <h1 className="advisory-member-name2">Executive Director</h1>
                         <p className="advisory-member-title">Healthcare And Management 
                         Professional</p>
                 </div>
