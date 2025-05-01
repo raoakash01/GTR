@@ -241,7 +241,7 @@ function Advisory() {
                         src={Manager3}/>
                         <h1 className="advisory-member-name">Vishal Chowdhary</h1>
                         <h1 className="advisory-member-name2">Executive Director</h1>
-                        <p className="advisory-member-title">Healthcare And Management 
+                        <p className="advisory-member-title">Healthcare and Management 
                         Professional</p>
                 </div>
                 </div>
