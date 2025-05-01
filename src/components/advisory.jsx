@@ -161,7 +161,7 @@ function Advisory() {
                     <img
                         className="advisory-member-image"
                         src={algills}/>
-                        <h1 className="advisory-member-name">AI gills</h1>
+                        <h1 className="advisory-member-name">AL gills</h1>
                         <h1 className="advisory-member-name">Former Director</h1>
                         <p className="advisory-member-title">Harvard Medical International, USA / Partner Group</p>
                 </div>
