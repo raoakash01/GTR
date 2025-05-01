@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
 import Whatsapp from "../assets/Whatsapp.png";
+import img1 from "../assets/1.webp";
+import img2 from "../assets/2.webp";
+import img3 from "../assets/4.webp";
+import img4 from "../assets/8.webp";
 
 function Home() {
     const [images, setImages] = useState([]);
@@ -9,16 +13,16 @@ function Home() {
 
     useEffect(() => {
         const imageUrls = [
-            import("../assets/1.webp"),
-            import("../assets/2.webp"),
-            import("../assets/4.webp"),
-            import("../assets/8.webp"),
+            img1,
+            img2,
+            img3,
+            img4,
         ];
 
         const loadImages = async () => {
             try {
                 const loadedImages = await Promise.all(
-                    imageUrls.map(url => url.then(image => image.default))
+                    imageUrls.map(url => url)
                 );
                 setImages(loadedImages);
                 setLoading(false);
@@ -43,10 +47,9 @@ function Home() {
             className="home"
             id="home"
             style={{
-                backgroundImage: loading ? "linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(../assets/1.webp)" : `linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(${images[imageIndex]})`,
+                backgroundImage: loading ? "linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(" + img1 + ")" : `linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(${images[imageIndex]})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
-                opacity: loading ? 0 : 1
+                backgroundPosition: "center"
             }}
         >
             <div className="home-content">
