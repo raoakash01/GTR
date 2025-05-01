@@ -41,7 +41,7 @@ function Home() {
             className="home"
             id="home"
             style={{
-                backgroundImage: images.length > 0 ? `url(${images[imageIndex]})` : 'none',
+                backgroundImage: images.length > 0 ? `linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(${images[imageIndex]})` : 'linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url("../assets/1.webp")',
                 backgroundSize: "cover",
                 backgroundPosition: "center"
             }}
