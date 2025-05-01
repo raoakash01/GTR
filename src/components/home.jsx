@@ -1,10 +1,11 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./home.css";
 import Whatsapp from "../assets/Whatsapp.png";
 
 function Home() {
     const [images, setImages] = useState([]);
     const [imageIndex, setImageIndex] = useState(0);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const imageUrls = [
@@ -20,6 +21,7 @@ function Home() {
                     imageUrls.map(url => url.then(image => image.default))
                 );
                 setImages(loadedImages);
+                setLoading(false);
             } catch (error) {
                 console.error("Error loading images", error);
             }
@@ -41,9 +43,10 @@ function Home() {
             className="home"
             id="home"
             style={{
-                backgroundImage: images.length > 0 ? `linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(${images[imageIndex]})` : 'linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url("../assets/1.webp")',
+                backgroundImage: loading ? "linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(../assets/1.webp)" : `linear-gradient(to right, rgba(9, 50, 83, 0.479), transparent), url(${images[imageIndex]})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center"
+                backgroundPosition: "center",
+                transition: "background-image 1s ease-in-out"
             }}
         >
             <div className="home-content">
