@@ -187,6 +187,19 @@
     .gtr2-grid-text{
         font-size: 1.5rem;
     }
+    .gtr2-right-box{
+        background-color: #F0F0F0;
+        width: 20rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #0C2752;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
+        align-self: center;
+        margin: auto;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -201,5 +214,17 @@
     }
     .gtr2-grid{
         padding: 0;
+    }
+    .gtr2-right-box{
+        background-color: #F0F0F0;
+        width: 18rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #0C2752;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
+        align-self: center;
+        margin: auto;
     }
 }
